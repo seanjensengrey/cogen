@@ -1,14 +1,24 @@
 #labels Featured
-So far:
+Epoll:
 {{{
 This is ApacheBench, Version 2.0.40-dev <$Revision: 1.146 $> apache-2.0
 Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
 Copyright 2006 The Apache Software Foundation, http://www.apache.org/
 
 Benchmarking 127.0.0.1 (be patient)
+Completed 1000 requests
+Completed 2000 requests
+Completed 3000 requests
+Completed 4000 requests
+Completed 5000 requests
+Completed 6000 requests
+Completed 7000 requests
+Completed 8000 requests
+Completed 9000 requests
+Finished 10000 requests
 
 
-Server Software:        cogen
+Server Software:        cogen.web.wsgi/0.1.0
 Server Hostname:        127.0.0.1
 Server Port:            8070
 
@@ -16,32 +26,32 @@ Document Path:          /
 Document Length:        3097 bytes
 
 Concurrency Level:      500
-Time taken for tests:   18.879645 seconds
+Time taken for tests:   10.329107 seconds
 Complete requests:      10000
 Failed requests:        0
 Write errors:           0
-Total transferred:      32066412 bytes
-HTML transferred:       30976194 bytes
-Requests per second:    529.67 [#/sec] (mean)
-Time per request:       943.982 [ms] (mean)
-Time per request:       1.888 [ms] (mean, across all concurrent requests)
-Transfer rate:          1658.61 [Kbytes/sec] received
+Total transferred:      32889780 bytes
+HTML transferred:       31496490 bytes
+Requests per second:    968.14 [#/sec] (mean)
+Time per request:       516.455 [ms] (mean)
+Time per request:       1.033 [ms] (mean, across all concurrent requests)
+Transfer rate:          3109.47 [Kbytes/sec] received
 
 Connection Times (ms)
               min  mean[+/-sd] median   max
-Connect:        0  125 592.2      0    8999
-Processing:     1   46 204.4      5    3625
-Waiting:        1   42 200.7      4    3624
-Total:          1  171 733.7      5   12614
+Connect:        6  228  57.5    232     333
+Processing:    60  236  53.0    238     346
+Waiting:        3  150  87.3    147     325
+Total:        248  465  78.5    505     544
 
 Percentage of the requests served within a certain time (ms)
-  50%      5
-  66%      9
-  75%     24
-  80%     24
-  90%     27
-  95%   2080
-  98%   2301
-  99%   3000
- 100%  12614 (longest request)
+  50%    505
+  66%    508
+  75%    510
+  80%    511
+  90%    513
+  95%    520
+  98%    521
+  99%    522
+ 100%    544 (longest request)
 }}}
