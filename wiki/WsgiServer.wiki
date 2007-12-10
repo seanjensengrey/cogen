@@ -1,4 +1,5 @@
 #summary cogen.web.wsgi
+#labels Featured
 
 = Introduction =
 
