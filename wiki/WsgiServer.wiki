@@ -1,0 +1,21 @@
+#summary cogen.web.wsgi
+
+= Introduction =
+
+`cogen` provides a compilant wsgi server with a wsgi.file_wrapper that uses sendfile behind the scenes.
+
+
+
+= Paste Integration =
+
+You can use this server with paste:
+
+Example config ini:
+
+{{{
+[server:main]
+use = egg:cogen#wsgi
+# Server configuration
+host = 127.0.0.1
+port = 85
+}}}
