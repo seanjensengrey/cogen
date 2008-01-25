@@ -3,8 +3,8 @@
 
 = Introduction =
 
-The idea is to support asynchronous operations: that is give the wsgi app ability to pause itself, resume when something happens and make available the result of that *something*.
-In `cogen` that *something* is a operation.
+The idea is to support asynchronous operations: that is give the wsgi app ability to pause itself, resume when something happens and make available the result of that _something_.
+In `cogen` that _something_ is a operation.
 
 Another desired feature is to allow use of middleware. We achieve this by yielding empty strings in the app and saving the operation to be run in a object from `environ` - wsgi spec specifies that middleware should yield at least as many chunks as the wrapped app has yielded [http://www.python.org/dev/peps/pep-0333/#middleware-handling-of-block-boundaries 1]. Though not any middleware follows that to the letter - you have to look at `cogen.web.wsgi` as to a streaming server - if the middleware flattens the response the breakage will occur as operations aren't send to the wsgi server and the app is not paused.
 
