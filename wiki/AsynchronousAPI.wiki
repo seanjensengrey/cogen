@@ -18,6 +18,8 @@ Another desired feature is to allow use of middleware. We achieve this by yieldi
   * `environ['cogen.input']` - at the moment only holds a Read operation and it is used exactly as `environ['cogen.core']`:
     * `environ['cogen.input'].Read`
 
+Check the docstring generated documentation too !
+
 == Example app with coroutine extensions ==
 
 {{{
@@ -30,8 +32,21 @@ def wait_app(environ, start_response):
     else:
         yield "Someone signaled me with this message: %s" % cgi.escape(`environ['cogen.wsgi'].result`)
 }}}
-    * environ['cogen'].core is actualy a wrapper that sets environ['cogen'].operation with the called object and returns a empty string. This should penetrate most of the middleware - according to the wsgi spec, middleware should pass a empty string if it doesn't have anything to return on that specific iteration point, or, in other words, the length of the app iter returned by middleware should be at least that of the app.
-    * the wsigi server will set environ['cogen'].result with the result of the operation and environ['cogen'].exception with the details of the exception - if any: (exc_type, exc_value, traceback_object). 
 
+== Example reading the input asynchronously ==
 
-= Reading wsgi.input asynchronously =
+{{{
+buff = StringIO()
+while 1:
+    yield environ['cogen.input'].Read(8192)
+    result = environ['cogen.wsgi'].result
+    if isinstance(result, Exception):
+        import traceback
+        traceback.print_exception(*environ['cogen.wsgi'].exception)
+        break
+    else:
+        if not result:
+            break
+        buff.write(result)
+buff.seek(0)                                                            
+}}}
