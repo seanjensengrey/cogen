@@ -10,13 +10,17 @@ Another desired feature is to allow use of middleware. We achieve this by yieldi
 
 `cogen.web.wsgi` provides 3 nice objects in the environ that eases writing apps like this.
 
-- `environ['cogen.core']` - a wrapper that sets `environ['cogen.wsgi'].operation` with the called object and returns a empty string. This should penetrate all the compilant middleware - take note of the flatten issue above.
-- `environ['cogen.wsgi']` - this is a object for communications between the app and the server
-  - `environ['cogen.wsgi'].result` - holds the result of the operation, if a error occured it will be a instance of `Exception`
-  - `environ['cogen.wsgi'].operation` - hold the operation to run - you don't need to fiddle with need - just use `environ['cogen.core']`
-  - `environ['cogen.wsgi'].exception` - holds complete information about the error occurred: `(type, value, traceback)`
-- `environ['cogen.input']` - at the moment only holds a Read operation and it is used exactly as `environ['cogen.core']`:
-  - `environ['cogen.input'].Read`
+* `environ['cogen.core']` - a wrapper that sets `environ['cogen.wsgi'].operation` with the called object and returns a empty string. This should penetrate all the compilant middleware - take note of the flatten issue above.
+
+* `environ['cogen.wsgi']` - this is a object for communications between the app and the server
+  * `environ['cogen.wsgi'].result` - holds the result of the operation, if a error occured it will be a instance of `Exception`
+
+  * `environ['cogen.wsgi'].operation` - hold the operation to run - you don't need to fiddle with need - just use `environ['cogen.core']`
+
+  *`environ['cogen.wsgi'].exception` - holds complete information about the error occurred: `(type, value, traceback)`
+
+* `environ['cogen.input']` - at the moment only holds a Read operation and it is used exactly as `environ['cogen.core']`:
+  *`environ['cogen.input'].Read`
 
 == Example app with coroutine extensions ==
 
