@@ -1,0 +1,36 @@
+#summary Introduction to asynchronous features of cogen.web.wsgi
+#labels Featured
+
+= Introduction =
+
+The idea is to support asynchronous operations: that is give the wsgi app ability to pause itself, resume when something happens and make available the result of that *something*.
+In `cogen` that *something* is a operation.
+
+Another desired feature is to allow use of middleware. We achieve this by yielding empty strings in the app and saving the operation to be run in a object from `environ` - wsgi spec specifies that middleware should yield at least as many chunks as the wrapped app has yielded [http://www.python.org/dev/peps/pep-0333/#middleware-handling-of-block-boundaries 1]. Though not any middleware follows that to the letter - you have to look at `cogen.web.wsgi` as to a streaming server - if the middleware flattens the response the breakage will occur as operations aren't send to the wsgi server and the app is not paused.
+
+`cogen.web.wsgi` provided 3 nice objects in the environ that eases writing apps like this.
+
+- `environ['cogen.core']` 
+- `environ['cogen.wsgi']`
+  - `environ['cogen.wsgi'].result`
+  - `environ['cogen.wsgi'].operation`
+  - `environ['cogen.wsgi'].exception`
+- `environ['cogen.input']`
+
+== Example app with coroutine extensions ==
+
+{{{
+def wait_app(environ, start_response):
+    start_response('200 OK', [('Content-type','text/html')])
+    yield "I'm waiting for some signal<br>"
+    yield environ['cogen.core'].events.WaitForSignal("abc", timeout=5)
+    if isinstance(environ['cogen.wsgi'].result, Exception):
+        yield "Your time is up !"
+    else:
+        yield "Someone signaled me with this message: %s" % cgi.escape(`environ['cogen.wsgi'].result`)
+}}}
+    * environ['cogen'].core is actualy a wrapper that sets environ['cogen'].operation with the called object and returns a empty string. This should penetrate most of the middleware - according to the wsgi spec, middleware should pass a empty string if it doesn't have anything to return on that specific iteration point, or, in other words, the length of the app iter returned by middleware should be at least that of the app.
+    * the wsigi server will set environ['cogen'].result with the result of the operation and environ['cogen'].exception with the details of the exception - if any: (exc_type, exc_value, traceback_object). 
+
+
+= Reading wsgi.input asynchronously =
