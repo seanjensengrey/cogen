@@ -1,4 +1,3 @@
-#labels Featured
 I'm nowhere near a real benchmark, but results with a linux os(that means epoll) inside vmware look pretty good:
 {{{
 This is ApacheBench, Version 2.0.40-dev <$Revision: 1.146 $> apache-2.0
