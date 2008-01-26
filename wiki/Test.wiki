@@ -1,5 +1,6 @@
 #summary cogen api documentation
-<div style="float:right;background:red">asdasd</div>
+|| aasd || asdd ||
+|| qwe          ||
 
 = Module: cogen =
 
