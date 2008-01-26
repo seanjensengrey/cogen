@@ -1,0 +1,19 @@
+#summary cogen api documentation
+
+= Module: cogen =
+
+Docstring
+
+== Submodules ==
+
+=== [CogenCommon common] ===
+
+Docstring
+
+=== [CogenCore core] ===
+
+Docstring
+
+=== [CogenWeb web] ===
+
+Docstring
