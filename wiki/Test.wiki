@@ -1,6 +1,8 @@
 #summary cogen api documentation
-|| aasd || asdd ||
-|| qwe          ||
+|| Modules || Submodules ||
+|| cogen.common || common ||
+|| cogen.core || core ||
+|| cogen.web || web ||
 
 = Module: cogen =
 
