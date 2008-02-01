@@ -1,0 +1,101 @@
+==== Modules: [Cogen cogen] [CogenCommon cogen.common] [CogenCore cogen.core] [CogenCoreCoroutine cogen.core.coroutine] [CogenCoreEvents cogen.core.events] [CogenCorePollers cogen.core.pollers] [CogenCoreQueue cogen.core.queue] [CogenCoreSchedulers cogen.core.schedulers] [CogenCoreSockets cogen.core.sockets] [CogenCoreUtil cogen.core.util] [CogenTest cogen.test] [CogenTestBase cogen.test.base] [CogenTestTest_queue cogen.test.test_queue] [CogenTestTest_sched cogen.test.test_sched] [CogenTestTest_socket cogen.test.test_socket] [CogenTestTest_timer cogen.test.test_timer] [CogenWeb cogen.web] [CogenWebAsync cogen.web.async] [CogenWebWsgi cogen.web.wsgi] ====
+==== Classes: [CogenCoreEventsAddcoro cogen.core.events.AddCoro] [CogenCoreEventsCall cogen.core.events.Call] [CogenCoreEventsConnectionclosed cogen.core.events.ConnectionClosed] [CogenCoreEventsJoin cogen.core.events.Join] [CogenCoreEventsOperationtimeout cogen.core.events.OperationTimeout] [CogenCoreEventsSignal cogen.core.events.Signal] [CogenCoreEventsSleep cogen.core.events.Sleep] [CogenCoreEventsWaitforsignal cogen.core.events.WaitForSignal] ====
+
+= Module: events =
+
+
+
+== Classes ==
+
+=== AddCoro ===
+
+A operator for adding a coroutine in the scheduler.
+Example:
+
+{{{
+yield events.AddCoro(some_coro, args=(), kwargs={})
+}}}
+
+
+=== Call ===
+
+This will pause the current coroutine, add a new coro in the scheduler and 
+resume the callee when it returns.
+
+Usage:
+{{{
+result = yield events.Call(mycoro, args=, kwargs=, prio=)
+}}}
+
+  - if `prio` is set the new coroutine will be added in the top of the 
+  scheduler queue
+
+
+=== ConnectionClosed ===
+
+Raised when the other peer has closed connection.
+
+
+=== Join ===
+
+A operator for waiting on a coroutine. 
+Example:
+
+{{{
+@coroutine
+def coro_a():
+    return_value = yield events.Join(ref)
+    
+    
+@coroutine
+def coro_b():
+    yield "bla"
+    raise StopIteration("some return value")
+
+ref = scheduler.add(coro_b)
+scheduler.add(coro_a)
+}}}
+
+
+=== OperationTimeout ===
+
+Raised when the timeout for a operation expires. The exception 
+message will be the operation
+
+
+=== Signal ===
+
+This will resume the coroutines that where paused with WaitForSignal.
+
+Usage:
+
+{{{
+nr = yield events.Signal(name, value)
+}}}
+
+  - nr - the number of coroutines woken up
+
+
+=== Sleep ===
+
+Usage:
+
+{{{
+yield events.Sleep(time_object)
+}}}
+
+  - timeoject - a datetime or timedelta object, or a number of seconds
+    
+{{{
+yield events.Sleep(timestamp=ts)
+}}}
+
+  - ts - a timestamp
+
+
+=== WaitForSignal ===
+
+The coroutine will resume when the same object is Signaled.
+
+
+

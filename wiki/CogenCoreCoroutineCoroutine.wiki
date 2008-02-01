@@ -1,0 +1,116 @@
+==== Modules: [Cogen cogen] [CogenCommon cogen.common] [CogenCore cogen.core] [CogenCoreCoroutine cogen.core.coroutine] [CogenCoreEvents cogen.core.events] [CogenCorePollers cogen.core.pollers] [CogenCoreQueue cogen.core.queue] [CogenCoreSchedulers cogen.core.schedulers] [CogenCoreSockets cogen.core.sockets] [CogenCoreUtil cogen.core.util] [CogenTest cogen.test] [CogenTestBase cogen.test.base] [CogenTestTest_queue cogen.test.test_queue] [CogenTestTest_sched cogen.test.test_sched] [CogenTestTest_socket cogen.test.test_socket] [CogenTestTest_timer cogen.test.test_timer] [CogenWeb cogen.web] [CogenWebAsync cogen.web.async] [CogenWebWsgi cogen.web.wsgi] ====
+==== Methods: [#add_waiter add_waiter] [#finalize finalize] [#handle_error handle_error] [#remove_waiter remove_waiter] [#run_op run_op] ====
+==== Attributes: [#STATE_COMPLETED STATE_COMPLETED] [#STATE_FAILED STATE_FAILED] [#STATE_NEED_INIT STATE_NEED_INIT] [#STATE_RUNNING STATE_RUNNING] [#caller caller] [#coro coro] [#exception exception] [#f_args f_args] [#f_kws f_kws] [#name name] [#prio prio] [#result result] [#running running] [#state state] [#waiters waiters] ====
+
+= Class: Coroutine =
+
+We need a coroutine wrapper for generators and function alike because
+we want to run functions that don'self return generators just like a 
+coroutine 
+
+== Methods ==
+
+=== add_waiter ===
+signature: (self, coro)
+
+
+
+=== finalize ===
+signature: (self)
+
+
+
+=== handle_error ===
+signature: (self)
+
+
+
+=== remove_waiter ===
+signature: (self, coro)
+
+
+
+=== run_op ===
+signature: (self, op)
+
+~ @debug(0)
+
+
+
+== Attributes ==
+
+=== STATE_COMPLETED ===
+
+
+{{{2}}}
+
+=== STATE_FAILED ===
+
+
+{{{3}}}
+
+=== STATE_NEED_INIT ===
+
+
+{{{0}}}
+
+=== STATE_RUNNING ===
+
+
+{{{1}}}
+
+=== caller ===
+
+
+{{{<member 'caller' of 'Coroutine' objects>}}}
+
+=== coro ===
+
+
+{{{<member 'coro' of 'Coroutine' objects>}}}
+
+=== exception ===
+
+
+{{{<member 'exception' of 'Coroutine' objects>}}}
+
+=== f_args ===
+
+
+{{{<member 'f_args' of 'Coroutine' objects>}}}
+
+=== f_kws ===
+
+
+{{{<member 'f_kws' of 'Coroutine' objects>}}}
+
+=== name ===
+
+
+{{{<member 'name' of 'Coroutine' objects>}}}
+
+=== prio ===
+
+
+{{{<member 'prio' of 'Coroutine' objects>}}}
+
+=== result ===
+
+
+{{{<member 'result' of 'Coroutine' objects>}}}
+
+=== running ===
+
+
+{{{<property object at 0x00B52878>}}}
+
+=== state ===
+
+
+{{{<member 'state' of 'Coroutine' objects>}}}
+
+=== waiters ===
+
+
+{{{<member 'waiters' of 'Coroutine' objects>}}}
+

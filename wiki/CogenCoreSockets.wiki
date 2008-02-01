@@ -1,0 +1,80 @@
+==== Modules: [Cogen cogen] [CogenCommon cogen.common] [CogenCore cogen.core] [CogenCoreCoroutine cogen.core.coroutine] [CogenCoreEvents cogen.core.events] [CogenCorePollers cogen.core.pollers] [CogenCoreQueue cogen.core.queue] [CogenCoreSchedulers cogen.core.schedulers] [CogenCoreSockets cogen.core.sockets] [CogenCoreUtil cogen.core.util] [CogenTest cogen.test] [CogenTestBase cogen.test.base] [CogenTestTest_queue cogen.test.test_queue] [CogenTestTest_sched cogen.test.test_sched] [CogenTestTest_socket cogen.test.test_socket] [CogenTestTest_timer cogen.test.test_timer] [CogenWeb cogen.web] [CogenWebAsync cogen.web.async] [CogenWebWsgi cogen.web.wsgi] ====
+==== Classes: [CogenCoreSocketsAccept cogen.core.sockets.Accept] [CogenCoreSocketsConnect cogen.core.sockets.Connect] [CogenCoreSocketsRead cogen.core.sockets.Read] [CogenCoreSocketsReadall cogen.core.sockets.ReadAll] [CogenCoreSocketsReadline cogen.core.sockets.ReadLine] [CogenCoreSocketsSendfile cogen.core.sockets.SendFile] [CogenCoreSocketsSocket cogen.core.sockets.Socket] [CogenCoreSocketsWrite cogen.core.sockets.Write] [CogenCoreSocketsWriteall cogen.core.sockets.WriteAll] ====
+
+= Module: sockets =
+
+
+
+== Classes ==
+
+=== Accept ===
+
+Returns a (conn, addr) tuple when the operation completes.
+
+
+=== Connect ===
+
+Connect to the given `addr` using `sock`.
+
+
+=== Read ===
+
+`len` is max read size, BUT, if if there are buffers from ReadLine 
+return them first.
+Example usage:
+
+{{{
+yield sockets.Read(socket_object, buffer_length)
+}}}
+
+
+=== ReadAll ===
+
+Run this operator till we've read `len` bytes.
+
+
+=== ReadLine ===
+
+Run this operator till we read a newline (\n) or we have a overflow.
+
+`len` is the max size for a line
+
+
+=== SendFile ===
+
+Uses underling OS sendfile call or a regular memory copy operation if 
+there is no sendfile.
+You can use this as a WriteAll if you specify the length.
+Usage:
+    
+{{{
+yield sockets.SendFile(, , 0) 
+    # will send till send operations return 0
+    
+yield sockets.SendFile(, , 0, blocksize=0)
+    # there will be only one send operation (if successfull)
+    # that meas the whole file will be read in memory if there is 
+    #no sendfile
+    
+yield sockets.SendFile(, , 0, )
+    # this will hang if we can'self read  bytes 
+    #from the file
+}}}
+
+
+=== Socket ===
+
+
+
+
+=== Write ===
+
+Write the buffer to the socket and return the number of bytes written.
+
+
+=== WriteAll ===
+
+Run this operation till all the bytes have been written.
+
+
+

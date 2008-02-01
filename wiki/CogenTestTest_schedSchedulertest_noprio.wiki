@@ -1,0 +1,240 @@
+==== Modules: [Cogen cogen] [CogenCommon cogen.common] [CogenCore cogen.core] [CogenCoreCoroutine cogen.core.coroutine] [CogenCoreEvents cogen.core.events] [CogenCorePollers cogen.core.pollers] [CogenCoreQueue cogen.core.queue] [CogenCoreSchedulers cogen.core.schedulers] [CogenCoreSockets cogen.core.sockets] [CogenCoreUtil cogen.core.util] [CogenTest cogen.test] [CogenTestBase cogen.test.base] [CogenTestTest_queue cogen.test.test_queue] [CogenTestTest_sched cogen.test.test_sched] [CogenTestTest_socket cogen.test.test_socket] [CogenTestTest_timer cogen.test.test_timer] [CogenWeb cogen.web] [CogenWebAsync cogen.web.async] [CogenWebWsgi cogen.web.wsgi] ====
+==== Classes: [CogenTestTest_timerTimertest_prioAssertionerror exceptions.AssertionError] [CogenTestTest_timerTimertest_prioScheduler cogen.core.schedulers.Scheduler] ====
+==== Methods: [#countTestCases countTestCases] [#debug debug] [#defaultTestResult defaultTestResult] [#fail fail] [#failIf failIf] [#failIf failIf] [#failIfAlmostEqual failIfAlmostEqual] [#failIfAlmostEqual failIfAlmostEqual] [#failIfAlmostEqual failIfAlmostEqual] [#failIfEqual failIfEqual] [#failIfEqual failIfEqual] [#failIfEqual failIfEqual] [#failUnless failUnless] [#failUnless failUnless] [#failUnless failUnless] [#failUnlessAlmostEqual failUnlessAlmostEqual] [#failUnlessAlmostEqual failUnlessAlmostEqual] [#failUnlessAlmostEqual failUnlessAlmostEqual] [#failUnlessEqual failUnlessEqual] [#failUnlessEqual failUnlessEqual] [#failUnlessEqual failUnlessEqual] [#failUnlessRaises failUnlessRaises] [#failUnlessRaises failUnlessRaises] [#id id] [#run run] [#setUp setUp] [#shortDescription shortDescription] [#tearDown tearDown] [#test_add_coro test_add_coro] [#test_call test_call] [#test_join test_join] [#test_signal test_signal] ====
+==== Attributes: [#STATE_NEED_INIT STATE_NEED_INIT] ====
+
+= Class: SchedulerTest_NoPrio =
+
+
+
+== Classes ==
+
+=== AssertionError ===
+
+Assertion failed.
+
+=== Scheduler ===
+
+
+
+
+== Methods ==
+
+=== countTestCases ===
+signature: (self)
+
+
+
+=== debug ===
+signature: (self)
+
+Run the test without collecting errors in a TestResult
+
+=== defaultTestResult ===
+signature: (self)
+
+
+
+=== fail ===
+signature: (self, msg=None)
+
+Fail immediately, with the given message.
+
+=== failIf ===
+signature: (self, expr, msg=None)
+
+Fail the test if the expression is true.
+
+=== failIf ===
+signature: (self, expr, msg=None)
+
+Fail the test if the expression is true.
+
+=== failIfAlmostEqual ===
+signature: (self, first, second, places=7, msg=None)
+
+Fail if the two objects are equal as determined by their
+difference rounded to the given number of decimal places
+(default 7) and comparing to zero.
+
+Note that decimal places (from zero) are usually not the same
+as significant digits (measured from the most signficant digit).
+
+=== failIfAlmostEqual ===
+signature: (self, first, second, places=7, msg=None)
+
+Fail if the two objects are equal as determined by their
+difference rounded to the given number of decimal places
+(default 7) and comparing to zero.
+
+Note that decimal places (from zero) are usually not the same
+as significant digits (measured from the most signficant digit).
+
+=== failIfAlmostEqual ===
+signature: (self, first, second, places=7, msg=None)
+
+Fail if the two objects are equal as determined by their
+difference rounded to the given number of decimal places
+(default 7) and comparing to zero.
+
+Note that decimal places (from zero) are usually not the same
+as significant digits (measured from the most signficant digit).
+
+=== failIfEqual ===
+signature: (self, first, second, msg=None)
+
+Fail if the two objects are equal as determined by the '=='
+operator.
+
+=== failIfEqual ===
+signature: (self, first, second, msg=None)
+
+Fail if the two objects are equal as determined by the '=='
+operator.
+
+=== failIfEqual ===
+signature: (self, first, second, msg=None)
+
+Fail if the two objects are equal as determined by the '=='
+operator.
+
+=== failUnless ===
+signature: (self, expr, msg=None)
+
+Fail the test unless the expression is true.
+
+=== failUnless ===
+signature: (self, expr, msg=None)
+
+Fail the test unless the expression is true.
+
+=== failUnless ===
+signature: (self, expr, msg=None)
+
+Fail the test unless the expression is true.
+
+=== failUnlessAlmostEqual ===
+signature: (self, first, second, places=7, msg=None)
+
+Fail if the two objects are unequal as determined by their
+difference rounded to the given number of decimal places
+(default 7) and comparing to zero.
+
+Note that decimal places (from zero) are usually not the same
+as significant digits (measured from the most signficant digit).
+
+=== failUnlessAlmostEqual ===
+signature: (self, first, second, places=7, msg=None)
+
+Fail if the two objects are unequal as determined by their
+difference rounded to the given number of decimal places
+(default 7) and comparing to zero.
+
+Note that decimal places (from zero) are usually not the same
+as significant digits (measured from the most signficant digit).
+
+=== failUnlessAlmostEqual ===
+signature: (self, first, second, places=7, msg=None)
+
+Fail if the two objects are unequal as determined by their
+difference rounded to the given number of decimal places
+(default 7) and comparing to zero.
+
+Note that decimal places (from zero) are usually not the same
+as significant digits (measured from the most signficant digit).
+
+=== failUnlessEqual ===
+signature: (self, first, second, msg=None)
+
+Fail if the two objects are unequal as determined by the '=='
+operator.
+
+=== failUnlessEqual ===
+signature: (self, first, second, msg=None)
+
+Fail if the two objects are unequal as determined by the '=='
+operator.
+
+=== failUnlessEqual ===
+signature: (self, first, second, msg=None)
+
+Fail if the two objects are unequal as determined by the '=='
+operator.
+
+=== failUnlessRaises ===
+signature: (self, excClass, callableObj, *args, **kwargs)
+
+Fail unless an exception of class excClass is thrown
+by callableObj when invoked with arguments args and keyword
+arguments kwargs. If a different type of exception is
+thrown, it will not be caught, and the test case will be
+deemed to have suffered an error, exactly as for an
+unexpected exception.
+
+=== failUnlessRaises ===
+signature: (self, excClass, callableObj, *args, **kwargs)
+
+Fail unless an exception of class excClass is thrown
+by callableObj when invoked with arguments args and keyword
+arguments kwargs. If a different type of exception is
+thrown, it will not be caught, and the test case will be
+deemed to have suffered an error, exactly as for an
+unexpected exception.
+
+=== id ===
+signature: (self)
+
+
+
+=== run ===
+signature: (self, result=None)
+
+
+
+=== setUp ===
+signature: (self)
+
+
+
+=== shortDescription ===
+signature: (self)
+
+Returns a one-line description of the test, or None if no
+description has been provided.
+
+The default implementation of this method returns the first line of
+the specified test method's docstring.
+
+=== tearDown ===
+signature: (self)
+
+
+
+=== test_add_coro ===
+signature: (self)
+
+
+
+=== test_call ===
+signature: (self)
+
+
+
+=== test_join ===
+signature: (self)
+
+
+
+=== test_signal ===
+signature: (self)
+
+
+
+
+== Attributes ==
+
+=== STATE_NEED_INIT ===
+
+
+{{{0}}}
+

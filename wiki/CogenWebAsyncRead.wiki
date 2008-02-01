@@ -1,0 +1,31 @@
+==== Modules: [Cogen cogen] [CogenCommon cogen.common] [CogenCore cogen.core] [CogenCoreCoroutine cogen.core.coroutine] [CogenCoreEvents cogen.core.events] [CogenCorePollers cogen.core.pollers] [CogenCoreQueue cogen.core.queue] [CogenCoreSchedulers cogen.core.schedulers] [CogenCoreSockets cogen.core.sockets] [CogenCoreUtil cogen.core.util] [CogenTest cogen.test] [CogenTestBase cogen.test.base] [CogenTestTest_queue cogen.test.test_queue] [CogenTestTest_sched cogen.test.test_sched] [CogenTestTest_socket cogen.test.test_socket] [CogenTestTest_timer cogen.test.test_timer] [CogenWeb cogen.web] [CogenWebAsync cogen.web.async] [CogenWebWsgi cogen.web.wsgi] ====
+==== Methods: [#__init__ __init__] [#run run] ====
+
+= Class: Read =
+
+This is actually a hack that mixes ReadAll and ReadLine and 
+patches their state attributes. Hopefully i'll evolve it to
+something more elegant at some point.
+
+== Methods ==
+
+=== __init__ ===
+signature: (self, conn, req, len=4096, **kws)
+
+Initial `req` object holds the state of the operations involving
+reading the input and it requires to have these attributes:
+
+* read_chunked = 
+* content_length = 
+* read_count = 0
+* state = async.Read.NEED_SIZE
+
+These have to be initialized in the request.
+
+=== run ===
+signature: (self)
+
+~ @debug(0)        
+
+
+

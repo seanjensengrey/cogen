@@ -1,0 +1,36 @@
+==== Modules: [Cogen cogen] [CogenCommon cogen.common] [CogenCore cogen.core] [CogenCoreCoroutine cogen.core.coroutine] [CogenCoreEvents cogen.core.events] [CogenCorePollers cogen.core.pollers] [CogenCoreQueue cogen.core.queue] [CogenCoreSchedulers cogen.core.schedulers] [CogenCoreSockets cogen.core.sockets] [CogenCoreUtil cogen.core.util] [CogenTest cogen.test] [CogenTestBase cogen.test.base] [CogenTestTest_queue cogen.test.test_queue] [CogenTestTest_sched cogen.test.test_sched] [CogenTestTest_socket cogen.test.test_socket] [CogenTestTest_timer cogen.test.test_timer] [CogenWeb cogen.web] [CogenWebAsync cogen.web.async] [CogenWebWsgi cogen.web.wsgi] ====
+==== Classes: [CogenCoreUtilTimeoutdesc cogen.core.util.TimeoutDesc] [CogenCoreUtilPriority cogen.core.util.priority] ====
+==== Functions: [#debug debug] ====
+
+= Module: util =
+
+
+
+== Classes ==
+
+=== TimeoutDesc ===
+
+
+
+
+=== priority ===
+
+|| Property || Description || 
+|| DEFAULT || Use the default_priority set in the Scheduler || 
+|| LAST, NOPRIO || Allways scheduler the operation/coroutine at the end of 
+                   the queue ||   
+|| CORO || Favor the coroutine - if it's the case. || 
+|| OP || Favor the operation - if it's the case. || 
+|| FIRST, PRIO || Allways schedule with priority || 
+
+
+
+== Functions ==
+
+=== debug ===
+signature: (trace=True, backtrace=1, other=None)
+
+
+
+
+

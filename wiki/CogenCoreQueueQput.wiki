@@ -1,0 +1,68 @@
+==== Modules: [Cogen cogen] [CogenCommon cogen.common] [CogenCore cogen.core] [CogenCoreCoroutine cogen.core.coroutine] [CogenCoreEvents cogen.core.events] [CogenCorePollers cogen.core.pollers] [CogenCoreQueue cogen.core.queue] [CogenCoreSchedulers cogen.core.schedulers] [CogenCoreSockets cogen.core.sockets] [CogenCoreUtil cogen.core.util] [CogenTest cogen.test] [CogenTestBase cogen.test.base] [CogenTestTest_queue cogen.test.test_queue] [CogenTestTest_sched cogen.test.test_sched] [CogenTestTest_socket cogen.test.test_socket] [CogenTestTest_timer cogen.test.test_timer] [CogenWeb cogen.web] [CogenWebAsync cogen.web.async] [CogenWebWsgi cogen.web.wsgi] ====
+==== Methods: [#finalize finalize] [#process process] ====
+==== Attributes: [#block block] [#caller caller] [#finalized finalized] [#item item] [#prio prio] [#queue queue] [#result result] [#timeout timeout] [#weak_timeout weak_timeout] ====
+
+= Class: QPut =
+
+A operation for the queue put call.
+
+== Methods ==
+
+=== finalize ===
+signature: (self)
+
+
+
+=== process ===
+signature: (self, sched, coro)
+
+
+
+
+== Attributes ==
+
+=== block ===
+
+
+{{{<member 'block' of 'QPut' objects>}}}
+
+=== caller ===
+
+
+{{{<member 'caller' of 'QPut' objects>}}}
+
+=== finalized ===
+
+
+{{{<member 'finalized' of 'TimedOperation' objects>}}}
+
+=== item ===
+
+
+{{{<member 'item' of 'QPut' objects>}}}
+
+=== prio ===
+
+
+{{{<member 'prio' of 'Operation' objects>}}}
+
+=== queue ===
+
+
+{{{<member 'queue' of 'QPut' objects>}}}
+
+=== result ===
+
+
+{{{<member 'result' of 'QPut' objects>}}}
+
+=== timeout ===
+
+
+{{{None}}}
+
+=== weak_timeout ===
+
+
+{{{<member 'weak_timeout' of 'TimedOperation' objects>}}}
+

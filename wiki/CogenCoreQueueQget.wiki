@@ -1,0 +1,63 @@
+==== Modules: [Cogen cogen] [CogenCommon cogen.common] [CogenCore cogen.core] [CogenCoreCoroutine cogen.core.coroutine] [CogenCoreEvents cogen.core.events] [CogenCorePollers cogen.core.pollers] [CogenCoreQueue cogen.core.queue] [CogenCoreSchedulers cogen.core.schedulers] [CogenCoreSockets cogen.core.sockets] [CogenCoreUtil cogen.core.util] [CogenTest cogen.test] [CogenTestBase cogen.test.base] [CogenTestTest_queue cogen.test.test_queue] [CogenTestTest_sched cogen.test.test_sched] [CogenTestTest_socket cogen.test.test_socket] [CogenTestTest_timer cogen.test.test_timer] [CogenWeb cogen.web] [CogenWebAsync cogen.web.async] [CogenWebWsgi cogen.web.wsgi] ====
+==== Methods: [#finalize finalize] [#process process] ====
+==== Attributes: [#block block] [#caller caller] [#finalized finalized] [#prio prio] [#queue queue] [#result result] [#timeout timeout] [#weak_timeout weak_timeout] ====
+
+= Class: QGet =
+
+A operation for the queue get call.
+
+== Methods ==
+
+=== finalize ===
+signature: (self)
+
+
+
+=== process ===
+signature: (self, sched, coro)
+
+
+
+
+== Attributes ==
+
+=== block ===
+
+
+{{{<member 'block' of 'QGet' objects>}}}
+
+=== caller ===
+
+
+{{{<member 'caller' of 'QGet' objects>}}}
+
+=== finalized ===
+
+
+{{{<member 'finalized' of 'TimedOperation' objects>}}}
+
+=== prio ===
+
+
+{{{<member 'prio' of 'Operation' objects>}}}
+
+=== queue ===
+
+
+{{{<member 'queue' of 'QGet' objects>}}}
+
+=== result ===
+
+
+{{{<member 'result' of 'QGet' objects>}}}
+
+=== timeout ===
+
+
+{{{None}}}
+
+=== weak_timeout ===
+
+
+{{{<member 'weak_timeout' of 'TimedOperation' objects>}}}
+

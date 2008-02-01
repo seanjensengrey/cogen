@@ -1,0 +1,61 @@
+==== Modules: [Cogen cogen] [CogenCommon cogen.common] [CogenCore cogen.core] [CogenCoreCoroutine cogen.core.coroutine] [CogenCoreEvents cogen.core.events] [CogenCorePollers cogen.core.pollers] [CogenCoreQueue cogen.core.queue] [CogenCoreSchedulers cogen.core.schedulers] [CogenCoreSockets cogen.core.sockets] [CogenCoreUtil cogen.core.util] [CogenTest cogen.test] [CogenTestBase cogen.test.base] [CogenTestTest_queue cogen.test.test_queue] [CogenTestTest_sched cogen.test.test_sched] [CogenTestTest_socket cogen.test.test_socket] [CogenTestTest_timer cogen.test.test_timer] [CogenWeb cogen.web] [CogenWebAsync cogen.web.async] [CogenWebWsgi cogen.web.wsgi] ====
+==== Classes: [CogenWebAsyncCogenoperationcall cogen.web.async.COGENOperationCall] [CogenWebAsyncCogenoperationwrapper cogen.web.async.COGENOperationWrapper] [CogenWebAsyncCogenproxy cogen.web.async.COGENProxy] [CogenWebAsyncRead cogen.web.async.Read] [CogenWebAsyncSynchronousinputmiddleware cogen.web.async.SynchronousInputMiddleware] ====
+
+= Module: async =
+
+cogen.web.wsgi server is asynchronous by default. If you need to run a app that
+uses wsgi.input synchronously you need to wrapp it in 
+`SynchronousInputMiddleware`.
+
+Wsgi asynchronous api only provides a read operation at the moment. Here's a
+example:
+
+.. sourcecode:: python
+
+    buff = StringIO()
+    while 1:
+        yield environ['cogen.input'].Read(self.buffer_length)
+        result = environ['cogen.wsgi'].result
+        if isinstance(result, Exception):
+            import traceback
+            traceback.print_exception(*environ['cogen.wsgi'].exception)
+            break
+        else:
+            if not result:
+                break
+            buff.write(result)
+    buff.seek(0)
+    # ...
+    # do something with the data
+    # ...
+
+== Classes ==
+
+=== COGENOperationCall ===
+
+
+
+
+=== COGENOperationWrapper ===
+
+
+
+
+=== COGENProxy ===
+
+
+
+
+=== Read ===
+
+This is actually a hack that mixes ReadAll and ReadLine and 
+patches their state attributes. Hopefully i'll evolve it to
+something more elegant at some point.
+
+
+=== SynchronousInputMiddleware ===
+
+Middleware for providing wsgi.input to the app.
+
+
+

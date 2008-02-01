@@ -1,0 +1,209 @@
+==== Modules: [Cogen cogen] [CogenCommon cogen.common] [CogenCore cogen.core] [CogenCoreCoroutine cogen.core.coroutine] [CogenCoreEvents cogen.core.events] [CogenCorePollers cogen.core.pollers] [CogenCoreQueue cogen.core.queue] [CogenCoreSchedulers cogen.core.schedulers] [CogenCoreSockets cogen.core.sockets] [CogenCoreUtil cogen.core.util] [CogenTest cogen.test] [CogenTestBase cogen.test.base] [CogenTestTest_queue cogen.test.test_queue] [CogenTestTest_sched cogen.test.test_sched] [CogenTestTest_socket cogen.test.test_socket] [CogenTestTest_timer cogen.test.test_timer] [CogenWeb cogen.web] [CogenWebAsync cogen.web.async] [CogenWebWsgi cogen.web.wsgi] ====
+==== Methods: [#accept accept] [#bind bind] [#close close] [#connect connect] [#connect_ex connect_ex] [#dup dup] [#fileno fileno] [#getpeername getpeername] [#getsockname getsockname] [#getsockopt getsockopt] [#gettimeout gettimeout] [#listen listen] [#makefile makefile] [#sendall sendall] [#setblocking setblocking] [#setsockopt setsockopt] [#settimeout settimeout] [#shutdown shutdown] ====
+==== Attributes: [#family family] [#proto proto] [#recv recv] [#recv_into recv_into] [#recvfrom recvfrom] [#recvfrom_into recvfrom_into] [#send send] [#sendto sendto] [#type type] ====
+
+= Class: Socket =
+
+
+
+== Methods ==
+
+=== accept ===
+signature: (self)
+
+accept() -> (socket object, address info)
+
+Wait for an incoming connection.  Return a new socket representing the
+connection, and the address of the client.  For IP sockets, the address
+info is a pair (hostaddr, port).
+
+=== bind ===
+signature: (self, *args)
+
+bind(address)
+
+Bind the socket to a local address.  For IP sockets, the address is a
+pair (host, port); the host must refer to the local host. For raw packet
+sockets the address is a tuple (ifname, proto [,pkttype [,hatype]])
+
+=== close ===
+signature: (self)
+
+close()
+
+Close the socket.  It cannot be used after this call.
+
+=== connect ===
+signature: (self, *args)
+
+connect(address)
+
+Connect the socket to a remote address.  For IP sockets, the address
+is a pair (host, port).
+
+=== connect_ex ===
+signature: (self, *args)
+
+connect_ex(address) -> errno
+
+This is like connect(address), but returns an error code (the errno value)
+instead of raising an exception when an error occurs.
+
+=== dup ===
+signature: (self)
+
+dup() -> socket object
+
+Return a new socket object connected to the same system resource.
+
+=== fileno ===
+signature: (self, *args)
+
+fileno() -> integer
+
+Return the integer file descriptor of the socket.
+
+=== getpeername ===
+signature: (self, *args)
+
+getpeername() -> address info
+
+Return the address of the remote endpoint.  For IP sockets, the address
+info is a pair (hostaddr, port).
+
+=== getsockname ===
+signature: (self, *args)
+
+getsockname() -> address info
+
+Return the address of the local endpoint.  For IP sockets, the address
+info is a pair (hostaddr, port).
+
+=== getsockopt ===
+signature: (self, *args)
+
+getsockopt(level, option[, buffersize]) -> value
+
+Get a socket option.  See the Unix manual for level and option.
+If a nonzero buffersize argument is given, the return value is a
+string of that length; otherwise it is an integer.
+
+=== gettimeout ===
+signature: (self, *args)
+
+gettimeout() -> timeout
+
+Returns the timeout in floating seconds associated with socket 
+operations. A timeout of None indicates that timeouts on socket 
+operations are disabled.
+
+=== listen ===
+signature: (self, *args)
+
+listen(backlog)
+
+Enable a server to accept connections.  The backlog argument must be at
+least 1; it specifies the number of unaccepted connection that the system
+will allow before refusing new connections.
+
+=== makefile ===
+signature: (self, mode='r', bufsize=-1)
+
+makefile([mode[, bufsize]]) -> file object
+
+Return a regular file object corresponding to the socket.  The mode
+and bufsize arguments are as for the built-in open() function.
+
+=== sendall ===
+signature: (self, *args)
+
+sendall(data[, flags])
+
+Send a data string to the socket.  For the optional flags
+argument, see the Unix manual.  This calls send() repeatedly
+until all data is sent.  If an error occurs, it's impossible
+to tell how much data has been sent.
+
+=== setblocking ===
+signature: (self, *args)
+
+setblocking(flag)
+
+Set the socket to blocking (flag is true) or non-blocking (false).
+setblocking(True) is equivalent to settimeout(None);
+setblocking(False) is equivalent to settimeout(0.0).
+
+=== setsockopt ===
+signature: (self, *args)
+
+setsockopt(level, option, value)
+
+Set a socket option.  See the Unix manual for level and option.
+The value argument can either be an integer or a string.
+
+=== settimeout ===
+signature: (self, *args)
+
+settimeout(timeout)
+
+Set a timeout on socket operations.  'timeout' can be a float,
+giving in seconds, or None.  Setting a timeout of None disables
+the timeout feature and is equivalent to setblocking(1).
+Setting a timeout of zero is the same as setblocking(0).
+
+=== shutdown ===
+signature: (self, *args)
+
+shutdown(flag)
+
+Shut down the reading side of the socket (flag == SHUT_RD), the writing side
+of the socket (flag == SHUT_WR), or both ends (flag == SHUT_RDWR).
+
+
+== Attributes ==
+
+=== family ===
+
+
+{{{<property object at 0x00B47468>}}}
+
+=== proto ===
+
+
+{{{<property object at 0x00B474B8>}}}
+
+=== recv ===
+
+
+{{{<member 'recv' of '_socketobject' objects>}}}
+
+=== recv_into ===
+
+
+{{{<member 'recv_into' of '_socketobject' objects>}}}
+
+=== recvfrom ===
+
+
+{{{<member 'recvfrom' of '_socketobject' objects>}}}
+
+=== recvfrom_into ===
+
+
+{{{<member 'recvfrom_into' of '_socketobject' objects>}}}
+
+=== send ===
+
+
+{{{<member 'send' of '_socketobject' objects>}}}
+
+=== sendto ===
+
+
+{{{<member 'sendto' of '_socketobject' objects>}}}
+
+=== type ===
+
+
+{{{<property object at 0x00B47490>}}}
+

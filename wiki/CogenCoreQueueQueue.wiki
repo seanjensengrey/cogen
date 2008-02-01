@@ -1,0 +1,107 @@
+==== Modules: [Cogen cogen] [CogenCommon cogen.common] [CogenCore cogen.core] [CogenCoreCoroutine cogen.core.coroutine] [CogenCoreEvents cogen.core.events] [CogenCorePollers cogen.core.pollers] [CogenCoreQueue cogen.core.queue] [CogenCoreSchedulers cogen.core.schedulers] [CogenCoreSockets cogen.core.sockets] [CogenCoreUtil cogen.core.util] [CogenTest cogen.test] [CogenTestBase cogen.test.base] [CogenTestTest_queue cogen.test.test_queue] [CogenTestTest_sched cogen.test.test_sched] [CogenTestTest_socket cogen.test.test_socket] [CogenTestTest_timer cogen.test.test_timer] [CogenWeb cogen.web] [CogenWebAsync cogen.web.async] [CogenWebWsgi cogen.web.wsgi] ====
+==== Methods: [#empty empty] [#full full] [#get get] [#get_nowait get_nowait] [#join join] [#put put] [#put_nowait put_nowait] [#qsize qsize] [#task_done task_done] ====
+
+= Class: Queue =
+
+This class attempts to mimic the exact functionality of the 
+python standard library Queue.Queue class, but with a coroutine context:
+
+* the queue calls return coroutine operations
+
+So, to use this you write someting like:
+
+.. sourcecode:: python
+    
+    @coroutine
+    def foo():
+        q = cogen.core.queue.Queue()
+        yield q.put(123)
+        val = yield q.get()
+
+== Methods ==
+
+=== empty ===
+signature: (self)
+
+Return True if the queue is empty, False otherwise (not reliable!).
+
+=== full ===
+signature: (self)
+
+Return True if the queue is full, False otherwise (not reliable!).
+
+=== get ===
+signature: (self, block=True, **kws)
+
+Remove and return an item from the queue.
+
+If optional args 'block' is true and 'timeout' is None (the default),
+block if necessary until an item is available. If 'timeout' is
+a positive number, it blocks at most 'timeout' seconds and raises
+the Empty exception if no item was available within that time.
+Otherwise ('block' is false), return an item if one is immediately
+available, else raise the Empty exception ('timeout' is ignored
+in that case).
+
+=== get_nowait ===
+signature: (self)
+
+Remove and return an item from the queue without blocking.
+
+Only get an item if one is immediately available. Otherwise
+raise the Empty exception.
+
+=== join ===
+signature: (self)
+
+Blocks until all items in the Queue have been gotten and processed.
+
+The count of unfinished tasks goes up whenever an item is added to the
+queue. The count goes down whenever a consumer thread calls task_done()
+to indicate the item was retrieved and all work on it is complete.
+
+When the count of unfinished tasks drops to zero, join() unblocks.
+
+=== put ===
+signature: (self, item, block=True, **kws)
+
+Put an item into the queue.
+
+If optional args 'block' is true and 'timeout' is None (the default),
+block if necessary until a free slot is available. If 'timeout' is
+a positive number, it blocks at most 'timeout' seconds and raises
+the Full exception if no free slot was available within that time.
+Otherwise ('block' is false), put an item on the queue if a free slot
+is immediately available, else raise the Full exception ('timeout'
+is ignored in that case).
+
+=== put_nowait ===
+signature: (self, item)
+
+Put an item into the queue without blocking.
+
+Only enqueue the item if a free slot is immediately available.
+Otherwise raise the Full exception.
+
+=== qsize ===
+signature: (self)
+
+Return the approximate size of the queue (not reliable!).
+
+=== task_done ===
+signature: (self, **kws)
+
+Indicate that a formerly enqueued task is complete.
+
+Used by Queue consumer threads.  For each get() used to fetch a task,
+a subsequent call to task_done() tells the queue that the processing
+on the task is complete.
+
+If a join() is currently blocking, it will resume when all items
+have been processed (meaning that a task_done() call was received
+for every item that had been put() into the queue).
+
+Raises a ValueError if called more times than there were items
+placed in the queue.
+
+
