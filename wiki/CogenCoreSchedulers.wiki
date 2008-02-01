@@ -1,7 +1,8 @@
+#sumary cogen.core.schedulers Documentation
 #labels Documentation
-#sumary schedulers Documentation
 
-==== Classes: [CogenCoreSchedulersDebugginwrapper cogen.core.schedulers.DebugginWrapper] [CogenTestTest_timerTimertest_prioScheduler cogen.core.schedulers.Scheduler] [CogenCoreSchedulersTimeout cogen.core.schedulers.Timeout] ====
+==== Parent: [CogenCore cogen.core] ====
+==== Classes: [CogenCoreSchedulersDebugginwrapper DebugginWrapper] [CogenTestTest_timerTimertest_prioScheduler Scheduler] [CogenCoreSchedulersTimeout Timeout] ====
 
 = Module: schedulers =
 

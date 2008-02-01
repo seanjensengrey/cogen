@@ -1,6 +1,7 @@
+#sumary cogen.core.schedulers.Scheduler Documentation
 #labels Documentation
-#sumary Scheduler Documentation
 
+==== Parent: [CogenTestTest_timerTimertest_prio cogen.test.test_timer.TimerTest_Prio] ====
 ==== Methods: [#add add] [#add_timeout add_timeout] [#handle_timeouts handle_timeouts] [#next_timer_delta next_timer_delta] [#process_op process_op] [#run run] [#run_poller run_poller] [#run_timer run_timer] ====
 
 = Class: Scheduler =

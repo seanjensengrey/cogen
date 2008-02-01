@@ -1,7 +1,8 @@
+#sumary cogen.core.pollers Documentation
 #labels Documentation
-#sumary pollers Documentation
 
-==== Classes: [CogenCorePollersEpollpoller cogen.core.pollers.EpollPoller] [CogenCorePollersKqueuepoller cogen.core.pollers.KQueuePoller] [CogenCorePollersPoller cogen.core.pollers.Poller] [CogenCorePollersSelectpoller cogen.core.pollers.SelectPoller] ====
+==== Parent: [CogenCore cogen.core] ====
+==== Classes: [CogenCorePollersEpollpoller EpollPoller] [CogenCorePollersKqueuepoller KQueuePoller] [CogenCorePollersPoller Poller] [CogenCorePollersSelectpoller SelectPoller] ====
 
 = Module: pollers =
 

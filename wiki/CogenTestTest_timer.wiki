@@ -1,7 +1,8 @@
+#sumary cogen.test.test_timer Documentation
 #labels Documentation
-#sumary test_timer Documentation
 
-==== Classes: [CogenTestTest_timerTimertest_noprio cogen.test.test_timer.TimerTest_NoPrio] [CogenTestTest_timerTimertest_prio cogen.test.test_timer.TimerTest_Prio] [CogenTestTest_timerTimer_mixin cogen.test.test_timer.Timer_MixIn] ====
+==== Parent: [CogenTest cogen.test] ====
+==== Classes: [CogenTestTest_timerTimertest_noprio TimerTest_NoPrio] [CogenTestTest_timerTimertest_prio TimerTest_Prio] [CogenTestTest_timerTimer_mixin Timer_MixIn] ====
 
 = Module: test_timer =
 

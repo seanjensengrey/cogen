@@ -1,6 +1,7 @@
+#sumary cogen.core.util.priority Documentation
 #labels Documentation
-#sumary priority Documentation
 
+==== Parent: [CogenCoreUtil cogen.core.util] ====
 
 = Class: priority =
 

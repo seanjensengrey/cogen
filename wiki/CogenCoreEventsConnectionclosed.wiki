@@ -1,6 +1,7 @@
+#sumary cogen.core.events.ConnectionClosed Documentation
 #labels Documentation
-#sumary ConnectionClosed Documentation
 
+==== Parent: [CogenCoreEvents cogen.core.events] ====
 
 = Class: ConnectionClosed =
 

@@ -1,6 +1,7 @@
+#sumary cogen.test.test_sched.SchedulerTest_MixIn Documentation
 #labels Documentation
-#sumary SchedulerTest_MixIn Documentation
 
+==== Parent: [CogenTestTest_sched cogen.test.test_sched] ====
 ==== Methods: [#setUp setUp] [#tearDown tearDown] [#test_add_coro test_add_coro] [#test_call test_call] [#test_join test_join] [#test_signal test_signal] ====
 
 = Class: SchedulerTest_MixIn =

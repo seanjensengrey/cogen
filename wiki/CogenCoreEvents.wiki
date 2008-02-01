@@ -1,7 +1,8 @@
+#sumary cogen.core.events Documentation
 #labels Documentation
-#sumary events Documentation
 
-==== Classes: [CogenCoreEventsAddcoro cogen.core.events.AddCoro] [CogenCoreEventsCall cogen.core.events.Call] [CogenCoreEventsConnectionclosed cogen.core.events.ConnectionClosed] [CogenCoreEventsJoin cogen.core.events.Join] [CogenCoreEventsOperationtimeout cogen.core.events.OperationTimeout] [CogenCoreEventsSignal cogen.core.events.Signal] [CogenCoreEventsSleep cogen.core.events.Sleep] [CogenCoreEventsWaitforsignal cogen.core.events.WaitForSignal] ====
+==== Parent: [CogenCore cogen.core] ====
+==== Classes: [CogenCoreEventsAddcoro AddCoro] [CogenCoreEventsCall Call] [CogenCoreEventsConnectionclosed ConnectionClosed] [CogenCoreEventsJoin Join] [CogenCoreEventsOperationtimeout OperationTimeout] [CogenCoreEventsSignal Signal] [CogenCoreEventsSleep Sleep] [CogenCoreEventsWaitforsignal WaitForSignal] ====
 
 = Module: events =
 

@@ -1,6 +1,7 @@
+#sumary cogen.common Documentation
 #labels Documentation
-#sumary common Documentation
 
+==== Parent: [Cogen cogen] ====
 
 = Module: common =
 

@@ -1,6 +1,7 @@
+#sumary cogen.core.events.Signal Documentation
 #labels Documentation
-#sumary Signal Documentation
 
+==== Parent: [CogenCoreEvents cogen.core.events] ====
 ==== Methods: [#__init__ __init__] ====
 
 = Class: Signal =

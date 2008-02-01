@@ -1,6 +1,7 @@
+#sumary cogen.web.wsgi.WSGIFileWrapper Documentation
 #labels Documentation
-#sumary WSGIFileWrapper Documentation
 
+==== Parent: [CogenWebWsgi cogen.web.wsgi] ====
 ==== Methods: [#__init__ __init__] ====
 
 = Class: WSGIFileWrapper =

@@ -1,7 +1,8 @@
+#sumary cogen.web.wsgi.WSGIServer Documentation
 #labels Documentation
-#sumary WSGIServer Documentation
 
-==== Classes: [CogenWebWsgiWsgiserverWsgiconnection cogen.web.wsgi.WSGIConnection] ====
+==== Parent: [CogenWebWsgi cogen.web.wsgi] ====
+==== Classes: [CogenWebWsgiWsgiserverWsgiconnection WSGIConnection] ====
 ==== Methods: [#bind bind] [#serve serve] ====
 ==== Attributes: [#STATE_NEED_INIT STATE_NEED_INIT] [#bind_addr bind_addr] [#environ environ] [#protocol protocol] [#version version] ====
 

@@ -1,6 +1,7 @@
+#sumary cogen.core.util.TimeoutDesc Documentation
 #labels Documentation
-#sumary TimeoutDesc Documentation
 
+==== Parent: [CogenCoreUtil cogen.core.util] ====
 
 = Class: TimeoutDesc =
 

@@ -1,6 +1,7 @@
+#sumary cogen.core.queue.Empty Documentation
 #labels Documentation
-#sumary Empty Documentation
 
+==== Parent: [CogenCoreQueue cogen.core.queue] ====
 ==== Attributes: [#args args] [#message message] ====
 
 = Class: Empty =

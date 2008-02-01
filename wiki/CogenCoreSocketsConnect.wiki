@@ -1,6 +1,7 @@
+#sumary cogen.core.sockets.Connect Documentation
 #labels Documentation
-#sumary Connect Documentation
 
+==== Parent: [CogenCoreSockets cogen.core.sockets] ====
 ==== Methods: [#__init__ __init__] [#run run] ====
 
 = Class: Connect =

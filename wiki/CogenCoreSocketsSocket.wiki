@@ -1,6 +1,7 @@
+#sumary cogen.core.sockets.Socket Documentation
 #labels Documentation
-#sumary Socket Documentation
 
+==== Parent: [CogenCoreSockets cogen.core.sockets] ====
 ==== Methods: [#accept accept] [#bind bind] [#close close] [#connect connect] [#connect_ex connect_ex] [#dup dup] [#fileno fileno] [#getpeername getpeername] [#getsockname getsockname] [#getsockopt getsockopt] [#gettimeout gettimeout] [#listen listen] [#makefile makefile] [#sendall sendall] [#setblocking setblocking] [#setsockopt setsockopt] [#settimeout settimeout] [#shutdown shutdown] ====
 ==== Attributes: [#family family] [#proto proto] [#recv recv] [#recv_into recv_into] [#recvfrom recvfrom] [#recvfrom_into recvfrom_into] [#send send] [#sendto sendto] [#type type] ====
 

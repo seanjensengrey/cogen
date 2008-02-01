@@ -1,6 +1,7 @@
+#sumary cogen.test.base.PrioMixIn Documentation
 #labels Documentation
-#sumary PrioMixIn Documentation
 
+==== Parent: [CogenTestBase cogen.test.base] ====
 ==== Attributes: [#STATE_FAILED STATE_FAILED] ====
 
 = Class: PrioMixIn =

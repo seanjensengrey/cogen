@@ -1,6 +1,7 @@
+#sumary cogen.core.sockets.ReadAll Documentation
 #labels Documentation
-#sumary ReadAll Documentation
 
+==== Parent: [CogenCoreSockets cogen.core.sockets] ====
 ==== Methods: [#__init__ __init__] [#run run] ====
 
 = Class: ReadAll =

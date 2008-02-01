@@ -1,6 +1,7 @@
+#sumary cogen.core.queue.QGet Documentation
 #labels Documentation
-#sumary QGet Documentation
 
+==== Parent: [CogenCoreQueue cogen.core.queue] ====
 ==== Methods: [#finalize finalize] [#process process] ====
 ==== Attributes: [#block block] [#caller caller] [#finalized finalized] [#prio prio] [#queue queue] [#result result] [#timeout timeout] [#weak_timeout weak_timeout] ====
 

@@ -1,7 +1,8 @@
+#sumary cogen.web.wsgi Documentation
 #labels Documentation
-#sumary wsgi Documentation
 
-==== Classes: [CogenWebWsgiWsgiserverWsgiconnection cogen.web.wsgi.WSGIConnection] [CogenWebWsgiWsgifilewrapper cogen.web.wsgi.WSGIFileWrapper] [CogenWebWsgiWsgiserver cogen.web.wsgi.WSGIServer] ====
+==== Parent: [CogenWeb cogen.web] ====
+==== Classes: [CogenWebWsgiWsgiserverWsgiconnection WSGIConnection] [CogenWebWsgiWsgifilewrapper WSGIFileWrapper] [CogenWebWsgiWsgiserver WSGIServer] ====
 
 = Module: wsgi =
 

@@ -1,6 +1,7 @@
+#sumary cogen.core.pollers.EpollPoller Documentation
 #labels Documentation
-#sumary EpollPoller Documentation
 
+==== Parent: [CogenCorePollers cogen.core.pollers] ====
 ==== Methods: [#add add] [#handle_errored handle_errored] [#remove remove] [#run run] [#run_once run_once] [#run_operation run_operation] [#run_or_add run_or_add] [#waiting_op waiting_op] ====
 ==== Attributes: [#RESOLUTION RESOLUTION] [#mRESOLUTION mRESOLUTION] [#nRESOLUTION nRESOLUTION] ====
 

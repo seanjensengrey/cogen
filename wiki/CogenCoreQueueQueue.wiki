@@ -1,6 +1,7 @@
+#sumary cogen.core.queue.Queue Documentation
 #labels Documentation
-#sumary Queue Documentation
 
+==== Parent: [CogenCoreQueue cogen.core.queue] ====
 ==== Methods: [#empty empty] [#full full] [#get get] [#get_nowait get_nowait] [#join join] [#put put] [#put_nowait put_nowait] [#qsize qsize] [#task_done task_done] ====
 
 = Class: Queue =

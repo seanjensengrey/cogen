@@ -1,6 +1,7 @@
+#sumary cogen.web.async.SynchronousInputMiddleware Documentation
 #labels Documentation
-#sumary SynchronousInputMiddleware Documentation
 
+==== Parent: [CogenWebAsync cogen.web.async] ====
 ==== Methods: [#__call__ __call__] [#__init__ __init__] ====
 
 = Class: SynchronousInputMiddleware =

@@ -1,6 +1,7 @@
+#sumary cogen.core.events.Join Documentation
 #labels Documentation
-#sumary Join Documentation
 
+==== Parent: [CogenCoreEvents cogen.core.events] ====
 ==== Methods: [#__init__ __init__] ====
 
 = Class: Join =

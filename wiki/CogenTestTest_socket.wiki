@@ -1,7 +1,8 @@
+#sumary cogen.test.test_socket Documentation
 #labels Documentation
-#sumary test_socket Documentation
 
-==== Classes: [CogenTestTest_socketSockettest_mixin cogen.test.test_socket.SocketTest_MixIn] [CogenTestTest_socketSockettest_noprio cogen.test.test_socket.SocketTest_NoPrio] [CogenTestTest_socketSockettest_prio cogen.test.test_socket.SocketTest_Prio] ====
+==== Parent: [CogenTest cogen.test] ====
+==== Classes: [CogenTestTest_socketSockettest_mixin SocketTest_MixIn] [CogenTestTest_socketSockettest_noprio SocketTest_NoPrio] [CogenTestTest_socketSockettest_prio SocketTest_Prio] ====
 
 = Module: test_socket =
 

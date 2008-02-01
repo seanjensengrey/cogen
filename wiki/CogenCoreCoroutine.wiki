@@ -1,7 +1,8 @@
+#sumary cogen.core.coroutine Documentation
 #labels Documentation
-#sumary coroutine Documentation
 
-==== Classes: [CogenCoreCoroutineCoroutine cogen.core.coroutine.Coroutine] ====
+==== Parent: [CogenCore cogen.core] ====
+==== Classes: [CogenCoreCoroutineCoroutine Coroutine] ====
 ==== Functions: [#coroutine coroutine] ====
 
 = Module: coroutine =

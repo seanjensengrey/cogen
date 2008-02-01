@@ -1,7 +1,8 @@
+#sumary cogen.core.sockets Documentation
 #labels Documentation
-#sumary sockets Documentation
 
-==== Classes: [CogenCoreSocketsAccept cogen.core.sockets.Accept] [CogenCoreSocketsConnect cogen.core.sockets.Connect] [CogenCoreSocketsRead cogen.core.sockets.Read] [CogenCoreSocketsReadall cogen.core.sockets.ReadAll] [CogenCoreSocketsReadline cogen.core.sockets.ReadLine] [CogenCoreSocketsSendfile cogen.core.sockets.SendFile] [CogenCoreSocketsSocket cogen.core.sockets.Socket] [CogenCoreSocketsWrite cogen.core.sockets.Write] [CogenCoreSocketsWriteall cogen.core.sockets.WriteAll] ====
+==== Parent: [CogenCore cogen.core] ====
+==== Classes: [CogenCoreSocketsAccept Accept] [CogenCoreSocketsConnect Connect] [CogenCoreSocketsRead Read] [CogenCoreSocketsReadall ReadAll] [CogenCoreSocketsReadline ReadLine] [CogenCoreSocketsSendfile SendFile] [CogenCoreSocketsSocket Socket] [CogenCoreSocketsWrite Write] [CogenCoreSocketsWriteall WriteAll] ====
 
 = Module: sockets =
 

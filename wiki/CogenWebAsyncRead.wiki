@@ -1,6 +1,7 @@
+#sumary cogen.web.async.Read Documentation
 #labels Documentation
-#sumary Read Documentation
 
+==== Parent: [CogenWebAsync cogen.web.async] ====
 ==== Methods: [#__init__ __init__] [#run run] ====
 
 = Class: Read =

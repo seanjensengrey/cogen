@@ -1,6 +1,7 @@
+#sumary cogen.core.events.WaitForSignal Documentation
 #labels Documentation
-#sumary WaitForSignal Documentation
 
+==== Parent: [CogenCoreEvents cogen.core.events] ====
 ==== Methods: [#__init__ __init__] ====
 
 = Class: WaitForSignal =

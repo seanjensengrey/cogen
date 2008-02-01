@@ -1,7 +1,8 @@
+#sumary cogen.test.test_queue.QueueTest_Prio Documentation
 #labels Documentation
-#sumary QueueTest_Prio Documentation
 
-==== Classes: [CogenTestTest_timerTimertest_prioAssertionerror exceptions.AssertionError] [CogenTestTest_timerTimertest_prioScheduler cogen.core.schedulers.Scheduler] ====
+==== Parent: [CogenTestTest_queue cogen.test.test_queue] ====
+==== Classes: [CogenTestTest_timerTimertest_prioAssertionerror AssertionError] [CogenTestTest_timerTimertest_prioScheduler Scheduler] ====
 ==== Methods: [#countTestCases countTestCases] [#debug debug] [#defaultTestResult defaultTestResult] [#fail fail] [#failIf failIf] [#failIf failIf] [#failIfAlmostEqual failIfAlmostEqual] [#failIfAlmostEqual failIfAlmostEqual] [#failIfAlmostEqual failIfAlmostEqual] [#failIfEqual failIfEqual] [#failIfEqual failIfEqual] [#failIfEqual failIfEqual] [#failUnless failUnless] [#failUnless failUnless] [#failUnless failUnless] [#failUnlessAlmostEqual failUnlessAlmostEqual] [#failUnlessAlmostEqual failUnlessAlmostEqual] [#failUnlessAlmostEqual failUnlessAlmostEqual] [#failUnlessEqual failUnlessEqual] [#failUnlessEqual failUnlessEqual] [#failUnlessEqual failUnlessEqual] [#failUnlessRaises failUnlessRaises] [#failUnlessRaises failUnlessRaises] [#id id] [#run run] [#setUp setUp] [#shortDescription shortDescription] [#tearDown tearDown] [#test_join test_join] [#test_queue test_queue] [#test_signal_1s2w test_signal_1s2w] ====
 ==== Attributes: [#STATE_FAILED STATE_FAILED] ====
 

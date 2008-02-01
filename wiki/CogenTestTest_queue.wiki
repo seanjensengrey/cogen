@@ -1,7 +1,8 @@
+#sumary cogen.test.test_queue Documentation
 #labels Documentation
-#sumary test_queue Documentation
 
-==== Classes: [CogenTestTest_queueQueuetest_mixin cogen.test.test_queue.QueueTest_MixIn] [CogenTestTest_queueQueuetest_noprio cogen.test.test_queue.QueueTest_NoPrio] [CogenTestTest_queueQueuetest_prio cogen.test.test_queue.QueueTest_Prio] ====
+==== Parent: [CogenTest cogen.test] ====
+==== Classes: [CogenTestTest_queueQueuetest_mixin QueueTest_MixIn] [CogenTestTest_queueQueuetest_noprio QueueTest_NoPrio] [CogenTestTest_queueQueuetest_prio QueueTest_Prio] ====
 
 = Module: test_queue =
 

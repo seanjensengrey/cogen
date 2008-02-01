@@ -1,7 +1,8 @@
+#sumary cogen.core Documentation
 #labels Documentation
-#sumary core Documentation
 
-==== Modules: [CogenCoreCoroutine cogen.core.coroutine] [CogenCoreEvents cogen.core.events] [CogenCorePollers cogen.core.pollers] [CogenCoreQueue cogen.core.queue] [CogenCoreSchedulers cogen.core.schedulers] [CogenCoreSockets cogen.core.sockets] [CogenCoreUtil cogen.core.util] ====
+==== Parent: [Cogen cogen] ====
+==== Modules: [CogenCoreCoroutine coroutine] [CogenCoreEvents events] [CogenCorePollers pollers] [CogenCoreQueue queue] [CogenCoreSchedulers schedulers] [CogenCoreSockets sockets] [CogenCoreUtil util] ====
 
 = Module: core =
 

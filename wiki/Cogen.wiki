@@ -1,7 +1,7 @@
-#labels Documentation
 #sumary cogen Documentation
+#labels Documentation
 
-==== Modules: [CogenCommon cogen.common] [CogenCore cogen.core] [CogenDocs cogen.docs] [CogenTest cogen.test] [CogenWeb cogen.web] ====
+==== Modules: [CogenCommon common] [CogenCore core] [CogenDocs docs] [CogenTest test] [CogenWeb web] ====
 
 = Module: cogen =
 

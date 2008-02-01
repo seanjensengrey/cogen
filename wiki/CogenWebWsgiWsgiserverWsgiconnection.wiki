@@ -1,6 +1,7 @@
+#sumary cogen.web.wsgi.WSGIConnection Documentation
 #labels Documentation
-#sumary WSGIConnection Documentation
 
+==== Parent: [CogenWebWsgiWsgiserver cogen.web.wsgi.WSGIServer] ====
 ==== Methods: [#__init__ __init__] [#render_headers render_headers] [#run run] [#simple_response simple_response] [#start_response start_response] ====
 
 = Class: WSGIConnection =

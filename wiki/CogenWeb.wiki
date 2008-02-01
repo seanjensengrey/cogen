@@ -1,7 +1,8 @@
+#sumary cogen.web Documentation
 #labels Documentation
-#sumary web Documentation
 
-==== Modules: [CogenWebAsync cogen.web.async] [CogenWebWsgi cogen.web.wsgi] ====
+==== Parent: [Cogen cogen] ====
+==== Modules: [CogenWebAsync async] [CogenWebWsgi wsgi] ====
 
 = Module: web =
 

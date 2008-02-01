@@ -1,6 +1,7 @@
+#sumary cogen.core.coroutine.Coroutine Documentation
 #labels Documentation
-#sumary Coroutine Documentation
 
+==== Parent: [CogenCoreCoroutine cogen.core.coroutine] ====
 ==== Methods: [#add_waiter add_waiter] [#finalize finalize] [#handle_error handle_error] [#remove_waiter remove_waiter] [#run_op run_op] ====
 ==== Attributes: [#STATE_COMPLETED STATE_COMPLETED] [#STATE_FAILED STATE_FAILED] [#STATE_NEED_INIT STATE_NEED_INIT] [#STATE_RUNNING STATE_RUNNING] [#caller caller] [#coro coro] [#exception exception] [#f_args f_args] [#f_kws f_kws] [#name name] [#prio prio] [#result result] [#running running] [#state state] [#waiters waiters] ====
 

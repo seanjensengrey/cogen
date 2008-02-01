@@ -1,6 +1,7 @@
+#sumary cogen.core.events.OperationTimeout Documentation
 #labels Documentation
-#sumary OperationTimeout Documentation
 
+==== Parent: [CogenCoreEvents cogen.core.events] ====
 
 = Class: OperationTimeout =
 

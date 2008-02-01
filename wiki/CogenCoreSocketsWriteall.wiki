@@ -1,6 +1,7 @@
+#sumary cogen.core.sockets.WriteAll Documentation
 #labels Documentation
-#sumary WriteAll Documentation
 
+==== Parent: [CogenCoreSockets cogen.core.sockets] ====
 ==== Methods: [#__init__ __init__] [#run run] ====
 
 = Class: WriteAll =

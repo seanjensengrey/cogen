@@ -1,7 +1,8 @@
+#sumary cogen.core.queue Documentation
 #labels Documentation
-#sumary queue Documentation
 
-==== Classes: [CogenCoreQueueEmpty cogen.core.queue.Empty] [CogenCoreQueueFull cogen.core.queue.Full] [CogenCoreQueueQdone cogen.core.queue.QDone] [CogenCoreQueueQget cogen.core.queue.QGet] [CogenCoreQueueQjoin cogen.core.queue.QJoin] [CogenCoreQueueQput cogen.core.queue.QPut] [CogenCoreQueueQueue cogen.core.queue.Queue] ====
+==== Parent: [CogenCore cogen.core] ====
+==== Classes: [CogenCoreQueueEmpty Empty] [CogenCoreQueueFull Full] [CogenCoreQueueQdone QDone] [CogenCoreQueueQget QGet] [CogenCoreQueueQjoin QJoin] [CogenCoreQueueQput QPut] [CogenCoreQueueQueue Queue] ====
 
 = Module: queue =
 

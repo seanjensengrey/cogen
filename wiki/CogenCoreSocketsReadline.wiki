@@ -1,6 +1,7 @@
+#sumary cogen.core.sockets.ReadLine Documentation
 #labels Documentation
-#sumary ReadLine Documentation
 
+==== Parent: [CogenCoreSockets cogen.core.sockets] ====
 ==== Methods: [#__init__ __init__] [#run run] ====
 
 = Class: ReadLine =

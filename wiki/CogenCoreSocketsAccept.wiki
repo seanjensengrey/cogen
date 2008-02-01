@@ -1,6 +1,7 @@
+#sumary cogen.core.sockets.Accept Documentation
 #labels Documentation
-#sumary Accept Documentation
 
+==== Parent: [CogenCoreSockets cogen.core.sockets] ====
 ==== Methods: [#__init__ __init__] [#run run] ====
 
 = Class: Accept =
