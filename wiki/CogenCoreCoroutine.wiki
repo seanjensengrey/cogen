@@ -1,3 +1,4 @@
+#labels Api-Docs
 ==== Modules: ====
   - [Cogen cogen]
   - [CogenCommon cogen.common]
@@ -50,6 +51,4 @@ def plain_ol_generator():
     yield bla
     ...
 }}}
-
-
 
