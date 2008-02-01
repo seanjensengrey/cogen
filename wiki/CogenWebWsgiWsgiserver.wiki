@@ -9,35 +9,12 @@
 = Class: WSGIServer =
 
 An HTTP server for WSGI.
-------------------------
-  =================== ========================================================
-  Option              Description
-  =================== ========================================================
-  bind_addr           The interface on which to listen for connections.
-                      For TCP sockets, a (host, port) tuple. Host values may 
-                      be any IPv4 or IPv6 address, or any valid hostname. 
-                      The string 'localhost' is a synonym for '127.0.0.1' (or
-                      '::1', if your hosts file prefers IPv6).
-                      The string '0.0.0.0' is a special IPv4 entry meaning 
-                      "any active interface" (INADDR_ANY), and '::' is the 
-                      similar IN6ADDR_ANY for IPv6. The empty string or None 
-                      are not allowed.
-                      
-                      For UNIX sockets, supply the filename as a string.
-                    
-  wsgi_app            the WSGI 'application callable'; multiple WSGI 
-                      applications may be passed as (path_prefix, app) pairs.
-  server_name         the string to set for WSGI's SERVER_NAME environ entry.
-                      Defaults to socket.gethostname().
-  request_queue_size  the 'backlog' argument to socket.listen();
-                      specifies the maximum number of queued connections 
-                      (default 5).
-  protocol            the version string to write in the Status-Line of all
-                      HTTP responses. For example, "HTTP/1.1" (the default). 
-                      This also limits the supported features used in the 
-                      response.
-  =================== ========================================================
-  
+|| Option || Description ||
+|| bind_addr || The interface on which to listen for connections. For TCP sockets, a (host, port) tuple. Host values may be any IPv4 or IPv6 address, or any valid hostname. The string 'localhost' is a synonym for '127.0.0.1' (or '::1', if your hosts file prefers IPv6). The string '0.0.0.0' is a special IPv4 entry meaning "any active interface" (INADDR_ANY), and '::' is the similar IN6ADDR_ANY for IPv6. The empty string or None are not allowed.  For UNIX sockets, supply the filename as a string. ||
+|| wsgi_app || the WSGI 'application callable'; multiple WSGI applications may be passed as (path_prefix, app) pairs. ||
+|| server_name || the string to set for WSGI's SERVER_NAME environ entry. Defaults to socket.gethostname(). ||
+|| request_queue_size || the 'backlog' argument to socket.listen() specifies the maximum number of queued connections (default 5). ||
+|| protocol || the version string to write in the Status-Line of all HTTP responses. For example, "HTTP/1.1" (the default). This also limits the supported features used in the response. ||
 
 == Classes ==
 
@@ -69,7 +46,7 @@ Run the server forever.
 === bind_addr ===
 
 
-{{{<property object at 0x00C341E8>}}}
+{{{<property object at 0x00DE0F80>}}}
 
 === environ ===
 
