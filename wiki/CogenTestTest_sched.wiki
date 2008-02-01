@@ -1,23 +1,6 @@
-==== Modules: ====
-  - [Cogen cogen]
-  - [CogenCommon cogen.common]
-  - [CogenCore cogen.core]
-  - [CogenCoreCoroutine cogen.core.coroutine]
-  - [CogenCoreEvents cogen.core.events]
-  - [CogenCorePollers cogen.core.pollers]
-  - [CogenCoreQueue cogen.core.queue]
-  - [CogenCoreSchedulers cogen.core.schedulers]
-  - [CogenCoreSockets cogen.core.sockets]
-  - [CogenCoreUtil cogen.core.util]
-  - [CogenTest cogen.test]
-  - [CogenTestBase cogen.test.base]
-  - [CogenTestTest_queue cogen.test.test_queue]
-  - [CogenTestTest_sched cogen.test.test_sched]
-  - [CogenTestTest_socket cogen.test.test_socket]
-  - [CogenTestTest_timer cogen.test.test_timer]
-  - [CogenWeb cogen.web]
-  - [CogenWebAsync cogen.web.async]
-  - [CogenWebWsgi cogen.web.wsgi]
+#labels Documentation
+#sumary test_sched Documentation
+
 ==== Classes: [CogenTestTest_schedSchedulertest_mixin cogen.test.test_sched.SchedulerTest_MixIn] [CogenTestTest_schedSchedulertest_noprio cogen.test.test_sched.SchedulerTest_NoPrio] [CogenTestTest_schedSchedulertest_prio cogen.test.test_sched.SchedulerTest_Prio] ====
 
 = Module: test_sched =

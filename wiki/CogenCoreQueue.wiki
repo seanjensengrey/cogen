@@ -1,23 +1,6 @@
-==== Modules: ====
-  - [Cogen cogen]
-  - [CogenCommon cogen.common]
-  - [CogenCore cogen.core]
-  - [CogenCoreCoroutine cogen.core.coroutine]
-  - [CogenCoreEvents cogen.core.events]
-  - [CogenCorePollers cogen.core.pollers]
-  - [CogenCoreQueue cogen.core.queue]
-  - [CogenCoreSchedulers cogen.core.schedulers]
-  - [CogenCoreSockets cogen.core.sockets]
-  - [CogenCoreUtil cogen.core.util]
-  - [CogenTest cogen.test]
-  - [CogenTestBase cogen.test.base]
-  - [CogenTestTest_queue cogen.test.test_queue]
-  - [CogenTestTest_sched cogen.test.test_sched]
-  - [CogenTestTest_socket cogen.test.test_socket]
-  - [CogenTestTest_timer cogen.test.test_timer]
-  - [CogenWeb cogen.web]
-  - [CogenWebAsync cogen.web.async]
-  - [CogenWebWsgi cogen.web.wsgi]
+#labels Documentation
+#sumary queue Documentation
+
 ==== Classes: [CogenCoreQueueEmpty cogen.core.queue.Empty] [CogenCoreQueueFull cogen.core.queue.Full] [CogenCoreQueueQdone cogen.core.queue.QDone] [CogenCoreQueueQget cogen.core.queue.QGet] [CogenCoreQueueQjoin cogen.core.queue.QJoin] [CogenCoreQueueQput cogen.core.queue.QPut] [CogenCoreQueueQueue cogen.core.queue.Queue] ====
 
 = Module: queue =
