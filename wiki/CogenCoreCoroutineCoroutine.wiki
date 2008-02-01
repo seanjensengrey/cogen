@@ -11,27 +11,27 @@ coroutine
 == Methods ==
 
 === add_waiter ===
-signature: (self, coro)
+signature: add_waiter(self, coro)
 
 
 
 === finalize ===
-signature: (self)
+signature: finalize(self)
 
 
 
 === handle_error ===
-signature: (self)
+signature: handle_error(self)
 
 
 
 === remove_waiter ===
-signature: (self, coro)
+signature: remove_waiter(self, coro)
 
 
 
 === run_op ===
-signature: (self, op)
+signature: run_op(self, op)
 
 ~ @debug(0)
 
@@ -102,7 +102,7 @@ signature: (self, op)
 === running ===
 
 
-{{{<property object at 0x00B52878>}}}
+{{{<property object at 0x00B59418>}}}
 
 === state ===
 
