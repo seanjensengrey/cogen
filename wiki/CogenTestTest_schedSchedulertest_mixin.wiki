@@ -1,4 +1,4 @@
-#sumary cogen.test.test_sched.SchedulerTest_MixIn Documentation
+#summary cogen.test.test_sched.SchedulerTest_MixIn Documentation
 #labels Documentation
 
 ==== Parent: [CogenTestTest_sched cogen.test.test_sched] ====

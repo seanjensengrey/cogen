@@ -1,4 +1,4 @@
-#sumary cogen.test.test_timer.Timer_MixIn Documentation
+#summary cogen.test.test_timer.Timer_MixIn Documentation
 #labels Documentation
 
 ==== Parent: [CogenTestTest_timer cogen.test.test_timer] ====

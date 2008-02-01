@@ -1,4 +1,4 @@
-#sumary cogen.core.events.Sleep Documentation
+#summary cogen.core.events.Sleep Documentation
 #labels Documentation
 
 ==== Parent: [CogenCoreEvents cogen.core.events] ====

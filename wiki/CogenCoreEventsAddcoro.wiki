@@ -1,4 +1,4 @@
-#sumary cogen.core.events.AddCoro Documentation
+#summary cogen.core.events.AddCoro Documentation
 #labels Documentation
 
 ==== Parent: [CogenCoreEvents cogen.core.events] ====

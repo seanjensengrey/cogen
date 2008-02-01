@@ -1,4 +1,4 @@
-#sumary cogen.core.sockets.Connect Documentation
+#summary cogen.core.sockets.Connect Documentation
 #labels Documentation
 
 ==== Parent: [CogenCoreSockets cogen.core.sockets] ====

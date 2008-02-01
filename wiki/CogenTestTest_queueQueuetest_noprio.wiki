@@ -1,4 +1,4 @@
-#sumary cogen.test.test_queue.QueueTest_NoPrio Documentation
+#summary cogen.test.test_queue.QueueTest_NoPrio Documentation
 #labels Documentation
 
 ==== Parent: [CogenTestTest_queue cogen.test.test_queue] ====

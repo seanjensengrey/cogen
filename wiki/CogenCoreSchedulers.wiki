@@ -1,4 +1,4 @@
-#sumary cogen.core.schedulers Documentation
+#summary cogen.core.schedulers Documentation
 #labels Documentation
 
 ==== Parent: [CogenCore cogen.core] ====

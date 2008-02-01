@@ -1,4 +1,4 @@
-#sumary cogen.test.base.PrioMixIn Documentation
+#summary cogen.test.base.PrioMixIn Documentation
 #labels Documentation
 
 ==== Parent: [CogenTestBase cogen.test.base] ====

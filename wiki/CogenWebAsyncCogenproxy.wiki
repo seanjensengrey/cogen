@@ -1,4 +1,4 @@
-#sumary cogen.web.async.COGENProxy Documentation
+#summary cogen.web.async.COGENProxy Documentation
 #labels Documentation
 
 ==== Parent: [CogenWebAsync cogen.web.async] ====

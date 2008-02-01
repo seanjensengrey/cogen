@@ -1,4 +1,4 @@
-#sumary cogen.core.queue.Full Documentation
+#summary cogen.core.queue.Full Documentation
 #labels Documentation
 
 ==== Parent: [CogenCoreQueue cogen.core.queue] ====

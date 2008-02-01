@@ -1,4 +1,4 @@
-#sumary cogen.core.schedulers.Scheduler Documentation
+#summary cogen.core.schedulers.Scheduler Documentation
 #labels Documentation
 
 ==== Parent: [CogenTestTest_timerTimertest_prio cogen.test.test_timer.TimerTest_Prio] ====

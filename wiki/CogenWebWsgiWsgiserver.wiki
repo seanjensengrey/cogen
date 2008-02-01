@@ -1,4 +1,4 @@
-#sumary cogen.web.wsgi.WSGIServer Documentation
+#summary cogen.web.wsgi.WSGIServer Documentation
 #labels Documentation
 
 ==== Parent: [CogenWebWsgi cogen.web.wsgi] ====
@@ -69,7 +69,7 @@ Run the server forever.
 === bind_addr ===
 
 
-{{{<property object at 0x00C331E8>}}}
+{{{<property object at 0x00C341E8>}}}
 
 === environ ===
 

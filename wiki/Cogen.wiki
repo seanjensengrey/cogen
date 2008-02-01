@@ -1,4 +1,4 @@
-#sumary cogen Documentation
+#summary cogen Documentation
 #labels Documentation
 
 ==== Modules: [CogenCommon common] [CogenCore core] [CogenDocs docs] [CogenTest test] [CogenWeb web] ====

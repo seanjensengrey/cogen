@@ -1,4 +1,4 @@
-#sumary cogen.core.schedulers.DebugginWrapper Documentation
+#summary cogen.core.schedulers.DebugginWrapper Documentation
 #labels Documentation
 
 ==== Parent: [CogenCoreSchedulers cogen.core.schedulers] ====

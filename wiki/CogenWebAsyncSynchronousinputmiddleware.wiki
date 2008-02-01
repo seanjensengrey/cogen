@@ -1,4 +1,4 @@
-#sumary cogen.web.async.SynchronousInputMiddleware Documentation
+#summary cogen.web.async.SynchronousInputMiddleware Documentation
 #labels Documentation
 
 ==== Parent: [CogenWebAsync cogen.web.async] ====

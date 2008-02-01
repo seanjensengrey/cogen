@@ -1,4 +1,4 @@
-#sumary cogen.web.wsgi.WSGIConnection Documentation
+#summary cogen.web.wsgi.WSGIConnection Documentation
 #labels Documentation
 
 ==== Parent: [CogenWebWsgiWsgiserver cogen.web.wsgi.WSGIServer] ====

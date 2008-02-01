@@ -1,4 +1,4 @@
-#sumary cogen.test Documentation
+#summary cogen.test Documentation
 #labels Documentation
 
 ==== Parent: [Cogen cogen] ====

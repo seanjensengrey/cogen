@@ -1,4 +1,4 @@
-#sumary cogen.core.pollers.Poller Documentation
+#summary cogen.core.pollers.Poller Documentation
 #labels Documentation
 
 ==== Parent: [CogenCorePollers cogen.core.pollers] ====

@@ -1,4 +1,4 @@
-#sumary cogen.core.schedulers.Timeout Documentation
+#summary cogen.core.schedulers.Timeout Documentation
 #labels Documentation
 
 ==== Parent: [CogenCoreSchedulers cogen.core.schedulers] ====

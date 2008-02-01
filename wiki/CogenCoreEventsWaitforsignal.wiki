@@ -1,4 +1,4 @@
-#sumary cogen.core.events.WaitForSignal Documentation
+#summary cogen.core.events.WaitForSignal Documentation
 #labels Documentation
 
 ==== Parent: [CogenCoreEvents cogen.core.events] ====

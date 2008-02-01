@@ -1,4 +1,4 @@
-#sumary cogen.core.util.priority Documentation
+#summary cogen.core.util.priority Documentation
 #labels Documentation
 
 ==== Parent: [CogenCoreUtil cogen.core.util] ====

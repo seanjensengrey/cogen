@@ -1,4 +1,4 @@
-#sumary cogen.core.coroutine.Coroutine Documentation
+#summary cogen.core.coroutine.Coroutine Documentation
 #labels Documentation
 
 ==== Parent: [CogenCoreCoroutine cogen.core.coroutine] ====

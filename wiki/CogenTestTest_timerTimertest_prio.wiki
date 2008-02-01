@@ -1,4 +1,4 @@
-#sumary cogen.test.test_timer.TimerTest_Prio Documentation
+#summary cogen.test.test_timer.TimerTest_Prio Documentation
 #labels Documentation
 
 ==== Parent: [CogenTestTest_timer cogen.test.test_timer] ====

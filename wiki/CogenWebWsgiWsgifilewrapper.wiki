@@ -1,4 +1,4 @@
-#sumary cogen.web.wsgi.WSGIFileWrapper Documentation
+#summary cogen.web.wsgi.WSGIFileWrapper Documentation
 #labels Documentation
 
 ==== Parent: [CogenWebWsgi cogen.web.wsgi] ====

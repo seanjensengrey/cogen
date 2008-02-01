@@ -1,4 +1,4 @@
-#sumary cogen.core.events.Signal Documentation
+#summary cogen.core.events.Signal Documentation
 #labels Documentation
 
 ==== Parent: [CogenCoreEvents cogen.core.events] ====

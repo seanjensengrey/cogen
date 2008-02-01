@@ -1,4 +1,4 @@
-#sumary cogen.core.queue.QPut Documentation
+#summary cogen.core.queue.QPut Documentation
 #labels Documentation
 
 ==== Parent: [CogenCoreQueue cogen.core.queue] ====

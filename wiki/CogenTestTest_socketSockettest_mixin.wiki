@@ -1,4 +1,4 @@
-#sumary cogen.test.test_socket.SocketTest_MixIn Documentation
+#summary cogen.test.test_socket.SocketTest_MixIn Documentation
 #labels Documentation
 
 ==== Parent: [CogenTestTest_socket cogen.test.test_socket] ====
