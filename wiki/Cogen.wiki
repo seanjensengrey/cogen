@@ -4,7 +4,6 @@
 ==== Modules: [CogenCommon common] [CogenCore core] [CogenDocs docs] [CogenTest test] [CogenWeb web] ====
 
 = Module: cogen =
-
 This is a library for network oriented, coroutine based programming. 
 The interfaces and events/operations aim to mimic thread features. Coroutines 
 work as simple generators, the operations and events work as objects passed in 
@@ -15,14 +14,12 @@ Check each modules for specific help.
 
 == Modules ==
 
-=== common ===
-
+=== [CogenCommon common] ===
 A module for quick importing the essential core stuff. 
 (coroutine, Scheduler, events, sockets, priority)
 
 
-=== core ===
-
+=== [CogenCore core] ===
 This module holds the essential stuff.
 
 Programming with this library should be straghtforward. A coroutine is just 
@@ -84,21 +81,18 @@ m.run()
 }}}
 
 
-=== docs ===
+=== [CogenDocs docs] ===
 
 
 
-
-=== test ===
-
+=== [CogenTest test] ===
 To run the unittests get the source package and run setup.py test
 
 
 TODO: test for timeout: operator runs before the timeout but it remains allocated.
 
 
-=== web ===
-
+=== [CogenWeb web] ===
 This module holds a wsgi server and future web-related code.
 
 

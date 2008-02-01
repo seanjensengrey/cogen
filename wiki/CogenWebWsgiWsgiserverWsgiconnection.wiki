@@ -11,28 +11,23 @@
 == Methods ==
 
 === __init__ ===
-signature: __init__(self, sock, wsgi_app, environ)
-
+signature: {{{__init__(self, sock, wsgi_app, environ)}}}
 
 
 === render_headers ===
-signature: render_headers(self)
-
+signature: {{{render_headers(self)}}}
 
 
 === run ===
-signature: run(*args, **kws)
-
+signature: {{{run(*args, **kws)}}}
 A bit bulky atm...
 
 === simple_response ===
-signature: simple_response(self, status, msg='')
-
+signature: {{{simple_response(self, status, msg='')}}}
 Return a operation for writing simple response back to the client.
 
 === start_response ===
-signature: start_response(self, status, headers, exc_info=None)
-
+signature: {{{start_response(self, status, headers, exc_info=None)}}}
 WSGI callable to begin the HTTP response.
 
 

@@ -11,13 +11,11 @@ Write the buffer to the socket and return the number of bytes written.
 == Methods ==
 
 === __init__ ===
-signature: __init__(self, sock, buff, **kws)
-
+signature: {{{__init__(self, sock, buff, **kws)}}}
 
 
 === run ===
-signature: run(self)
-
+signature: {{{run(self)}}}
 
 
 

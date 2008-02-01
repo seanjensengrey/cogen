@@ -5,7 +5,6 @@
 ==== Classes: [CogenWebAsyncCogenoperationcall COGENOperationCall] [CogenWebAsyncCogenoperationwrapper COGENOperationWrapper] [CogenWebAsyncCogenproxy COGENProxy] [CogenWebAsyncRead Read] [CogenWebAsyncSynchronousinputmiddleware SynchronousInputMiddleware] ====
 
 = Module: async =
-
 cogen.web.wsgi server is asynchronous by default. If you need to run a app that
 uses wsgi.input synchronously you need to wrapp it in 
 `SynchronousInputMiddleware`.
@@ -34,30 +33,25 @@ buff.seek(0)
 
 == Classes ==
 
-=== COGENOperationCall ===
+=== [CogenWebAsyncCogenoperationcall COGENOperationCall] ===
 
 
 
-
-=== COGENOperationWrapper ===
-
+=== [CogenWebAsyncCogenoperationwrapper COGENOperationWrapper] ===
 
 
 
-=== COGENProxy ===
+=== [CogenWebAsyncCogenproxy COGENProxy] ===
 
 
 
-
-=== Read ===
-
+=== [CogenWebAsyncRead Read] ===
 This is actually a hack that mixes ReadAll and ReadLine and 
 patches their state attributes. Hopefully i'll evolve it to
 something more elegant at some point.
 
 
-=== SynchronousInputMiddleware ===
-
+=== [CogenWebAsyncSynchronousinputmiddleware SynchronousInputMiddleware] ===
 Middleware for providing wsgi.input to the app.
 
 

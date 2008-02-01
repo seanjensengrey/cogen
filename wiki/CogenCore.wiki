@@ -5,7 +5,6 @@
 ==== Modules: [CogenCoreCoroutine coroutine] [CogenCoreEvents events] [CogenCorePollers pollers] [CogenCoreQueue queue] [CogenCoreSchedulers schedulers] [CogenCoreSockets sockets] [CogenCoreUtil util] ====
 
 = Module: core =
-
 This module holds the essential stuff.
 
 Programming with this library should be straghtforward. A coroutine is just 
@@ -68,38 +67,31 @@ m.run()
 
 == Modules ==
 
-=== coroutine ===
+=== [CogenCoreCoroutine coroutine] ===
 
 
 
-
-=== events ===
-
+=== [CogenCoreEvents events] ===
 
 
 
-=== pollers ===
+=== [CogenCorePollers pollers] ===
 
 
 
-
-=== queue ===
-
+=== [CogenCoreQueue queue] ===
 
 
 
-=== schedulers ===
+=== [CogenCoreSchedulers schedulers] ===
 
 
 
-
-=== sockets ===
-
+=== [CogenCoreSockets sockets] ===
 
 
 
-=== util ===
-
+=== [CogenCoreUtil util] ===
 
 
 

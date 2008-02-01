@@ -22,17 +22,14 @@ An HTTP server for WSGI.
 
 
 
-
 == Methods ==
 
 === bind ===
-signature: bind(self, family, type, proto=0)
-
+signature: {{{bind(self, family, type, proto=0)}}}
 Create (or recreate) the actual socket object.
 
 === serve ===
-signature: serve(*args, **kws)
-
+signature: {{{serve(*args, **kws)}}}
 Run the server forever.
 
 
@@ -40,26 +37,21 @@ Run the server forever.
 
 === STATE_NEED_INIT ===
 
-
 {{{0}}}
 
 === bind_addr ===
 
-
-{{{<property object at 0x00DDFF58>}}}
+{{{<property object at 0x00C341E8>}}}
 
 === environ ===
-
 
 {{{{}}}}
 
 === protocol ===
 
-
 {{{'HTTP/1.1'}}}
 
 === version ===
-
 
 {{{'cogen.web.wsgi/0.1.5 Python/2.5.1'}}}
 

@@ -12,11 +12,9 @@
 
 === args ===
 
-
 {{{<attribute 'args' of 'exceptions.BaseException' objects>}}}
 
 === message ===
-
 
 {{{<member 'message' of 'exceptions.BaseException' objects>}}}
 

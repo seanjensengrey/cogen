@@ -5,13 +5,11 @@
 ==== Modules: [CogenWebAsync async] [CogenWebWsgi wsgi] ====
 
 = Module: web =
-
 This module holds a wsgi server and future web-related code.
 
 == Modules ==
 
-=== async ===
-
+=== [CogenWebAsync async] ===
 cogen.web.wsgi server is asynchronous by default. If you need to run a app that
 uses wsgi.input synchronously you need to wrapp it in 
 `SynchronousInputMiddleware`.
@@ -39,8 +37,7 @@ buff.seek(0)
 }}}
 
 
-=== wsgi ===
-
+=== [CogenWebWsgi wsgi] ===
 This wsgi server is a single threaded, single process server that interleaves 
 the iterations of the wsgi apps - I could add a threadpool for blocking apps in 
 the future.

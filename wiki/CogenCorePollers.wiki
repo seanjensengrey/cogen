@@ -7,27 +7,22 @@
 = Module: pollers =
 
 
-
 == Classes ==
 
-=== EpollPoller ===
+=== [CogenCorePollersEpollpoller EpollPoller] ===
 
 
 
-
-=== KQueuePoller ===
-
+=== [CogenCorePollersKqueuepoller KQueuePoller] ===
 
 
 
-=== Poller ===
-
+=== [CogenCorePollersPoller Poller] ===
 A poller just checks if there are ready-sockets for the operations.
 The operations are not done here, they are done in the socket ops instances.
 
 
-=== SelectPoller ===
-
+=== [CogenCorePollersSelectpoller SelectPoller] ===
 
 
 

@@ -17,13 +17,11 @@ yield sockets.Read(socket_object, buffer_length)
 == Methods ==
 
 === __init__ ===
-signature: __init__(self, sock, len=4096, **kws)
-
+signature: {{{__init__(self, sock, len=4096, **kws)}}}
 
 
 === run ===
-signature: run(self)
-
+signature: {{{run(self)}}}
 
 
 

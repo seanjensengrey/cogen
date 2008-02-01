@@ -11,13 +11,11 @@ Run this operation till all the bytes have been written.
 == Methods ==
 
 === __init__ ===
-signature: __init__(self, sock, buff, **kws)
-
+signature: {{{__init__(self, sock, buff, **kws)}}}
 
 
 === run ===
-signature: run(self)
-
+signature: {{{run(self)}}}
 
 
 

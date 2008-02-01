@@ -11,28 +11,23 @@
 == Methods ==
 
 === setUp ===
-signature: setUp(self)
-
+signature: {{{setUp(self)}}}
 
 
 === tearDown ===
-signature: tearDown(self)
-
+signature: {{{tearDown(self)}}}
 
 
 === test_read_all ===
-signature: test_read_all(self)
-
+signature: {{{test_read_all(self)}}}
 
 
 === test_read_lines ===
-signature: test_read_lines(self)
-
+signature: {{{test_read_lines(self)}}}
 
 
 === test_write_all ===
-signature: test_write_all(self)
-
+signature: {{{test_write_all(self)}}}
 
 
 

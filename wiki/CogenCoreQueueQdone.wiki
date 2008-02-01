@@ -12,15 +12,13 @@ A operation for the queue done_task call
 == Methods ==
 
 === finalize ===
-signature: finalize(self)
-
+signature: {{{finalize(self)}}}
 Called just before the Coroutine wrapper passes the operation back
 in the generator. Return value is the value actualy sent in the 
 generator.
 
 === process ===
-signature: process(self, sched, coro)
-
+signature: {{{process(self, sched, coro)}}}
 
 
 
@@ -28,11 +26,9 @@ signature: process(self, sched, coro)
 
 === prio ===
 
-
 {{{<member 'prio' of 'Operation' objects>}}}
 
 === queue ===
-
 
 {{{<member 'queue' of 'QDone' objects>}}}
 

@@ -27,8 +27,7 @@ scheduler.add(coro_a)
 == Methods ==
 
 === __init__ ===
-signature: __init__(self, coro, **kws)
-
+signature: {{{__init__(self, coro, **kws)}}}
 
 
 

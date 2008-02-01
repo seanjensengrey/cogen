@@ -12,13 +12,11 @@ A operation for the queue get call.
 == Methods ==
 
 === finalize ===
-signature: finalize(self)
-
+signature: {{{finalize(self)}}}
 
 
 === process ===
-signature: process(self, sched, coro)
-
+signature: {{{process(self, sched, coro)}}}
 
 
 
@@ -26,41 +24,33 @@ signature: process(self, sched, coro)
 
 === block ===
 
-
 {{{<member 'block' of 'QGet' objects>}}}
 
 === caller ===
-
 
 {{{<member 'caller' of 'QGet' objects>}}}
 
 === finalized ===
 
-
 {{{<member 'finalized' of 'TimedOperation' objects>}}}
 
 === prio ===
-
 
 {{{<member 'prio' of 'Operation' objects>}}}
 
 === queue ===
 
-
 {{{<member 'queue' of 'QGet' objects>}}}
 
 === result ===
-
 
 {{{<member 'result' of 'QGet' objects>}}}
 
 === timeout ===
 
-
 {{{None}}}
 
 === weak_timeout ===
-
 
 {{{<member 'weak_timeout' of 'TimedOperation' objects>}}}
 

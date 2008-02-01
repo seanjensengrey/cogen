@@ -7,21 +7,17 @@
 = Module: schedulers =
 
 
-
 == Classes ==
 
-=== DebugginWrapper ===
+=== [CogenCoreSchedulersDebugginwrapper DebugginWrapper] ===
 
 
 
-
-=== Scheduler ===
-
+=== [CogenTestTest_timerTimertest_prioScheduler Scheduler] ===
 
 
 
-=== Timeout ===
-
+=== [CogenCoreSchedulersTimeout Timeout] ===
 
 
 

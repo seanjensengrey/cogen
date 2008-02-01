@@ -7,21 +7,17 @@
 = Module: test_socket =
 
 
-
 == Classes ==
 
-=== SocketTest_MixIn ===
+=== [CogenTestTest_socketSockettest_mixin SocketTest_MixIn] ===
 
 
 
-
-=== SocketTest_NoPrio ===
-
+=== [CogenTestTest_socketSockettest_noprio SocketTest_NoPrio] ===
 
 
 
-=== SocketTest_Prio ===
-
+=== [CogenTestTest_socketSockettest_prio SocketTest_Prio] ===
 
 
 

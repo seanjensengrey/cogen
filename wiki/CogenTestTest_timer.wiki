@@ -7,21 +7,17 @@
 = Module: test_timer =
 
 
-
 == Classes ==
 
-=== TimerTest_NoPrio ===
+=== [CogenTestTest_timerTimertest_noprio TimerTest_NoPrio] ===
 
 
 
-
-=== TimerTest_Prio ===
-
+=== [CogenTestTest_timerTimertest_prio TimerTest_Prio] ===
 
 
 
-=== Timer_MixIn ===
-
+=== [CogenTestTest_timerTimer_mixin Timer_MixIn] ===
 
 
 

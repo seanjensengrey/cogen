@@ -13,49 +13,40 @@
 == Classes ==
 
 === AssertionError ===
-
 Assertion failed.
 
 === Scheduler ===
 
 
 
-
 == Methods ==
 
 === countTestCases ===
-signature: countTestCases(self)
-
+signature: {{{countTestCases(self)}}}
 
 
 === debug ===
-signature: debug(self)
-
+signature: {{{debug(self)}}}
 Run the test without collecting errors in a TestResult
 
 === defaultTestResult ===
-signature: defaultTestResult(self)
-
+signature: {{{defaultTestResult(self)}}}
 
 
 === fail ===
-signature: fail(self, msg=None)
-
+signature: {{{fail(self, msg=None)}}}
 Fail immediately, with the given message.
 
 === failIf ===
-signature: failIf(self, expr, msg=None)
-
+signature: {{{failIf(self, expr, msg=None)}}}
 Fail the test if the expression is true.
 
 === failIf ===
-signature: failIf(self, expr, msg=None)
-
+signature: {{{failIf(self, expr, msg=None)}}}
 Fail the test if the expression is true.
 
 === failIfAlmostEqual ===
-signature: failIfAlmostEqual(self, first, second, places=7, msg=None)
-
+signature: {{{failIfAlmostEqual(self, first, second, places=7, msg=None)}}}
 Fail if the two objects are equal as determined by their
 difference rounded to the given number of decimal places
 (default 7) and comparing to zero.
@@ -64,8 +55,7 @@ Note that decimal places (from zero) are usually not the same
 as significant digits (measured from the most signficant digit).
 
 === failIfAlmostEqual ===
-signature: failIfAlmostEqual(self, first, second, places=7, msg=None)
-
+signature: {{{failIfAlmostEqual(self, first, second, places=7, msg=None)}}}
 Fail if the two objects are equal as determined by their
 difference rounded to the given number of decimal places
 (default 7) and comparing to zero.
@@ -74,8 +64,7 @@ Note that decimal places (from zero) are usually not the same
 as significant digits (measured from the most signficant digit).
 
 === failIfAlmostEqual ===
-signature: failIfAlmostEqual(self, first, second, places=7, msg=None)
-
+signature: {{{failIfAlmostEqual(self, first, second, places=7, msg=None)}}}
 Fail if the two objects are equal as determined by their
 difference rounded to the given number of decimal places
 (default 7) and comparing to zero.
@@ -84,41 +73,34 @@ Note that decimal places (from zero) are usually not the same
 as significant digits (measured from the most signficant digit).
 
 === failIfEqual ===
-signature: failIfEqual(self, first, second, msg=None)
-
+signature: {{{failIfEqual(self, first, second, msg=None)}}}
 Fail if the two objects are equal as determined by the '=='
 operator.
 
 === failIfEqual ===
-signature: failIfEqual(self, first, second, msg=None)
-
+signature: {{{failIfEqual(self, first, second, msg=None)}}}
 Fail if the two objects are equal as determined by the '=='
 operator.
 
 === failIfEqual ===
-signature: failIfEqual(self, first, second, msg=None)
-
+signature: {{{failIfEqual(self, first, second, msg=None)}}}
 Fail if the two objects are equal as determined by the '=='
 operator.
 
 === failUnless ===
-signature: failUnless(self, expr, msg=None)
-
+signature: {{{failUnless(self, expr, msg=None)}}}
 Fail the test unless the expression is true.
 
 === failUnless ===
-signature: failUnless(self, expr, msg=None)
-
+signature: {{{failUnless(self, expr, msg=None)}}}
 Fail the test unless the expression is true.
 
 === failUnless ===
-signature: failUnless(self, expr, msg=None)
-
+signature: {{{failUnless(self, expr, msg=None)}}}
 Fail the test unless the expression is true.
 
 === failUnlessAlmostEqual ===
-signature: failUnlessAlmostEqual(self, first, second, places=7, msg=None)
-
+signature: {{{failUnlessAlmostEqual(self, first, second, places=7, msg=None)}}}
 Fail if the two objects are unequal as determined by their
 difference rounded to the given number of decimal places
 (default 7) and comparing to zero.
@@ -127,8 +109,7 @@ Note that decimal places (from zero) are usually not the same
 as significant digits (measured from the most signficant digit).
 
 === failUnlessAlmostEqual ===
-signature: failUnlessAlmostEqual(self, first, second, places=7, msg=None)
-
+signature: {{{failUnlessAlmostEqual(self, first, second, places=7, msg=None)}}}
 Fail if the two objects are unequal as determined by their
 difference rounded to the given number of decimal places
 (default 7) and comparing to zero.
@@ -137,8 +118,7 @@ Note that decimal places (from zero) are usually not the same
 as significant digits (measured from the most signficant digit).
 
 === failUnlessAlmostEqual ===
-signature: failUnlessAlmostEqual(self, first, second, places=7, msg=None)
-
+signature: {{{failUnlessAlmostEqual(self, first, second, places=7, msg=None)}}}
 Fail if the two objects are unequal as determined by their
 difference rounded to the given number of decimal places
 (default 7) and comparing to zero.
@@ -147,26 +127,22 @@ Note that decimal places (from zero) are usually not the same
 as significant digits (measured from the most signficant digit).
 
 === failUnlessEqual ===
-signature: failUnlessEqual(self, first, second, msg=None)
-
+signature: {{{failUnlessEqual(self, first, second, msg=None)}}}
 Fail if the two objects are unequal as determined by the '=='
 operator.
 
 === failUnlessEqual ===
-signature: failUnlessEqual(self, first, second, msg=None)
-
+signature: {{{failUnlessEqual(self, first, second, msg=None)}}}
 Fail if the two objects are unequal as determined by the '=='
 operator.
 
 === failUnlessEqual ===
-signature: failUnlessEqual(self, first, second, msg=None)
-
+signature: {{{failUnlessEqual(self, first, second, msg=None)}}}
 Fail if the two objects are unequal as determined by the '=='
 operator.
 
 === failUnlessRaises ===
-signature: failUnlessRaises(self, excClass, callableObj, *args, **kwargs)
-
+signature: {{{failUnlessRaises(self, excClass, callableObj, *args, **kwargs)}}}
 Fail unless an exception of class excClass is thrown
 by callableObj when invoked with arguments args and keyword
 arguments kwargs. If a different type of exception is
@@ -175,8 +151,7 @@ deemed to have suffered an error, exactly as for an
 unexpected exception.
 
 === failUnlessRaises ===
-signature: failUnlessRaises(self, excClass, callableObj, *args, **kwargs)
-
+signature: {{{failUnlessRaises(self, excClass, callableObj, *args, **kwargs)}}}
 Fail unless an exception of class excClass is thrown
 by callableObj when invoked with arguments args and keyword
 arguments kwargs. If a different type of exception is
@@ -185,23 +160,19 @@ deemed to have suffered an error, exactly as for an
 unexpected exception.
 
 === id ===
-signature: id(self)
-
+signature: {{{id(self)}}}
 
 
 === run ===
-signature: run(self, result=None)
-
+signature: {{{run(self, result=None)}}}
 
 
 === setUp ===
-signature: setUp(self)
-
+signature: {{{setUp(self)}}}
 
 
 === shortDescription ===
-signature: shortDescription(self)
-
+signature: {{{shortDescription(self)}}}
 Returns a one-line description of the test, or None if no
 description has been provided.
 
@@ -209,35 +180,29 @@ The default implementation of this method returns the first line of
 the specified test method's docstring.
 
 === tearDown ===
-signature: tearDown(self)
-
+signature: {{{tearDown(self)}}}
 
 
 === test_add_coro ===
-signature: test_add_coro(self)
-
+signature: {{{test_add_coro(self)}}}
 
 
 === test_call ===
-signature: test_call(self)
-
+signature: {{{test_call(self)}}}
 
 
 === test_join ===
-signature: test_join(self)
-
+signature: {{{test_join(self)}}}
 
 
 === test_signal ===
-signature: test_signal(self)
-
+signature: {{{test_signal(self)}}}
 
 
 
 == Attributes ==
 
 === STATE_FAILED ===
-
 
 {{{3}}}
 

@@ -11,8 +11,7 @@
 == Methods ==
 
 === __init__ ===
-signature: __init__(self, filelike, blocksize=8192)
-
+signature: {{{__init__(self, filelike, blocksize=8192)}}}
 
 
 

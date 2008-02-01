@@ -11,8 +11,7 @@ The coroutine will resume when the same object is Signaled.
 == Methods ==
 
 === __init__ ===
-signature: __init__(self, name, **kws)
-
+signature: {{{__init__(self, name, **kws)}}}
 
 
 

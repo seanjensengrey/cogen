@@ -7,41 +7,33 @@
 = Module: queue =
 
 
-
 == Classes ==
 
-=== Empty ===
+=== [CogenCoreQueueEmpty Empty] ===
 
 
 
-
-=== Full ===
-
+=== [CogenCoreQueueFull Full] ===
 
 
 
-=== QDone ===
-
+=== [CogenCoreQueueQdone QDone] ===
 A operation for the queue done_task call
 
 
-=== QGet ===
-
+=== [CogenCoreQueueQget QGet] ===
 A operation for the queue get call.
 
 
-=== QJoin ===
-
+=== [CogenCoreQueueQjoin QJoin] ===
 A operation for the queue join call.
 
 
-=== QPut ===
-
+=== [CogenCoreQueueQput QPut] ===
 A operation for the queue put call.
 
 
-=== Queue ===
-
+=== [CogenCoreQueueQueue Queue] ===
 This class attempts to mimic the exact functionality of the 
 python standard library Queue.Queue class, but with a coroutine context:
 

@@ -12,13 +12,11 @@ A operation for the queue put call.
 == Methods ==
 
 === finalize ===
-signature: finalize(self)
-
+signature: {{{finalize(self)}}}
 
 
 === process ===
-signature: process(self, sched, coro)
-
+signature: {{{process(self, sched, coro)}}}
 
 
 
@@ -26,46 +24,37 @@ signature: process(self, sched, coro)
 
 === block ===
 
-
 {{{<member 'block' of 'QPut' objects>}}}
 
 === caller ===
-
 
 {{{<member 'caller' of 'QPut' objects>}}}
 
 === finalized ===
 
-
 {{{<member 'finalized' of 'TimedOperation' objects>}}}
 
 === item ===
-
 
 {{{<member 'item' of 'QPut' objects>}}}
 
 === prio ===
 
-
 {{{<member 'prio' of 'Operation' objects>}}}
 
 === queue ===
-
 
 {{{<member 'queue' of 'QPut' objects>}}}
 
 === result ===
 
-
 {{{<member 'result' of 'QPut' objects>}}}
 
 === timeout ===
 
-
 {{{None}}}
 
 === weak_timeout ===
-
 
 {{{<member 'weak_timeout' of 'TimedOperation' objects>}}}
 

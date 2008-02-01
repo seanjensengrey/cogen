@@ -7,21 +7,17 @@
 = Module: test_queue =
 
 
-
 == Classes ==
 
-=== QueueTest_MixIn ===
+=== [CogenTestTest_queueQueuetest_mixin QueueTest_MixIn] ===
 
 
 
-
-=== QueueTest_NoPrio ===
-
+=== [CogenTestTest_queueQueuetest_noprio QueueTest_NoPrio] ===
 
 
 
-=== QueueTest_Prio ===
-
+=== [CogenTestTest_queueQueuetest_prio QueueTest_Prio] ===
 
 
 

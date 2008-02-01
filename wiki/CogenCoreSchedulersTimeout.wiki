@@ -12,31 +12,25 @@
 
 === coro ===
 
-
 {{{<member 'coro' of 'Timeout' objects>}}}
 
 === delta ===
-
 
 {{{<member 'delta' of 'Timeout' objects>}}}
 
 === last_checkpoint ===
 
-
 {{{<member 'last_checkpoint' of 'Timeout' objects>}}}
 
 === op ===
-
 
 {{{<member 'op' of 'Timeout' objects>}}}
 
 === timeout ===
 
-
 {{{<member 'timeout' of 'Timeout' objects>}}}
 
 === weak_timeout ===
-
 
 {{{<member 'weak_timeout' of 'Timeout' objects>}}}
 

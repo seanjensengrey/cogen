@@ -7,16 +7,13 @@
 = Module: base =
 
 
-
 == Classes ==
 
-=== NoPrioMixIn ===
+=== [CogenTestBaseNopriomixin NoPrioMixIn] ===
 
 
 
-
-=== PrioMixIn ===
-
+=== [CogenTestBasePriomixin PrioMixIn] ===
 
 
 

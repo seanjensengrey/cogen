@@ -5,7 +5,6 @@
 ==== Modules: [CogenTestBase base] [CogenTestTest_queue test_queue] [CogenTestTest_sched test_sched] [CogenTestTest_socket test_socket] [CogenTestTest_timer test_timer] ====
 
 = Module: test =
-
 To run the unittests get the source package and run setup.py test
 
 
@@ -13,28 +12,23 @@ TODO: test for timeout: operator runs before the timeout but it remains allocate
 
 == Modules ==
 
-=== base ===
+=== [CogenTestBase base] ===
 
 
 
-
-=== test_queue ===
-
+=== [CogenTestTest_queue test_queue] ===
 
 
 
-=== test_sched ===
+=== [CogenTestTest_sched test_sched] ===
 
 
 
-
-=== test_socket ===
-
+=== [CogenTestTest_socket test_socket] ===
 
 
 
-=== test_timer ===
-
+=== [CogenTestTest_timer test_timer] ===
 
 
 
