@@ -46,12 +46,12 @@ An HTTP server for WSGI.
 == Methods ==
 
 === bind ===
-signature: (self, family, type, proto=0)
+signature: bind(self, family, type, proto=0)
 
 Create (or recreate) the actual socket object.
 
 === serve ===
-signature: (*args, **kws)
+signature: serve(*args, **kws)
 
 Run the server forever.
 
@@ -66,7 +66,7 @@ Run the server forever.
 === bind_addr ===
 
 
-{{{<property object at 0x00C2F328>}}}
+{{{<property object at 0x00C331E8>}}}
 
 === environ ===
 

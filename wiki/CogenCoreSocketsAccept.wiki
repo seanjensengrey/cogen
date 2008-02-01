@@ -8,12 +8,12 @@ Returns a (conn, addr) tuple when the operation completes.
 == Methods ==
 
 === __init__ ===
-signature: (self, sock, **kws)
+signature: __init__(self, sock, **kws)
 
 
 
 === run ===
-signature: (self)
+signature: run(self)
 
 
 

@@ -9,27 +9,27 @@
 == Methods ==
 
 === add ===
-signature: (self, op, coro)
+signature: add(self, op, coro)
 
 
 
 === handle_errored ===
-signature: (self, desc)
+signature: handle_errored(self, desc)
 
 
 
 === handle_events ===
-signature: (self, ready, waiting_ops)
+signature: handle_events(self, ready, waiting_ops)
 
 
 
 === remove ===
-signature: (self, op, coro)
+signature: remove(self, op, coro)
 
 
 
 === run ===
-signature: (self, timeout=0)
+signature: run(self, timeout=0)
 
 Run a poller loop and return new socket events. Timeout is a timedelta 
 object, 0 if active coros or None. 
@@ -37,24 +37,24 @@ object, 0 if active coros or None.
 select timeout param is a float number of seconds.
 
 === run_once ===
-signature: (self, fdesc, waiting_ops)
+signature: run_once(self, fdesc, waiting_ops)
 
 Run a operation, remove it from the poller and return the result. 
 Called from the main poller loop. 
 
 === run_operation ===
-signature: (self, op)
+signature: run_operation(self, op)
 
 Run the socket op and return result or exception. 
 
 === run_or_add ===
-signature: (self, op, coro)
+signature: run_or_add(self, op, coro)
 
 Perform operation or add the operation in the poller if socket isn't
 ready. Called from the scheduller. 
 
 === waiting_op ===
-signature: (self, testcoro)
+signature: waiting_op(self, testcoro)
 
 
 

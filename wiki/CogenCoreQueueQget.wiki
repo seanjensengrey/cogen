@@ -9,12 +9,12 @@ A operation for the queue get call.
 == Methods ==
 
 === finalize ===
-signature: (self)
+signature: finalize(self)
 
 
 
 === process ===
-signature: (self, sched, coro)
+signature: process(self, sched, coro)
 
 
 

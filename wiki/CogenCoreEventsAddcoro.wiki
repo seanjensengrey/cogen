@@ -13,7 +13,7 @@ yield events.AddCoro(some_coro, args=(), kwargs={})
 == Methods ==
 
 === __init__ ===
-signature: (self, coro, args=None, kwargs=None, **kws)
+signature: __init__(self, coro, args=None, kwargs=None, **kws)
 
 
 

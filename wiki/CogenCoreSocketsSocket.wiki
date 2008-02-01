@@ -9,7 +9,7 @@
 == Methods ==
 
 === accept ===
-signature: (self)
+signature: accept(self)
 
 accept() -> (socket object, address info)
 
@@ -18,7 +18,7 @@ connection, and the address of the client.  For IP sockets, the address
 info is a pair (hostaddr, port).
 
 === bind ===
-signature: (self, *args)
+signature: bind(self, *args)
 
 bind(address)
 
@@ -27,14 +27,14 @@ pair (host, port); the host must refer to the local host. For raw packet
 sockets the address is a tuple (ifname, proto [,pkttype [,hatype]])
 
 === close ===
-signature: (self)
+signature: close(self)
 
 close()
 
 Close the socket.  It cannot be used after this call.
 
 === connect ===
-signature: (self, *args)
+signature: connect(self, *args)
 
 connect(address)
 
@@ -42,7 +42,7 @@ Connect the socket to a remote address.  For IP sockets, the address
 is a pair (host, port).
 
 === connect_ex ===
-signature: (self, *args)
+signature: connect_ex(self, *args)
 
 connect_ex(address) -> errno
 
@@ -50,21 +50,21 @@ This is like connect(address), but returns an error code (the errno value)
 instead of raising an exception when an error occurs.
 
 === dup ===
-signature: (self)
+signature: dup(self)
 
 dup() -> socket object
 
 Return a new socket object connected to the same system resource.
 
 === fileno ===
-signature: (self, *args)
+signature: fileno(self, *args)
 
 fileno() -> integer
 
 Return the integer file descriptor of the socket.
 
 === getpeername ===
-signature: (self, *args)
+signature: getpeername(self, *args)
 
 getpeername() -> address info
 
@@ -72,7 +72,7 @@ Return the address of the remote endpoint.  For IP sockets, the address
 info is a pair (hostaddr, port).
 
 === getsockname ===
-signature: (self, *args)
+signature: getsockname(self, *args)
 
 getsockname() -> address info
 
@@ -80,7 +80,7 @@ Return the address of the local endpoint.  For IP sockets, the address
 info is a pair (hostaddr, port).
 
 === getsockopt ===
-signature: (self, *args)
+signature: getsockopt(self, *args)
 
 getsockopt(level, option[, buffersize]) -> value
 
@@ -89,7 +89,7 @@ If a nonzero buffersize argument is given, the return value is a
 string of that length; otherwise it is an integer.
 
 === gettimeout ===
-signature: (self, *args)
+signature: gettimeout(self, *args)
 
 gettimeout() -> timeout
 
@@ -98,7 +98,7 @@ operations. A timeout of None indicates that timeouts on socket
 operations are disabled.
 
 === listen ===
-signature: (self, *args)
+signature: listen(self, *args)
 
 listen(backlog)
 
@@ -107,7 +107,7 @@ least 1; it specifies the number of unaccepted connection that the system
 will allow before refusing new connections.
 
 === makefile ===
-signature: (self, mode='r', bufsize=-1)
+signature: makefile(self, mode='r', bufsize=-1)
 
 makefile([mode[, bufsize]]) -> file object
 
@@ -115,7 +115,7 @@ Return a regular file object corresponding to the socket.  The mode
 and bufsize arguments are as for the built-in open() function.
 
 === sendall ===
-signature: (self, *args)
+signature: sendall(self, *args)
 
 sendall(data[, flags])
 
@@ -125,7 +125,7 @@ until all data is sent.  If an error occurs, it's impossible
 to tell how much data has been sent.
 
 === setblocking ===
-signature: (self, *args)
+signature: setblocking(self, *args)
 
 setblocking(flag)
 
@@ -134,7 +134,7 @@ setblocking(True) is equivalent to settimeout(None);
 setblocking(False) is equivalent to settimeout(0.0).
 
 === setsockopt ===
-signature: (self, *args)
+signature: setsockopt(self, *args)
 
 setsockopt(level, option, value)
 
@@ -142,7 +142,7 @@ Set a socket option.  See the Unix manual for level and option.
 The value argument can either be an integer or a string.
 
 === settimeout ===
-signature: (self, *args)
+signature: settimeout(self, *args)
 
 settimeout(timeout)
 
@@ -152,7 +152,7 @@ the timeout feature and is equivalent to setblocking(1).
 Setting a timeout of zero is the same as setblocking(0).
 
 === shutdown ===
-signature: (self, *args)
+signature: shutdown(self, *args)
 
 shutdown(flag)
 
@@ -165,12 +165,12 @@ of the socket (flag == SHUT_WR), or both ends (flag == SHUT_RDWR).
 === family ===
 
 
-{{{<property object at 0x00B47468>}}}
+{{{<property object at 0x00B468C8>}}}
 
 === proto ===
 
 
-{{{<property object at 0x00B474B8>}}}
+{{{<property object at 0x00B46918>}}}
 
 === recv ===
 
@@ -205,5 +205,5 @@ of the socket (flag == SHUT_WR), or both ends (flag == SHUT_RDWR).
 === type ===
 
 
-{{{<property object at 0x00B47490>}}}
+{{{<property object at 0x00B468F0>}}}
 

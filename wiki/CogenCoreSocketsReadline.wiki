@@ -10,12 +10,12 @@ Run this operator till we read a newline (\n) or we have a overflow.
 == Methods ==
 
 === __init__ ===
-signature: (self, sock, len=4096, **kws)
+signature: __init__(self, sock, len=4096, **kws)
 
 
 
 === run ===
-signature: (self)
+signature: run(self)
 
 ~ @debug(0)            
 

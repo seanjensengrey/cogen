@@ -8,32 +8,32 @@
 == Methods ==
 
 === setUp ===
-signature: (self)
+signature: setUp(self)
 
 
 
 === tearDown ===
-signature: (self)
+signature: tearDown(self)
 
 
 
 === test_add_coro ===
-signature: (self)
+signature: test_add_coro(self)
 
 
 
 === test_call ===
-signature: (self)
+signature: test_call(self)
 
 
 
 === test_join ===
-signature: (self)
+signature: test_join(self)
 
 
 
 === test_signal ===
-signature: (self)
+signature: test_signal(self)
 
 
 

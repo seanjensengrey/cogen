@@ -8,27 +8,27 @@
 == Methods ==
 
 === setUp ===
-signature: (self)
+signature: setUp(self)
 
 
 
 === tearDown ===
-signature: (self)
+signature: tearDown(self)
 
 
 
 === test_read_all ===
-signature: (self)
+signature: test_read_all(self)
 
 
 
 === test_read_lines ===
-signature: (self)
+signature: test_read_lines(self)
 
 
 
 === test_write_all ===
-signature: (self)
+signature: test_write_all(self)
 
 
 

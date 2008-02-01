@@ -25,12 +25,12 @@ yield sockets.SendFile(, , 0, )
 == Methods ==
 
 === __init__ ===
-signature: (self, file_handle, sock, offset=None, length=None, blocksize=4096, **kws)
+signature: __init__(self, file_handle, sock, offset=None, length=None, blocksize=4096, **kws)
 
 
 
 === run ===
-signature: (self)
+signature: run(self)
 
 
 

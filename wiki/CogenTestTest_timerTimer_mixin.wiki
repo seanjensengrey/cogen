@@ -8,17 +8,17 @@
 == Methods ==
 
 === setUp ===
-signature: (self)
+signature: setUp(self)
 
 
 
 === tearDown ===
-signature: (self)
+signature: tearDown(self)
 
 
 
 === test_sock_connect_timeout ===
-signature: (self)
+signature: test_sock_connect_timeout(self)
 
 
 

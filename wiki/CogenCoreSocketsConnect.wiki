@@ -8,12 +8,12 @@ Connect to the given `addr` using `sock`.
 == Methods ==
 
 === __init__ ===
-signature: (self, sock, addr, **kws)
+signature: __init__(self, sock, addr, **kws)
 
 
 
 === run ===
-signature: (self)
+signature: run(self)
 
 We need to avoid some non-blocking socket connect quirks: 
   - if you attempt a connect in NB mode you will always 
