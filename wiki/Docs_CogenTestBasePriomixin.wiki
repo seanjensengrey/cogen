@@ -1,7 +1,7 @@
 #summary cogen.test.base.PrioMixIn Documentation
 #labels Documentation
 
-==== Parent: [Docs_CogenTestBase cogen.test.base] ====
+==== Parent module: [Docs_CogenTestBase cogen.test.base] ====
 ==== Attributes: [#STATE_FAILED STATE_FAILED] ====
 
 = Class: PrioMixIn =

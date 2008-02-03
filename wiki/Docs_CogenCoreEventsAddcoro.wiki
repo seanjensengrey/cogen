@@ -1,7 +1,7 @@
 #summary cogen.core.events.AddCoro Documentation
 #labels Documentation
 
-==== Parent: [Docs_CogenCoreEvents cogen.core.events] ====
+==== Parent module: [Docs_CogenCoreEvents cogen.core.events] ====
 ==== Methods: [#__init__ __init__] ====
 
 = Class: AddCoro =

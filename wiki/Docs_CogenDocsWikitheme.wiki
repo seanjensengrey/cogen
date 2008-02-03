@@ -1,7 +1,7 @@
 #summary cogen.docs.wikitheme Documentation
 #labels Documentation
 
-==== Parent: [Docs_CogenDocs cogen.docs] ====
+==== Parent module: [Docs_CogenDocs cogen.docs] ====
 ==== Functions: [#filename filename] [#href href] ====
 
 = Module: wikitheme =

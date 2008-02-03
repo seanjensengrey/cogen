@@ -1,7 +1,7 @@
 #summary cogen.core.queue.QPut Documentation
 #labels Documentation
 
-==== Parent: [Docs_CogenCoreQueue cogen.core.queue] ====
+==== Parent module: [Docs_CogenCoreQueue cogen.core.queue] ====
 ==== Methods: [#finalize finalize] [#process process] ====
 ==== Attributes: [#block block] [#caller caller] [#finalized finalized] [#item item] [#prio prio] [#queue queue] [#result result] [#timeout timeout] [#weak_timeout weak_timeout] ====
 

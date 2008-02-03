@@ -1,7 +1,7 @@
 #summary cogen.core.pollers Documentation
 #labels Documentation
 
-==== Parent: [Docs_CogenCore cogen.core] ====
+==== Parent module: [Docs_CogenCore cogen.core] ====
 ==== Classes: [Docs_CogenCorePollersEpollpoller EpollPoller] [Docs_CogenCorePollersKqueuepoller KQueuePoller] [Docs_CogenCorePollersPoller Poller] [Docs_CogenCorePollersSelectpoller SelectPoller] ====
 
 = Module: pollers =

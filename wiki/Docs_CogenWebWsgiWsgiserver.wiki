@@ -1,7 +1,7 @@
 #summary cogen.web.wsgi.WSGIServer Documentation
 #labels Documentation
 
-==== Parent: [Docs_CogenWebWsgi cogen.web.wsgi] ====
+==== Parent module: [Docs_CogenWebWsgi cogen.web.wsgi] ====
 ==== Classes: [Docs_CogenWebWsgiWsgiserverWsgiconnection WSGIConnection] ====
 ==== Methods: [#bind bind] [#serve serve] ====
 ==== Attributes: [#STATE_NEED_INIT STATE_NEED_INIT] [#bind_addr bind_addr] [#environ environ] [#protocol protocol] [#version version] ====
@@ -43,7 +43,7 @@ Run the server forever.
 
 === {{{bind_addr}}} ===
 
-{{{<property object at 0x00C351C0>}}}
+{{{<property object at 0x00C35378>}}}
 
 === {{{environ}}} ===
 

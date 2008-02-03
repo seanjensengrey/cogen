@@ -1,7 +1,7 @@
 #summary cogen.test Documentation
 #labels Documentation
 
-==== Parent: [Docs_Cogen cogen] ====
+==== Parent module: [Docs_Cogen cogen] ====
 ==== Modules: [Docs_CogenTestBase base] [Docs_CogenTestTest_queue test_queue] [Docs_CogenTestTest_sched test_sched] [Docs_CogenTestTest_socket test_socket] [Docs_CogenTestTest_timer test_timer] ====
 
 = Module: test =

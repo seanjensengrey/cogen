@@ -1,7 +1,7 @@
 #summary cogen.common Documentation
 #labels Documentation
 
-==== Parent: [Docs_Cogen cogen] ====
+==== Parent module: [Docs_Cogen cogen] ====
 
 = Module: common =
 A module for quick importing the essential core stuff. 

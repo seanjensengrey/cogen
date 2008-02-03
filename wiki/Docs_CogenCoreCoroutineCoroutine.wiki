@@ -1,7 +1,7 @@
 #summary cogen.core.coroutine.Coroutine Documentation
 #labels Documentation
 
-==== Parent: [Docs_CogenCoreCoroutine cogen.core.coroutine] ====
+==== Parent module: [Docs_CogenCoreCoroutine cogen.core.coroutine] ====
 ==== Methods: [#add_waiter add_waiter] [#finalize finalize] [#handle_error handle_error] [#remove_waiter remove_waiter] [#run_op run_op] ====
 ==== Attributes: [#STATE_COMPLETED STATE_COMPLETED] [#STATE_FAILED STATE_FAILED] [#STATE_NEED_INIT STATE_NEED_INIT] [#STATE_RUNNING STATE_RUNNING] [#caller caller] [#coro coro] [#exception exception] [#f_args f_args] [#f_kws f_kws] [#name name] [#prio prio] [#result result] [#running running] [#state state] [#waiters waiters] ====
 
@@ -92,7 +92,7 @@ signature: {{{run_op(self, op)}}}
 
 === {{{running}}} ===
 
-{{{<property object at 0x00B56FA8>}}}
+{{{<property object at 0x00B574B8>}}}
 
 === {{{state}}} ===
 

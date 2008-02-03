@@ -1,7 +1,7 @@
 #summary cogen.test.base.NoPrioMixIn Documentation
 #labels Documentation
 
-==== Parent: [Docs_CogenTestBase cogen.test.base] ====
+==== Parent module: [Docs_CogenTestBase cogen.test.base] ====
 ==== Attributes: [#STATE_NEED_INIT STATE_NEED_INIT] ====
 
 = Class: NoPrioMixIn =

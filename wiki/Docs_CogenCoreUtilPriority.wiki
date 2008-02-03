@@ -1,7 +1,7 @@
 #summary cogen.core.util.priority Documentation
 #labels Documentation
 
-==== Parent: [Docs_CogenCoreUtil cogen.core.util] ====
+==== Parent module: [Docs_CogenCoreUtil cogen.core.util] ====
 
 = Class: priority =
 

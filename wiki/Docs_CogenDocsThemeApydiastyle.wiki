@@ -1,7 +1,7 @@
 #summary cogen.docs.theme.ApydiaStyle Documentation
 #labels Documentation
 
-==== Parent: [Docs_CogenDocsTheme cogen.docs.theme] ====
+==== Parent module: [Docs_CogenDocsTheme cogen.docs.theme] ====
 ==== Attributes: [#background_color background_color] [#default_style default_style] [#styles styles] ====
 
 = Class: ApydiaStyle =

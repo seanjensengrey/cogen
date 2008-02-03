@@ -1,7 +1,7 @@
 #summary cogen.test.test_socket.SocketTest_MixIn Documentation
 #labels Documentation
 
-==== Parent: [Docs_CogenTestTest_socket cogen.test.test_socket] ====
+==== Parent module: [Docs_CogenTestTest_socket cogen.test.test_socket] ====
 ==== Methods: [#setUp setUp] [#tearDown tearDown] [#test_read_all test_read_all] [#test_read_lines test_read_lines] [#test_write_all test_write_all] ====
 
 = Class: SocketTest_MixIn =

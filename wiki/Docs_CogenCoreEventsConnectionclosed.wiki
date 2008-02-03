@@ -1,7 +1,7 @@
 #summary cogen.core.events.ConnectionClosed Documentation
 #labels Documentation
 
-==== Parent: [Docs_CogenCoreEvents cogen.core.events] ====
+==== Parent module: [Docs_CogenCoreEvents cogen.core.events] ====
 
 = Class: ConnectionClosed =
 

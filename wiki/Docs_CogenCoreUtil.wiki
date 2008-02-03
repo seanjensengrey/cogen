@@ -1,7 +1,7 @@
 #summary cogen.core.util Documentation
 #labels Documentation
 
-==== Parent: [Docs_CogenCore cogen.core] ====
+==== Parent module: [Docs_CogenCore cogen.core] ====
 ==== Classes: [Docs_CogenCoreUtilTimeoutdesc TimeoutDesc] [Docs_CogenCoreUtilPriority priority] ====
 ==== Functions: [#debug debug] ====
 

@@ -1,7 +1,7 @@
 #summary cogen.test.test_timer.TimerTest_Prio Documentation
 #labels Documentation
 
-==== Parent: [Docs_CogenTestTest_timer cogen.test.test_timer] ====
+==== Parent module: [Docs_CogenTestTest_timer cogen.test.test_timer] ====
 ==== Classes: [Docs_CogenTestTest_timerTimertest_prioAssertionerror AssertionError] [Docs_CogenTestTest_timerTimertest_prioScheduler Scheduler] ====
 ==== Methods: [#countTestCases countTestCases] [#debug debug] [#defaultTestResult defaultTestResult] [#fail fail] [#failIf failIf] [#failIf failIf] [#failIfAlmostEqual failIfAlmostEqual] [#failIfAlmostEqual failIfAlmostEqual] [#failIfAlmostEqual failIfAlmostEqual] [#failIfEqual failIfEqual] [#failIfEqual failIfEqual] [#failIfEqual failIfEqual] [#failUnless failUnless] [#failUnless failUnless] [#failUnless failUnless] [#failUnlessAlmostEqual failUnlessAlmostEqual] [#failUnlessAlmostEqual failUnlessAlmostEqual] [#failUnlessAlmostEqual failUnlessAlmostEqual] [#failUnlessEqual failUnlessEqual] [#failUnlessEqual failUnlessEqual] [#failUnlessEqual failUnlessEqual] [#failUnlessRaises failUnlessRaises] [#failUnlessRaises failUnlessRaises] [#id id] [#run run] [#setUp setUp] [#shortDescription shortDescription] [#tearDown tearDown] [#test_sock_connect_timeout test_sock_connect_timeout] ====
 ==== Attributes: [#STATE_FAILED STATE_FAILED] ====

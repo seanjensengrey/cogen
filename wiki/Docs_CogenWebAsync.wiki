@@ -1,7 +1,7 @@
 #summary cogen.web.async Documentation
 #labels Documentation
 
-==== Parent: [Docs_CogenWeb cogen.web] ====
+==== Parent module: [Docs_CogenWeb cogen.web] ====
 ==== Classes: [Docs_CogenWebAsyncCogenoperationcall COGENOperationCall] [Docs_CogenWebAsyncCogenoperationwrapper COGENOperationWrapper] [Docs_CogenWebAsyncCogenproxy COGENProxy] [Docs_CogenWebAsyncRead Read] [Docs_CogenWebAsyncSynchronousinputmiddleware SynchronousInputMiddleware] ====
 
 = Module: async =

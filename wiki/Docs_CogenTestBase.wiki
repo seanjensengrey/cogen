@@ -1,7 +1,7 @@
 #summary cogen.test.base Documentation
 #labels Documentation
 
-==== Parent: [Docs_CogenTest cogen.test] ====
+==== Parent module: [Docs_CogenTest cogen.test] ====
 ==== Classes: [Docs_CogenTestBaseNopriomixin NoPrioMixIn] [Docs_CogenTestBasePriomixin PrioMixIn] ====
 
 = Module: base =

@@ -1,7 +1,7 @@
 #summary cogen.docs.theme Documentation
 #labels Documentation
 
-==== Parent: [Docs_CogenDocs cogen.docs] ====
+==== Parent module: [Docs_CogenDocs cogen.docs] ====
 ==== Classes: [Docs_CogenDocsThemeApydiastyle ApydiaStyle] ====
 
 = Module: theme =

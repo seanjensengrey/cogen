@@ -1,7 +1,7 @@
 #summary cogen.core.coroutine Documentation
 #labels Documentation
 
-==== Parent: [Docs_CogenCore cogen.core] ====
+==== Parent module: [Docs_CogenCore cogen.core] ====
 ==== Classes: [Docs_CogenCoreCoroutineCoroutine Coroutine] ====
 ==== Functions: [#coroutine coroutine] ====
 

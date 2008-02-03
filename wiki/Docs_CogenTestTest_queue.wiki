@@ -1,7 +1,7 @@
 #summary cogen.test.test_queue Documentation
 #labels Documentation
 
-==== Parent: [Docs_CogenTest cogen.test] ====
+==== Parent module: [Docs_CogenTest cogen.test] ====
 ==== Classes: [Docs_CogenTestTest_queueQueuetest_mixin QueueTest_MixIn] [Docs_CogenTestTest_queueQueuetest_noprio QueueTest_NoPrio] [Docs_CogenTestTest_queueQueuetest_prio QueueTest_Prio] ====
 
 = Module: test_queue =

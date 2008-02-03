@@ -1,7 +1,7 @@
 #summary cogen.core.sockets.SendFile Documentation
 #labels Documentation
 
-==== Parent: [Docs_CogenCoreSockets cogen.core.sockets] ====
+==== Parent module: [Docs_CogenCoreSockets cogen.core.sockets] ====
 ==== Methods: [#__init__ __init__] [#run run] ====
 
 = Class: SendFile =

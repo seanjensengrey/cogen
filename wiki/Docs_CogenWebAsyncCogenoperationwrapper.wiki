@@ -1,7 +1,7 @@
 #summary cogen.web.async.COGENOperationWrapper Documentation
 #labels Documentation
 
-==== Parent: [Docs_CogenWebAsync cogen.web.async] ====
+==== Parent module: [Docs_CogenWebAsync cogen.web.async] ====
 
 = Class: COGENOperationWrapper =
 

@@ -1,7 +1,7 @@
 #summary cogen.core.queue.Full Documentation
 #labels Documentation
 
-==== Parent: [Docs_CogenCoreQueue cogen.core.queue] ====
+==== Parent module: [Docs_CogenCoreQueue cogen.core.queue] ====
 ==== Attributes: [#args args] [#message message] ====
 
 = Class: Full =

@@ -1,7 +1,7 @@
 #summary cogen.core.queue.QJoin Documentation
 #labels Documentation
 
-==== Parent: [Docs_CogenCoreQueue cogen.core.queue] ====
+==== Parent module: [Docs_CogenCoreQueue cogen.core.queue] ====
 ==== Methods: [#finalize finalize] [#process process] ====
 ==== Attributes: [#prio prio] [#queue queue] ====
 
