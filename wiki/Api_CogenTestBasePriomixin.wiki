@@ -1,0 +1,16 @@
+#summary cogen.test.base.PrioMixIn Documentation
+#labels Documentation
+
+==== Parent: [Api_CogenTestBase cogen.test.base] ====
+==== Attributes: [#STATE_FAILED STATE_FAILED] ====
+
+= Class: PrioMixIn =
+
+
+
+== Attributes ==
+
+=== {{{STATE_FAILED}}} ===
+
+{{{3}}}
+

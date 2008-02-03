@@ -1,0 +1,20 @@
+#summary cogen.test.base Documentation
+#labels Documentation
+
+==== Parent: [Api_CogenTest cogen.test] ====
+==== Classes: [Api_CogenTestBaseNopriomixin NoPrioMixIn] [Api_CogenTestBasePriomixin PrioMixIn] ====
+
+= Module: base =
+
+
+== Classes ==
+
+=== [Api_CogenTestBaseNopriomixin NoPrioMixIn] ===
+
+
+
+=== [Api_CogenTestBasePriomixin PrioMixIn] ===
+
+
+
+

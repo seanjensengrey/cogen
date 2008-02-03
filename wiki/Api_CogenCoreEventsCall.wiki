@@ -1,0 +1,27 @@
+#summary cogen.core.events.Call Documentation
+#labels Documentation
+
+==== Parent: [Api_CogenCoreEvents cogen.core.events] ====
+==== Methods: [#__init__ __init__] ====
+
+= Class: Call =
+
+This will pause the current coroutine, add a new coro in the scheduler and 
+resume the callee when it returns.
+
+Usage:
+{{{
+result = yield events.Call(mycoro, args=, kwargs=, prio=)
+}}}
+
+  * if `prio` is set the new coroutine will be added in the top of the 
+  scheduler queue
+
+== Methods ==
+
+=== {{{__init__}}} ===
+signature: {{{__init__(self, coro, args=None, kwargs=None, **kws)}}}
+
+
+
+

@@ -1,0 +1,9 @@
+#summary cogen.common Documentation
+#labels Documentation
+
+==== Parent: [Api_Cogen cogen] ====
+
+= Module: common =
+A module for quick importing the essential core stuff. 
+(coroutine, Scheduler, events, sockets, priority)
+

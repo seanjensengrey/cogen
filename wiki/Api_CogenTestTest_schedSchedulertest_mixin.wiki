@@ -1,0 +1,43 @@
+#summary cogen.test.test_sched.SchedulerTest_MixIn Documentation
+#labels Documentation
+
+==== Parent: [Api_CogenTestTest_sched cogen.test.test_sched] ====
+==== Methods: [#setUp setUp] [#tearDown tearDown] [#test_add_coro test_add_coro] [#test_call test_call] [#test_join test_join] [#test_signal test_signal] ====
+
+= Class: SchedulerTest_MixIn =
+
+
+
+== Methods ==
+
+=== {{{setUp}}} ===
+signature: {{{setUp(self)}}}
+
+
+
+=== {{{tearDown}}} ===
+signature: {{{tearDown(self)}}}
+
+
+
+=== {{{test_add_coro}}} ===
+signature: {{{test_add_coro(self)}}}
+
+
+
+=== {{{test_call}}} ===
+signature: {{{test_call(self)}}}
+
+
+
+=== {{{test_join}}} ===
+signature: {{{test_join(self)}}}
+
+
+
+=== {{{test_signal}}} ===
+signature: {{{test_signal(self)}}}
+
+
+
+

@@ -1,0 +1,17 @@
+#summary cogen.docs.theme Documentation
+#labels Documentation
+
+==== Parent: [Api_CogenDocs cogen.docs] ====
+==== Classes: [Api_CogenDocsThemeApydiastyle ApydiaStyle] ====
+
+= Module: theme =
+
+
+== Classes ==
+
+=== [Api_CogenDocsThemeApydiastyle ApydiaStyle] ===
+Style for Pygments source highlighter
+
+
+
+
