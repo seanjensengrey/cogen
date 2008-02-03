@@ -5,7 +5,7 @@
 ==== Classes: [Docs_CogenCoreSchedulersDebugginwrapper DebugginWrapper] [Docs_CogenTestTest_timerTimertest_prioScheduler Scheduler] [Docs_CogenCoreSchedulersTimeout Timeout] ====
 
 = Module: schedulers =
-
+Scheduling framework.
 
 == Classes ==
 

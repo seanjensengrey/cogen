@@ -5,7 +5,7 @@
 ==== Classes: [Docs_CogenCorePollersEpollpoller EpollPoller] [Docs_CogenCorePollersKqueuepoller KQueuePoller] [Docs_CogenCorePollersPoller Poller] [Docs_CogenCorePollersSelectpoller SelectPoller] ====
 
 = Module: pollers =
-
+Network polling code.
 
 == Classes ==
 

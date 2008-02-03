@@ -92,7 +92,7 @@ signature: {{{run_op(self, op)}}}
 
 === {{{running}}} ===
 
-{{{<property object at 0x00B594B8>}}}
+{{{<property object at 0x00B56148>}}}
 
 === {{{state}}} ===
 

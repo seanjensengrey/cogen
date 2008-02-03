@@ -6,7 +6,7 @@
 ==== Functions: [#debug debug] ====
 
 = Module: util =
-
+Mischelaneous or common.
 
 == Classes ==
 

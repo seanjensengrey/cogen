@@ -5,7 +5,7 @@
 ==== Classes: [Docs_CogenCoreEventsAddcoro AddCoro] [Docs_CogenCoreEventsCall Call] [Docs_CogenCoreEventsConnectionclosed ConnectionClosed] [Docs_CogenCoreEventsJoin Join] [Docs_CogenCoreEventsOperationtimeout OperationTimeout] [Docs_CogenCoreEventsSignal Signal] [Docs_CogenCoreEventsSleep Sleep] [Docs_CogenCoreEventsWaitforsignal WaitForSignal] ====
 
 = Module: events =
-
+Base events (coroutine operations) and coroutine exceptions.
 
 == Classes ==
 

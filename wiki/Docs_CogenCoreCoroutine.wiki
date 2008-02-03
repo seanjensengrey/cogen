@@ -6,7 +6,7 @@
 ==== Functions: [#coroutine coroutine] ====
 
 = Module: coroutine =
-
+Coroutine related boilerplate and wrappers.
 
 == Classes ==
 

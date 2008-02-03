@@ -68,31 +68,31 @@ m.run()
 == Modules ==
 
 === [Docs_CogenCoreCoroutine coroutine] ===
-
+Coroutine related boilerplate and wrappers.
 
 
 === [Docs_CogenCoreEvents events] ===
-
+Base events (coroutine operations) and coroutine exceptions.
 
 
 === [Docs_CogenCorePollers pollers] ===
-
+Network polling code.
 
 
 === [Docs_CogenCoreQueue queue] ===
-
+Port of Queue.Queue from the python standard library.
 
 
 === [Docs_CogenCoreSchedulers schedulers] ===
-
+Scheduling framework.
 
 
 === [Docs_CogenCoreSockets sockets] ===
-
+Socket-only coroutine operations and `Socket` wrapper.
 
 
 === [Docs_CogenCoreUtil util] ===
-
+Mischelaneous or common.
 
 
 
