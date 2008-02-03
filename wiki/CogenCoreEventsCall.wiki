@@ -14,7 +14,7 @@ Usage:
 result = yield events.Call(mycoro, args=, kwargs=, prio=)
 }}}
 
-  - if `prio` is set the new coroutine will be added in the top of the 
+  * if `prio` is set the new coroutine will be added in the top of the 
   scheduler queue
 
 == Methods ==

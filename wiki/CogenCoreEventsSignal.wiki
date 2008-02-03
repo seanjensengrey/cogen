@@ -14,7 +14,7 @@ Usage:
 nr = yield events.Signal(name, value)
 }}}
 
-  - nr - the number of coroutines woken up
+  * nr - the number of coroutines woken up
 
 == Methods ==
 

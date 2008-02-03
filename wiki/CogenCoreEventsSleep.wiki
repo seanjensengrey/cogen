@@ -12,13 +12,13 @@ Usage:
 yield events.Sleep(time_object)
 }}}
 
-  - timeoject - a datetime or timedelta object, or a number of seconds
+  * timeoject - a datetime or timedelta object, or a number of seconds
     
 {{{
 yield events.Sleep(timestamp=ts)
 }}}
 
-  - ts - a timestamp
+  * ts - a timestamp
 
 == Methods ==
 

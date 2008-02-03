@@ -13,13 +13,13 @@ python standard library Queue.Queue class, but with a coroutine context:
 
 So, to use this you write someting like:
 
-.. sourcecode:: python
-    
-    @coroutine
-    def foo():
-        q = cogen.core.queue.Queue()
-        yield q.put(123)
-        val = yield q.get()
+{{{
+@coroutine
+def foo():
+    q = cogen.core.queue.Queue()
+    yield q.put(123)
+    val = yield q.get()
+}}}
 
 == Methods ==
 

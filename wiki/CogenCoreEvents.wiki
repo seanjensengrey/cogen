@@ -27,7 +27,7 @@ Usage:
 result = yield events.Call(mycoro, args=, kwargs=, prio=)
 }}}
 
-  - if `prio` is set the new coroutine will be added in the top of the 
+  * if `prio` is set the new coroutine will be added in the top of the 
   scheduler queue
 
 
@@ -69,7 +69,7 @@ Usage:
 nr = yield events.Signal(name, value)
 }}}
 
-  - nr - the number of coroutines woken up
+  * nr - the number of coroutines woken up
 
 
 === [CogenCoreEventsSleep Sleep] ===
@@ -79,13 +79,13 @@ Usage:
 yield events.Sleep(time_object)
 }}}
 
-  - timeoject - a datetime or timedelta object, or a number of seconds
+  * timeoject - a datetime or timedelta object, or a number of seconds
     
 {{{
 yield events.Sleep(timestamp=ts)
 }}}
 
-  - ts - a timestamp
+  * ts - a timestamp
 
 
 === [CogenCoreEventsWaitforsignal WaitForSignal] ===
