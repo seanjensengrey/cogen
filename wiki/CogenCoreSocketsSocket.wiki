@@ -167,11 +167,11 @@ of the socket (flag == SHUT_WR), or both ends (flag == SHUT_RDWR).
 
 === {{{family}}} ===
 
-{{{<property object at 0x00B44198>}}}
+{{{<property object at 0x00B46940>}}}
 
 === {{{proto}}} ===
 
-{{{<property object at 0x00B441E8>}}}
+{{{<property object at 0x00B46990>}}}
 
 === {{{recv}}} ===
 
@@ -199,5 +199,5 @@ of the socket (flag == SHUT_WR), or both ends (flag == SHUT_RDWR).
 
 === {{{type}}} ===
 
-{{{<property object at 0x00B441C0>}}}
+{{{<property object at 0x00B46968>}}}
 
