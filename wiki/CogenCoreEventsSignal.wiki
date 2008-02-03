@@ -20,6 +20,7 @@ nr = yield events.Signal(name, value)
 
 === {{{__init__}}} ===
 signature: {{{__init__(self, name, value=None, recipients=0, **kws)}}}
+
 All the coroutines waiting for this object will be added back in the
 active coroutine queue.
 

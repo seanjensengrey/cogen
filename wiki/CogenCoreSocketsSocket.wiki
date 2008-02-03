@@ -13,6 +13,7 @@
 
 === {{{accept}}} ===
 signature: {{{accept(self)}}}
+
 accept() -> (socket object, address info)
 
 Wait for an incoming connection.  Return a new socket representing the
@@ -21,6 +22,7 @@ info is a pair (hostaddr, port).
 
 === {{{bind}}} ===
 signature: {{{bind(self, *args)}}}
+
 bind(address)
 
 Bind the socket to a local address.  For IP sockets, the address is a
@@ -29,12 +31,14 @@ sockets the address is a tuple (ifname, proto [,pkttype [,hatype]])
 
 === {{{close}}} ===
 signature: {{{close(self)}}}
+
 close()
 
 Close the socket.  It cannot be used after this call.
 
 === {{{connect}}} ===
 signature: {{{connect(self, *args)}}}
+
 connect(address)
 
 Connect the socket to a remote address.  For IP sockets, the address
@@ -42,6 +46,7 @@ is a pair (host, port).
 
 === {{{connect_ex}}} ===
 signature: {{{connect_ex(self, *args)}}}
+
 connect_ex(address) -> errno
 
 This is like connect(address), but returns an error code (the errno value)
@@ -49,18 +54,21 @@ instead of raising an exception when an error occurs.
 
 === {{{dup}}} ===
 signature: {{{dup(self)}}}
+
 dup() -> socket object
 
 Return a new socket object connected to the same system resource.
 
 === {{{fileno}}} ===
 signature: {{{fileno(self, *args)}}}
+
 fileno() -> integer
 
 Return the integer file descriptor of the socket.
 
 === {{{getpeername}}} ===
 signature: {{{getpeername(self, *args)}}}
+
 getpeername() -> address info
 
 Return the address of the remote endpoint.  For IP sockets, the address
@@ -68,6 +76,7 @@ info is a pair (hostaddr, port).
 
 === {{{getsockname}}} ===
 signature: {{{getsockname(self, *args)}}}
+
 getsockname() -> address info
 
 Return the address of the local endpoint.  For IP sockets, the address
@@ -75,6 +84,7 @@ info is a pair (hostaddr, port).
 
 === {{{getsockopt}}} ===
 signature: {{{getsockopt(self, *args)}}}
+
 getsockopt(level, option[, buffersize]) -> value
 
 Get a socket option.  See the Unix manual for level and option.
@@ -83,6 +93,7 @@ string of that length; otherwise it is an integer.
 
 === {{{gettimeout}}} ===
 signature: {{{gettimeout(self, *args)}}}
+
 gettimeout() -> timeout
 
 Returns the timeout in floating seconds associated with socket 
@@ -91,6 +102,7 @@ operations are disabled.
 
 === {{{listen}}} ===
 signature: {{{listen(self, *args)}}}
+
 listen(backlog)
 
 Enable a server to accept connections.  The backlog argument must be at
@@ -99,6 +111,7 @@ will allow before refusing new connections.
 
 === {{{makefile}}} ===
 signature: {{{makefile(self, mode='r', bufsize=-1)}}}
+
 makefile([mode[, bufsize]]) -> file object
 
 Return a regular file object corresponding to the socket.  The mode
@@ -106,6 +119,7 @@ and bufsize arguments are as for the built-in open() function.
 
 === {{{sendall}}} ===
 signature: {{{sendall(self, *args)}}}
+
 sendall(data[, flags])
 
 Send a data string to the socket.  For the optional flags
@@ -115,6 +129,7 @@ to tell how much data has been sent.
 
 === {{{setblocking}}} ===
 signature: {{{setblocking(self, *args)}}}
+
 setblocking(flag)
 
 Set the socket to blocking (flag is true) or non-blocking (false).
@@ -123,6 +138,7 @@ setblocking(False) is equivalent to settimeout(0.0).
 
 === {{{setsockopt}}} ===
 signature: {{{setsockopt(self, *args)}}}
+
 setsockopt(level, option, value)
 
 Set a socket option.  See the Unix manual for level and option.
@@ -130,6 +146,7 @@ The value argument can either be an integer or a string.
 
 === {{{settimeout}}} ===
 signature: {{{settimeout(self, *args)}}}
+
 settimeout(timeout)
 
 Set a timeout on socket operations.  'timeout' can be a float,
@@ -139,6 +156,7 @@ Setting a timeout of zero is the same as setblocking(0).
 
 === {{{shutdown}}} ===
 signature: {{{shutdown(self, *args)}}}
+
 shutdown(flag)
 
 Shut down the reading side of the socket (flag == SHUT_RD), the writing side

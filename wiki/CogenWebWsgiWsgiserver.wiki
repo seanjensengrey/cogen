@@ -26,10 +26,12 @@ An HTTP server for WSGI.
 
 === {{{bind}}} ===
 signature: {{{bind(self, family, type, proto=0)}}}
+
 Create (or recreate) the actual socket object.
 
 === {{{serve}}} ===
 signature: {{{serve(*args, **kws)}}}
+
 Run the server forever.
 
 

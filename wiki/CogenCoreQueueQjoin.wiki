@@ -13,12 +13,14 @@ A operation for the queue join call.
 
 === {{{finalize}}} ===
 signature: {{{finalize(self)}}}
+
 Called just before the Coroutine wrapper passes the operation back
 in the generator. Return value is the value actualy sent in the 
 generator.
 
 === {{{process}}} ===
 signature: {{{process(self, sched, coro)}}}
+
 
 
 

@@ -21,6 +21,7 @@ coroutine
 
 === {{{coroutine}}} ===
 signature: {{{coroutine(func)}}}
+
 A decorator function for generators.
 Example:
 

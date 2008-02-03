@@ -16,26 +16,32 @@ The operations are not done here, they are done in the socket ops instances.
 signature: {{{add(self, op, coro)}}}
 
 
+
 === {{{handle_errored}}} ===
 signature: {{{handle_errored(self, desc)}}}
 
 
+
 === {{{run_once}}} ===
 signature: {{{run_once(self, fdesc, waiting_ops)}}}
+
 Run a operation, remove it from the poller and return the result. 
 Called from the main poller loop. 
 
 === {{{run_operation}}} ===
 signature: {{{run_operation(self, op)}}}
+
 Run the socket op and return result or exception. 
 
 === {{{run_or_add}}} ===
 signature: {{{run_or_add(self, op, coro)}}}
+
 Perform operation or add the operation in the poller if socket isn't
 ready. Called from the scheduller. 
 
 === {{{waiting_op}}} ===
 signature: {{{waiting_op(self, testcoro)}}}
+
 
 
 

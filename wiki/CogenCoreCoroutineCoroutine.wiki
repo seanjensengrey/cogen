@@ -17,20 +17,25 @@ coroutine
 signature: {{{add_waiter(self, coro)}}}
 
 
+
 === {{{finalize}}} ===
 signature: {{{finalize(self)}}}
+
 
 
 === {{{handle_error}}} ===
 signature: {{{handle_error(self)}}}
 
 
+
 === {{{remove_waiter}}} ===
 signature: {{{remove_waiter(self, coro)}}}
 
 
+
 === {{{run_op}}} ===
 signature: {{{run_op(self, op)}}}
+
 ~ @debug(0)
 
 
