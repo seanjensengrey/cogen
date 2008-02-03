@@ -1,0 +1,16 @@
+#summary cogen.test.base.NoPrioMixIn Documentation
+#labels Documentation
+
+==== Parent: [CogenTestBase cogen.test.base] ====
+==== Attributes: [#STATE_NEED_INIT STATE_NEED_INIT] ====
+
+= Class: NoPrioMixIn =
+
+
+
+== Attributes ==
+
+=== {{{STATE_NEED_INIT}}} ===
+
+{{{0}}}
+

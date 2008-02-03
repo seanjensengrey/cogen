@@ -1,0 +1,77 @@
+#summary cogen.core.sockets Documentation
+#labels Documentation
+
+==== Parent: [CogenCore cogen.core] ====
+==== Classes: [CogenCoreSocketsAccept Accept] [CogenCoreSocketsConnect Connect] [CogenCoreSocketsRead Read] [CogenCoreSocketsReadall ReadAll] [CogenCoreSocketsReadline ReadLine] [CogenCoreSocketsSendfile SendFile] [CogenCoreSocketsSocket Socket] [CogenCoreSocketsWrite Write] [CogenCoreSocketsWriteall WriteAll] ====
+
+= Module: sockets =
+
+
+== Classes ==
+
+=== [CogenCoreSocketsAccept Accept] ===
+Returns a (conn, addr) tuple when the operation completes.
+
+
+=== [CogenCoreSocketsConnect Connect] ===
+Connect to the given `addr` using `sock`.
+
+
+=== [CogenCoreSocketsRead Read] ===
+`len` is max read size, BUT, if if there are buffers from ReadLine 
+return them first.
+Example usage:
+
+{{{
+yield sockets.Read(socket_object, buffer_length)
+}}}
+
+
+=== [CogenCoreSocketsReadall ReadAll] ===
+Run this operator till we've read `len` bytes.
+
+
+=== [CogenCoreSocketsReadline ReadLine] ===
+Run this operator till we read a newline (\n) or we have a overflow.
+
+`len` is the max size for a line
+
+
+=== [CogenCoreSocketsSendfile SendFile] ===
+Uses underling OS sendfile call or a regular memory copy operation if 
+there is no sendfile.
+You can use this as a WriteAll if you specify the length.
+Usage:
+    
+{{{
+yield sockets.SendFile(, , 0) 
+    # will send till send operations return 0
+    
+yield sockets.SendFile(, , 0, blocksize=0)
+    # there will be only one send operation (if successfull)
+    # that meas the whole file will be read in memory if there is 
+    #no sendfile
+    
+yield sockets.SendFile(, , 0, )
+    # this will hang if we can'self read  bytes 
+    #from the file
+}}}
+
+
+=== [CogenCoreSocketsSocket Socket] ===
+This class just inherits good old socket.socket, sets nonblocking mode and
+add some attributes we need:
+  * rl_pending - for unchecked for linebreaks buffer
+  * rl_list - for checked for linebreaks buffers
+  * rl_list_sz - a cached size of the summed sizes of rl_list buffers
+
+
+=== [CogenCoreSocketsWrite Write] ===
+Write the buffer to the socket and return the number of bytes written.
+
+
+=== [CogenCoreSocketsWriteall WriteAll] ===
+Run this operation till all the bytes have been written.
+
+
+

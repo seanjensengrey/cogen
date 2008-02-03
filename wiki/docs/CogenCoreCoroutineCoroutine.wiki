@@ -1,0 +1,104 @@
+#summary cogen.core.coroutine.Coroutine Documentation
+#labels Documentation
+
+==== Parent: [CogenCoreCoroutine cogen.core.coroutine] ====
+==== Methods: [#add_waiter add_waiter] [#finalize finalize] [#handle_error handle_error] [#remove_waiter remove_waiter] [#run_op run_op] ====
+==== Attributes: [#STATE_COMPLETED STATE_COMPLETED] [#STATE_FAILED STATE_FAILED] [#STATE_NEED_INIT STATE_NEED_INIT] [#STATE_RUNNING STATE_RUNNING] [#caller caller] [#coro coro] [#exception exception] [#f_args f_args] [#f_kws f_kws] [#name name] [#prio prio] [#result result] [#running running] [#state state] [#waiters waiters] ====
+
+= Class: Coroutine =
+
+We need a coroutine wrapper for generators and function alike because
+we want to run functions that don'self return generators just like a 
+coroutine 
+
+== Methods ==
+
+=== {{{add_waiter}}} ===
+signature: {{{add_waiter(self, coro)}}}
+
+
+
+=== {{{finalize}}} ===
+signature: {{{finalize(self)}}}
+
+
+
+=== {{{handle_error}}} ===
+signature: {{{handle_error(self)}}}
+
+
+
+=== {{{remove_waiter}}} ===
+signature: {{{remove_waiter(self, coro)}}}
+
+
+
+=== {{{run_op}}} ===
+signature: {{{run_op(self, op)}}}
+
+~ @debug(0)
+
+
+
+== Attributes ==
+
+=== {{{STATE_COMPLETED}}} ===
+
+{{{2}}}
+
+=== {{{STATE_FAILED}}} ===
+
+{{{3}}}
+
+=== {{{STATE_NEED_INIT}}} ===
+
+{{{0}}}
+
+=== {{{STATE_RUNNING}}} ===
+
+{{{1}}}
+
+=== {{{caller}}} ===
+
+{{{<member 'caller' of 'Coroutine' objects>}}}
+
+=== {{{coro}}} ===
+
+{{{<member 'coro' of 'Coroutine' objects>}}}
+
+=== {{{exception}}} ===
+
+{{{<member 'exception' of 'Coroutine' objects>}}}
+
+=== {{{f_args}}} ===
+
+{{{<member 'f_args' of 'Coroutine' objects>}}}
+
+=== {{{f_kws}}} ===
+
+{{{<member 'f_kws' of 'Coroutine' objects>}}}
+
+=== {{{name}}} ===
+
+{{{<member 'name' of 'Coroutine' objects>}}}
+
+=== {{{prio}}} ===
+
+{{{<member 'prio' of 'Coroutine' objects>}}}
+
+=== {{{result}}} ===
+
+{{{<member 'result' of 'Coroutine' objects>}}}
+
+=== {{{running}}} ===
+
+{{{<property object at 0x00B594B8>}}}
+
+=== {{{state}}} ===
+
+{{{<member 'state' of 'Coroutine' objects>}}}
+
+=== {{{waiters}}} ===
+
+{{{<member 'waiters' of 'Coroutine' objects>}}}
+
