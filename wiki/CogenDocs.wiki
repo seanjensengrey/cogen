@@ -16,5 +16,4 @@
 === [CogenDocsWikitheme wikitheme] ===
 
 
--------
-|| generated with [Apydia http://apydia.ematia.de/] ||
+|| generated with [http://apydia.ematia.de/ Apydia] ||
