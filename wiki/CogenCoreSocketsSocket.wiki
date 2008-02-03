@@ -7,7 +7,10 @@
 
 = Class: Socket =
 
-
+We need some additional buffers and stuff:
+  - rl_pending - for unchecked for linebreaks buffer
+  - rl_list - for checked for linebreaks buffers
+  - rl_list_sz - a cached size of the summed sizes of rl_list buffers
 
 == Methods ==
 
@@ -167,11 +170,11 @@ of the socket (flag == SHUT_WR), or both ends (flag == SHUT_RDWR).
 
 === {{{family}}} ===
 
-{{{<property object at 0x00B46940>}}}
+{{{<property object at 0x00B474E0>}}}
 
 === {{{proto}}} ===
 
-{{{<property object at 0x00B46990>}}}
+{{{<property object at 0x00B47530>}}}
 
 === {{{recv}}} ===
 
@@ -199,5 +202,5 @@ of the socket (flag == SHUT_WR), or both ends (flag == SHUT_RDWR).
 
 === {{{type}}} ===
 
-{{{<property object at 0x00B46968>}}}
+{{{<property object at 0x00B47508>}}}
 
