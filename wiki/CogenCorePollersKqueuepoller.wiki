@@ -2,14 +2,23 @@
 #labels Documentation
 
 ==== Parent: [CogenCorePollers cogen.core.pollers] ====
-==== Methods: [#add add] [#handle_errored handle_errored] [#remove remove] [#run run] [#run_once run_once] [#run_operation run_operation] [#run_or_add run_or_add] [#waiting_op waiting_op] ====
-==== Attributes: [#RESOLUTION RESOLUTION] [#mRESOLUTION mRESOLUTION] [#nRESOLUTION nRESOLUTION] ====
+==== Methods: [#__init__ __init__] [#__len__ __len__] [#add add] [#handle_errored handle_errored] [#remove remove] [#run run] [#run_once run_once] [#run_operation run_operation] [#run_or_add run_or_add] [#waiting_op waiting_op] ====
 
 = Class: KQueuePoller =
 
 
 
 == Methods ==
+
+=== {{{__init__}}} ===
+signature: {{{__init__(self, scheduler, default_size=1024)}}}
+
+
+
+=== {{{__len__}}} ===
+signature: {{{__len__(self)}}}
+
+
 
 === {{{add}}} ===
 signature: {{{add(self, op, coro)}}}
@@ -20,7 +29,7 @@ signature: {{{add(self, op, coro)}}}
 === {{{handle_errored}}} ===
 signature: {{{handle_errored(self, desc)}}}
 
-
+Handles descriptors that have errors.
 
 === {{{remove}}} ===
 signature: {{{remove(self, op, coro)}}}
@@ -56,20 +65,6 @@ ready. Called from the scheduller.
 === {{{waiting_op}}} ===
 signature: {{{waiting_op(self, testcoro)}}}
 
+Returns the registered operation for some specified coroutine.
 
-
-
-== Attributes ==
-
-=== {{{RESOLUTION}}} ===
-
-{{{0.02}}}
-
-=== {{{mRESOLUTION}}} ===
-
-{{{20.0}}}
-
-=== {{{nRESOLUTION}}} ===
-
-{{{20000000.0}}}
 

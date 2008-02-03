@@ -9,15 +9,15 @@
 
 == Classes ==
 
-=== [CogenTestTest_timerTimertest_noprio {{{TimerTest_NoPrio}}}] ===
+=== [CogenTestTest_timerTimertest_noprio TimerTest_NoPrio] ===
 
 
 
-=== [CogenTestTest_timerTimertest_prio {{{TimerTest_Prio}}}] ===
+=== [CogenTestTest_timerTimertest_prio TimerTest_Prio] ===
 
 
 
-=== [CogenTestTest_timerTimer_mixin {{{Timer_MixIn}}}] ===
+=== [CogenTestTest_timerTimer_mixin Timer_MixIn] ===
 
 
 

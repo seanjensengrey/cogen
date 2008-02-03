@@ -2,8 +2,7 @@
 #labels Documentation
 
 ==== Parent: [CogenCorePollers cogen.core.pollers] ====
-==== Methods: [#add add] [#handle_errored handle_errored] [#run_once run_once] [#run_operation run_operation] [#run_or_add run_or_add] [#waiting_op waiting_op] ====
-==== Attributes: [#RESOLUTION RESOLUTION] [#mRESOLUTION mRESOLUTION] [#nRESOLUTION nRESOLUTION] ====
+==== Methods: [#__init__ __init__] [#__len__ __len__] [#add add] [#handle_errored handle_errored] [#remove remove] [#run run] [#run_once run_once] [#run_operation run_operation] [#run_or_add run_or_add] [#waiting_op waiting_op] ====
 
 = Class: Poller =
 
@@ -12,15 +11,39 @@ The operations are not done here, they are done in the socket ops instances.
 
 == Methods ==
 
+=== {{{__init__}}} ===
+signature: {{{__init__(self, scheduler)}}}
+
+
+
+=== {{{__len__}}} ===
+signature: {{{__len__(self)}}}
+
+Returns number of waiting operations registered in the poller.
+
 === {{{add}}} ===
 signature: {{{add(self, op, coro)}}}
 
-
+Implemented by the child class that actualy implements the polling.
+Registers an operation.
 
 === {{{handle_errored}}} ===
 signature: {{{handle_errored(self, desc)}}}
 
+Handles descriptors that have errors.
 
+=== {{{remove}}} ===
+signature: {{{remove(self, op, coro)}}}
+
+Implemented by the child class that actualy implements the polling.
+Removes a operation.
+
+=== {{{run}}} ===
+signature: {{{run(self, timeout=0)}}}
+
+Implemented by the child class that actualy implements the polling.
+Calls the underlying OS polling mechanism and runs the operations for
+any ready descriptor.
 
 === {{{run_once}}} ===
 signature: {{{run_once(self, fdesc, waiting_ops)}}}
@@ -42,20 +65,6 @@ ready. Called from the scheduller.
 === {{{waiting_op}}} ===
 signature: {{{waiting_op(self, testcoro)}}}
 
+Returns the registered operation for some specified coroutine.
 
-
-
-== Attributes ==
-
-=== {{{RESOLUTION}}} ===
-
-{{{0.02}}}
-
-=== {{{mRESOLUTION}}} ===
-
-{{{20.0}}}
-
-=== {{{nRESOLUTION}}} ===
-
-{{{20000000.0}}}
 

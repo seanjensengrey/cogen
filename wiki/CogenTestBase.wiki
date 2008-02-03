@@ -9,11 +9,11 @@
 
 == Classes ==
 
-=== [CogenTestBaseNopriomixin {{{NoPrioMixIn}}}] ===
+=== [CogenTestBaseNopriomixin NoPrioMixIn] ===
 
 
 
-=== [CogenTestBasePriomixin {{{PrioMixIn}}}] ===
+=== [CogenTestBasePriomixin PrioMixIn] ===
 
 
 

@@ -2,14 +2,23 @@
 #labels Documentation
 
 ==== Parent: [CogenCorePollers cogen.core.pollers] ====
-==== Methods: [#add add] [#handle_errored handle_errored] [#handle_events handle_events] [#remove remove] [#run run] [#run_once run_once] [#run_operation run_operation] [#run_or_add run_or_add] [#waiting_op waiting_op] ====
-==== Attributes: [#RESOLUTION RESOLUTION] [#mRESOLUTION mRESOLUTION] [#nRESOLUTION nRESOLUTION] ====
+==== Methods: [#__init__ __init__] [#__len__ __len__] [#add add] [#handle_errored handle_errored] [#handle_events handle_events] [#remove remove] [#run run] [#run_once run_once] [#run_operation run_operation] [#run_or_add run_or_add] [#waiting_op waiting_op] ====
 
 = Class: SelectPoller =
 
 
 
 == Methods ==
+
+=== {{{__init__}}} ===
+signature: {{{__init__(self, scheduler)}}}
+
+
+
+=== {{{__len__}}} ===
+signature: {{{__len__(self)}}}
+
+Returns number of waiting operations registered in the poller.
 
 === {{{add}}} ===
 signature: {{{add(self, op, coro)}}}
@@ -19,7 +28,7 @@ signature: {{{add(self, op, coro)}}}
 === {{{handle_errored}}} ===
 signature: {{{handle_errored(self, desc)}}}
 
-
+Handles descriptors that have errors.
 
 === {{{handle_events}}} ===
 signature: {{{handle_events(self, ready, waiting_ops)}}}
@@ -59,20 +68,6 @@ ready. Called from the scheduller.
 === {{{waiting_op}}} ===
 signature: {{{waiting_op(self, testcoro)}}}
 
+Returns the registered operation for some specified coroutine.
 
-
-
-== Attributes ==
-
-=== {{{RESOLUTION}}} ===
-
-{{{0.02}}}
-
-=== {{{mRESOLUTION}}} ===
-
-{{{20.0}}}
-
-=== {{{nRESOLUTION}}} ===
-
-{{{20000000.0}}}
 

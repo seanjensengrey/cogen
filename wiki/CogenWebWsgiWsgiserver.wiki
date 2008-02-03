@@ -43,7 +43,7 @@ Run the server forever.
 
 === {{{bind_addr}}} ===
 
-{{{<property object at 0x00C341E8>}}}
+{{{<property object at 0x00C36440>}}}
 
 === {{{environ}}} ===
 

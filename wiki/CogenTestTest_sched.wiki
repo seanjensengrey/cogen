@@ -9,15 +9,15 @@
 
 == Classes ==
 
-=== [CogenTestTest_schedSchedulertest_mixin {{{SchedulerTest_MixIn}}}] ===
+=== [CogenTestTest_schedSchedulertest_mixin SchedulerTest_MixIn] ===
 
 
 
-=== [CogenTestTest_schedSchedulertest_noprio {{{SchedulerTest_NoPrio}}}] ===
+=== [CogenTestTest_schedSchedulertest_noprio SchedulerTest_NoPrio] ===
 
 
 
-=== [CogenTestTest_schedSchedulertest_prio {{{SchedulerTest_Prio}}}] ===
+=== [CogenTestTest_schedSchedulertest_prio SchedulerTest_Prio] ===
 
 
 

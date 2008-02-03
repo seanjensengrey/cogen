@@ -9,7 +9,7 @@
 
 == Classes ==
 
-=== [CogenCoreEventsAddcoro {{{AddCoro}}}] ===
+=== [CogenCoreEventsAddcoro AddCoro] ===
 A operator for adding a coroutine in the scheduler.
 Example:
 
@@ -18,7 +18,7 @@ yield events.AddCoro(some_coro, args=(), kwargs={})
 }}}
 
 
-=== [CogenCoreEventsCall {{{Call}}}] ===
+=== [CogenCoreEventsCall Call] ===
 This will pause the current coroutine, add a new coro in the scheduler and 
 resume the callee when it returns.
 
@@ -31,11 +31,11 @@ result = yield events.Call(mycoro, args=, kwargs=, prio=)
   scheduler queue
 
 
-=== [CogenCoreEventsConnectionclosed {{{ConnectionClosed}}}] ===
+=== [CogenCoreEventsConnectionclosed ConnectionClosed] ===
 Raised when the other peer has closed connection.
 
 
-=== [CogenCoreEventsJoin {{{Join}}}] ===
+=== [CogenCoreEventsJoin Join] ===
 A operator for waiting on a coroutine. 
 Example:
 
@@ -55,12 +55,12 @@ scheduler.add(coro_a)
 }}}
 
 
-=== [CogenCoreEventsOperationtimeout {{{OperationTimeout}}}] ===
+=== [CogenCoreEventsOperationtimeout OperationTimeout] ===
 Raised when the timeout for a operation expires. The exception 
 message will be the operation
 
 
-=== [CogenCoreEventsSignal {{{Signal}}}] ===
+=== [CogenCoreEventsSignal Signal] ===
 This will resume the coroutines that where paused with WaitForSignal.
 
 Usage:
@@ -72,7 +72,7 @@ nr = yield events.Signal(name, value)
   - nr - the number of coroutines woken up
 
 
-=== [CogenCoreEventsSleep {{{Sleep}}}] ===
+=== [CogenCoreEventsSleep Sleep] ===
 Usage:
 
 {{{
@@ -88,7 +88,7 @@ yield events.Sleep(timestamp=ts)
   - ts - a timestamp
 
 
-=== [CogenCoreEventsWaitforsignal {{{WaitForSignal}}}] ===
+=== [CogenCoreEventsWaitforsignal WaitForSignal] ===
 The coroutine will resume when the same object is Signaled.
 
 

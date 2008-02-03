@@ -9,15 +9,15 @@
 
 == Classes ==
 
-=== [CogenCoreSchedulersDebugginwrapper {{{DebugginWrapper}}}] ===
+=== [CogenCoreSchedulersDebugginwrapper DebugginWrapper] ===
 
 
 
-=== [CogenTestTest_timerTimertest_prioScheduler {{{Scheduler}}}] ===
+=== [CogenTestTest_timerTimertest_prioScheduler Scheduler] ===
 
 
 
-=== [CogenCoreSchedulersTimeout {{{Timeout}}}] ===
+=== [CogenCoreSchedulersTimeout Timeout] ===
 
 
 
