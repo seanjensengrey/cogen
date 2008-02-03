@@ -1,0 +1,93 @@
+#summary cogen.docs.theme.ApydiaStyle Documentation
+#labels Documentation
+
+==== Parent: [CogenDocsTheme cogen.docs.theme] ====
+==== Attributes: [#background_color background_color] [#default_style default_style] [#styles styles] ====
+
+= Class: ApydiaStyle =
+
+Style for Pygments source highlighter
+
+
+== Attributes ==
+
+=== {{{background_color}}} ===
+
+{{{'#ffffff'}}}
+
+=== {{{default_style}}} ===
+
+{{{''}}}
+
+=== {{{styles}}} ===
+
+{{{{Token: '',
+ Token.Comment: 'italic #999',
+ Token.Comment.Multiline: '',
+ Token.Comment.Preproc: '',
+ Token.Comment.Single: '',
+ Token.Comment.Special: '',
+ Token.Error: 'bg:#FFFFFF border:#F04 #802',
+ Token.Generic: '',
+ Token.Generic.Deleted: '',
+ Token.Generic.Emph: '',
+ Token.Generic.Error: '',
+ Token.Generic.Heading: '',
+ Token.Generic.Inserted: '',
+ Token.Generic.Output: '',
+ Token.Generic.Prompt: '',
+ Token.Generic.Strong: '',
+ Token.Generic.Subheading: '',
+ Token.Generic.Traceback: '',
+ Token.Keyword: '#5E80E6',
+ Token.Keyword.Constant: '',
+ Token.Keyword.Declaration: '',
+ Token.Keyword.Pseudo: '',
+ Token.Keyword.Reserved: '',
+ Token.Keyword.Type: '',
+ Token.Literal: '',
+ Token.Literal.Date: '',
+ Token.Literal.Number: '',
+ Token.Literal.Number.Float: '',
+ Token.Literal.Number.Hex: '',
+ Token.Literal.Number.Integer: '',
+ Token.Literal.Number.Integer.Long: '',
+ Token.Literal.Number.Oct: '',
+ Token.Literal.String: 'bg:#F8F8F8 #444',
+ Token.Literal.String.Backtick: '',
+ Token.Literal.String.Char: '',
+ Token.Literal.String.Doc: '',
+ Token.Literal.String.Double: '',
+ Token.Literal.String.Escape: '',
+ Token.Literal.String.Heredoc: '',
+ Token.Literal.String.Interpol: '',
+ Token.Literal.String.Other: '',
+ Token.Literal.String.Regex: '',
+ Token.Literal.String.Single: '',
+ Token.Literal.String.Symbol: '',
+ Token.Name: '#000',
+ Token.Name.Attribute: '',
+ Token.Name.Builtin: '',
+ Token.Name.Builtin.Pseudo: '',
+ Token.Name.Class: '#E85833',
+ Token.Name.Constant: '',
+ Token.Name.Decorator: '',
+ Token.Name.Entity: '',
+ Token.Name.Exception: '',
+ Token.Name.Function: '#E85833',
+ Token.Name.Label: '',
+ Token.Name.Namespace: '',
+ Token.Name.Other: '',
+ Token.Name.Property: '',
+ Token.Name.Tag: '',
+ Token.Name.Variable: '',
+ Token.Name.Variable.Class: '',
+ Token.Name.Variable.Global: '',
+ Token.Name.Variable.Instance: '',
+ Token.Operator: '#E85833',
+ Token.Operator.Word: '',
+ Token.Other: '',
+ Token.Punctuation: '#444',
+ Token.Text: '',
+ Token.Text.Whitespace: ''}}}}
+

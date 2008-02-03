@@ -1,0 +1,20 @@
+#summary cogen.core.queue.Empty Documentation
+#labels Documentation
+
+==== Parent: [CogenCoreQueue cogen.core.queue] ====
+==== Attributes: [#args args] [#message message] ====
+
+= Class: Empty =
+
+
+
+== Attributes ==
+
+=== {{{args}}} ===
+
+{{{<attribute 'args' of 'exceptions.BaseException' objects>}}}
+
+=== {{{message}}} ===
+
+{{{<member 'message' of 'exceptions.BaseException' objects>}}}
+

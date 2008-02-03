@@ -1,0 +1,18 @@
+#summary cogen.core.events.WaitForSignal Documentation
+#labels Documentation
+
+==== Parent: [CogenCoreEvents cogen.core.events] ====
+==== Methods: [#__init__ __init__] ====
+
+= Class: WaitForSignal =
+
+The coroutine will resume when the same object is Signaled.
+
+== Methods ==
+
+=== {{{__init__}}} ===
+signature: {{{__init__(self, name, **kws)}}}
+
+
+
+

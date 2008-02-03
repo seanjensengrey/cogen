@@ -1,0 +1,29 @@
+#summary cogen.core.pollers Documentation
+#labels Documentation
+
+==== Parent: [CogenCore cogen.core] ====
+==== Classes: [CogenCorePollersEpollpoller EpollPoller] [CogenCorePollersKqueuepoller KQueuePoller] [CogenCorePollersPoller Poller] [CogenCorePollersSelectpoller SelectPoller] ====
+
+= Module: pollers =
+
+
+== Classes ==
+
+=== [CogenCorePollersEpollpoller EpollPoller] ===
+
+
+
+=== [CogenCorePollersKqueuepoller KQueuePoller] ===
+
+
+
+=== [CogenCorePollersPoller Poller] ===
+A poller just checks if there are ready-sockets for the operations.
+The operations are not done here, they are done in the socket ops instances.
+
+
+=== [CogenCorePollersSelectpoller SelectPoller] ===
+
+
+
+
