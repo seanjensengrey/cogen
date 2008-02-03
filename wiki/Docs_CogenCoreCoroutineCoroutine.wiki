@@ -8,7 +8,7 @@
 = Class: Coroutine =
 
 We need a coroutine wrapper for generators and function alike because
-we want to run functions that don'self return generators just like a 
+we want to run functions that don't return generators just like a
 coroutine 
 
 == Methods ==
@@ -92,7 +92,7 @@ signature: {{{run_op(self, op)}}}
 
 === {{{running}}} ===
 
-{{{<property object at 0x00B56148>}}}
+{{{<property object at 0x00B56FA8>}}}
 
 === {{{state}}} ===
 

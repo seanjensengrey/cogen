@@ -42,7 +42,7 @@ This wsgi server is a single threaded, single process server that interleaves
 the iterations of the wsgi apps - I could add a threadpool for blocking apps in 
 the future.
 
-If you don'self return iterators from apps and return lists you'll get, at most,
+If you don't return iterators from apps and return lists you'll get, at most,
 the performance of a server that processes requests sequentialy.
 
 On the other hand this server has coroutine extensions that suppose to support 

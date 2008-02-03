@@ -53,7 +53,7 @@ yield sockets.SendFile(, , 0, blocksize=0)
     #no sendfile
     
 yield sockets.SendFile(, , 0, )
-    # this will hang if we can'self read  bytes 
+    # this will hang if we can't read  bytes
     #from the file
 }}}
 
