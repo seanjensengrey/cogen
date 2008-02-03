@@ -1,9 +1,0 @@
-#summary cogen.web.async.COGENOperationCall Documentation
-#labels Documentation
-
-==== Parent: [Api_CogenWebAsync cogen.web.async] ====
-
-= Class: COGENOperationCall =
-
-
-

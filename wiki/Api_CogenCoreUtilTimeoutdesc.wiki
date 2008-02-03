@@ -1,9 +1,0 @@
-#summary cogen.core.util.TimeoutDesc Documentation
-#labels Documentation
-
-==== Parent: [Api_CogenCoreUtil cogen.core.util] ====
-
-= Class: TimeoutDesc =
-
-
-
