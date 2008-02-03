@@ -12,40 +12,40 @@
 
 == Classes ==
 
-=== AssertionError ===
+=== {{{AssertionError}}} ===
 Assertion failed.
 
-=== Scheduler ===
+=== {{{Scheduler}}} ===
 
 
 
 == Methods ==
 
-=== countTestCases ===
+=== {{{countTestCases}}} ===
 signature: {{{countTestCases(self)}}}
 
 
-=== debug ===
+=== {{{debug}}} ===
 signature: {{{debug(self)}}}
 Run the test without collecting errors in a TestResult
 
-=== defaultTestResult ===
+=== {{{defaultTestResult}}} ===
 signature: {{{defaultTestResult(self)}}}
 
 
-=== fail ===
+=== {{{fail}}} ===
 signature: {{{fail(self, msg=None)}}}
 Fail immediately, with the given message.
 
-=== failIf ===
+=== {{{failIf}}} ===
 signature: {{{failIf(self, expr, msg=None)}}}
 Fail the test if the expression is true.
 
-=== failIf ===
+=== {{{failIf}}} ===
 signature: {{{failIf(self, expr, msg=None)}}}
 Fail the test if the expression is true.
 
-=== failIfAlmostEqual ===
+=== {{{failIfAlmostEqual}}} ===
 signature: {{{failIfAlmostEqual(self, first, second, places=7, msg=None)}}}
 Fail if the two objects are equal as determined by their
 difference rounded to the given number of decimal places
@@ -54,7 +54,7 @@ difference rounded to the given number of decimal places
 Note that decimal places (from zero) are usually not the same
 as significant digits (measured from the most signficant digit).
 
-=== failIfAlmostEqual ===
+=== {{{failIfAlmostEqual}}} ===
 signature: {{{failIfAlmostEqual(self, first, second, places=7, msg=None)}}}
 Fail if the two objects are equal as determined by their
 difference rounded to the given number of decimal places
@@ -63,7 +63,7 @@ difference rounded to the given number of decimal places
 Note that decimal places (from zero) are usually not the same
 as significant digits (measured from the most signficant digit).
 
-=== failIfAlmostEqual ===
+=== {{{failIfAlmostEqual}}} ===
 signature: {{{failIfAlmostEqual(self, first, second, places=7, msg=None)}}}
 Fail if the two objects are equal as determined by their
 difference rounded to the given number of decimal places
@@ -72,34 +72,34 @@ difference rounded to the given number of decimal places
 Note that decimal places (from zero) are usually not the same
 as significant digits (measured from the most signficant digit).
 
-=== failIfEqual ===
+=== {{{failIfEqual}}} ===
 signature: {{{failIfEqual(self, first, second, msg=None)}}}
 Fail if the two objects are equal as determined by the '=='
 operator.
 
-=== failIfEqual ===
+=== {{{failIfEqual}}} ===
 signature: {{{failIfEqual(self, first, second, msg=None)}}}
 Fail if the two objects are equal as determined by the '=='
 operator.
 
-=== failIfEqual ===
+=== {{{failIfEqual}}} ===
 signature: {{{failIfEqual(self, first, second, msg=None)}}}
 Fail if the two objects are equal as determined by the '=='
 operator.
 
-=== failUnless ===
+=== {{{failUnless}}} ===
 signature: {{{failUnless(self, expr, msg=None)}}}
 Fail the test unless the expression is true.
 
-=== failUnless ===
+=== {{{failUnless}}} ===
 signature: {{{failUnless(self, expr, msg=None)}}}
 Fail the test unless the expression is true.
 
-=== failUnless ===
+=== {{{failUnless}}} ===
 signature: {{{failUnless(self, expr, msg=None)}}}
 Fail the test unless the expression is true.
 
-=== failUnlessAlmostEqual ===
+=== {{{failUnlessAlmostEqual}}} ===
 signature: {{{failUnlessAlmostEqual(self, first, second, places=7, msg=None)}}}
 Fail if the two objects are unequal as determined by their
 difference rounded to the given number of decimal places
@@ -108,7 +108,7 @@ difference rounded to the given number of decimal places
 Note that decimal places (from zero) are usually not the same
 as significant digits (measured from the most signficant digit).
 
-=== failUnlessAlmostEqual ===
+=== {{{failUnlessAlmostEqual}}} ===
 signature: {{{failUnlessAlmostEqual(self, first, second, places=7, msg=None)}}}
 Fail if the two objects are unequal as determined by their
 difference rounded to the given number of decimal places
@@ -117,7 +117,7 @@ difference rounded to the given number of decimal places
 Note that decimal places (from zero) are usually not the same
 as significant digits (measured from the most signficant digit).
 
-=== failUnlessAlmostEqual ===
+=== {{{failUnlessAlmostEqual}}} ===
 signature: {{{failUnlessAlmostEqual(self, first, second, places=7, msg=None)}}}
 Fail if the two objects are unequal as determined by their
 difference rounded to the given number of decimal places
@@ -126,22 +126,22 @@ difference rounded to the given number of decimal places
 Note that decimal places (from zero) are usually not the same
 as significant digits (measured from the most signficant digit).
 
-=== failUnlessEqual ===
+=== {{{failUnlessEqual}}} ===
 signature: {{{failUnlessEqual(self, first, second, msg=None)}}}
 Fail if the two objects are unequal as determined by the '=='
 operator.
 
-=== failUnlessEqual ===
+=== {{{failUnlessEqual}}} ===
 signature: {{{failUnlessEqual(self, first, second, msg=None)}}}
 Fail if the two objects are unequal as determined by the '=='
 operator.
 
-=== failUnlessEqual ===
+=== {{{failUnlessEqual}}} ===
 signature: {{{failUnlessEqual(self, first, second, msg=None)}}}
 Fail if the two objects are unequal as determined by the '=='
 operator.
 
-=== failUnlessRaises ===
+=== {{{failUnlessRaises}}} ===
 signature: {{{failUnlessRaises(self, excClass, callableObj, *args, **kwargs)}}}
 Fail unless an exception of class excClass is thrown
 by callableObj when invoked with arguments args and keyword
@@ -150,7 +150,7 @@ thrown, it will not be caught, and the test case will be
 deemed to have suffered an error, exactly as for an
 unexpected exception.
 
-=== failUnlessRaises ===
+=== {{{failUnlessRaises}}} ===
 signature: {{{failUnlessRaises(self, excClass, callableObj, *args, **kwargs)}}}
 Fail unless an exception of class excClass is thrown
 by callableObj when invoked with arguments args and keyword
@@ -159,19 +159,19 @@ thrown, it will not be caught, and the test case will be
 deemed to have suffered an error, exactly as for an
 unexpected exception.
 
-=== id ===
+=== {{{id}}} ===
 signature: {{{id(self)}}}
 
 
-=== run ===
+=== {{{run}}} ===
 signature: {{{run(self, result=None)}}}
 
 
-=== setUp ===
+=== {{{setUp}}} ===
 signature: {{{setUp(self)}}}
 
 
-=== shortDescription ===
+=== {{{shortDescription}}} ===
 signature: {{{shortDescription(self)}}}
 Returns a one-line description of the test, or None if no
 description has been provided.
@@ -179,30 +179,30 @@ description has been provided.
 The default implementation of this method returns the first line of
 the specified test method's docstring.
 
-=== tearDown ===
+=== {{{tearDown}}} ===
 signature: {{{tearDown(self)}}}
 
 
-=== test_add_coro ===
+=== {{{test_add_coro}}} ===
 signature: {{{test_add_coro(self)}}}
 
 
-=== test_call ===
+=== {{{test_call}}} ===
 signature: {{{test_call(self)}}}
 
 
-=== test_join ===
+=== {{{test_join}}} ===
 signature: {{{test_join(self)}}}
 
 
-=== test_signal ===
+=== {{{test_signal}}} ===
 signature: {{{test_signal(self)}}}
 
 
 
 == Attributes ==
 
-=== STATE_NEED_INIT ===
+=== {{{STATE_NEED_INIT}}} ===
 
 {{{0}}}
 

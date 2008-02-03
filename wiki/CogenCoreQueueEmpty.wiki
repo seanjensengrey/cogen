@@ -10,11 +10,11 @@
 
 == Attributes ==
 
-=== args ===
+=== {{{args}}} ===
 
 {{{<attribute 'args' of 'exceptions.BaseException' objects>}}}
 
-=== message ===
+=== {{{message}}} ===
 
 {{{<member 'message' of 'exceptions.BaseException' objects>}}}
 

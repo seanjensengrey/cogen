@@ -10,27 +10,27 @@
 
 == Attributes ==
 
-=== coro ===
+=== {{{coro}}} ===
 
 {{{<member 'coro' of 'Timeout' objects>}}}
 
-=== delta ===
+=== {{{delta}}} ===
 
 {{{<member 'delta' of 'Timeout' objects>}}}
 
-=== last_checkpoint ===
+=== {{{last_checkpoint}}} ===
 
 {{{<member 'last_checkpoint' of 'Timeout' objects>}}}
 
-=== op ===
+=== {{{op}}} ===
 
 {{{<member 'op' of 'Timeout' objects>}}}
 
-=== timeout ===
+=== {{{timeout}}} ===
 
 {{{<member 'timeout' of 'Timeout' objects>}}}
 
-=== weak_timeout ===
+=== {{{weak_timeout}}} ===
 
 {{{<member 'weak_timeout' of 'Timeout' objects>}}}
 

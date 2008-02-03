@@ -10,23 +10,23 @@
 
 == Methods ==
 
-=== setUp ===
+=== {{{setUp}}} ===
 signature: {{{setUp(self)}}}
 
 
-=== tearDown ===
+=== {{{tearDown}}} ===
 signature: {{{tearDown(self)}}}
 
 
-=== test_join ===
+=== {{{test_join}}} ===
 signature: {{{test_join(self)}}}
 
 
-=== test_queue ===
+=== {{{test_queue}}} ===
 signature: {{{test_queue(self)}}}
 
 
-=== test_signal_1s2w ===
+=== {{{test_signal_1s2w}}} ===
 signature: {{{test_signal_1s2w(self)}}}
 
 

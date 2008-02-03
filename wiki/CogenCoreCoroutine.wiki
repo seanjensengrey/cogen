@@ -10,7 +10,7 @@
 
 == Classes ==
 
-=== [CogenCoreCoroutineCoroutine Coroutine] ===
+=== {{{[CogenCoreCoroutineCoroutine Coroutine]}}} ===
 We need a coroutine wrapper for generators and function alike because
 we want to run functions that don'self return generators just like a 
 coroutine 
@@ -19,7 +19,7 @@ coroutine
 
 == Functions ==
 
-=== coroutine ===
+=== {{{coroutine}}} ===
 signature: {{{coroutine(func)}}}
 A decorator function for generators.
 Example:

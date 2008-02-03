@@ -11,50 +11,50 @@ A operation for the queue put call.
 
 == Methods ==
 
-=== finalize ===
+=== {{{finalize}}} ===
 signature: {{{finalize(self)}}}
 
 
-=== process ===
+=== {{{process}}} ===
 signature: {{{process(self, sched, coro)}}}
 
 
 
 == Attributes ==
 
-=== block ===
+=== {{{block}}} ===
 
 {{{<member 'block' of 'QPut' objects>}}}
 
-=== caller ===
+=== {{{caller}}} ===
 
 {{{<member 'caller' of 'QPut' objects>}}}
 
-=== finalized ===
+=== {{{finalized}}} ===
 
 {{{<member 'finalized' of 'TimedOperation' objects>}}}
 
-=== item ===
+=== {{{item}}} ===
 
 {{{<member 'item' of 'QPut' objects>}}}
 
-=== prio ===
+=== {{{prio}}} ===
 
 {{{<member 'prio' of 'Operation' objects>}}}
 
-=== queue ===
+=== {{{queue}}} ===
 
 {{{<member 'queue' of 'QPut' objects>}}}
 
-=== result ===
+=== {{{result}}} ===
 
 {{{<member 'result' of 'QPut' objects>}}}
 
-=== timeout ===
+=== {{{timeout}}} ===
 
 {{{None}}}
 
-=== weak_timeout ===
+=== {{{weak_timeout}}} ===
 
 {{{<member 'weak_timeout' of 'TimedOperation' objects>}}}
 

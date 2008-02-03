@@ -10,15 +10,15 @@
 
 == Methods ==
 
-=== setUp ===
+=== {{{setUp}}} ===
 signature: {{{setUp(self)}}}
 
 
-=== tearDown ===
+=== {{{tearDown}}} ===
 signature: {{{tearDown(self)}}}
 
 
-=== test_sock_connect_timeout ===
+=== {{{test_sock_connect_timeout}}} ===
 signature: {{{test_sock_connect_timeout(self)}}}
 
 

@@ -19,7 +19,7 @@ result = yield events.Call(mycoro, args=, kwargs=, prio=)
 
 == Methods ==
 
-=== __init__ ===
+=== {{{__init__}}} ===
 signature: {{{__init__(self, coro, args=None, kwargs=None, **kws)}}}
 
 

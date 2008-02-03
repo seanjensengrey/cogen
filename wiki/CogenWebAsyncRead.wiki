@@ -12,7 +12,7 @@ something more elegant at some point.
 
 == Methods ==
 
-=== __init__ ===
+=== {{{__init__}}} ===
 signature: {{{__init__(self, conn, req, len=4096, **kws)}}}
 Initial `req` object holds the state of the operations involving
 reading the input and it requires to have these attributes:
@@ -24,7 +24,7 @@ reading the input and it requires to have these attributes:
 
 These have to be initialized in the request.
 
-=== run ===
+=== {{{run}}} ===
 signature: {{{run(self)}}}
 ~ @debug(0)        
 

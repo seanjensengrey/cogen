@@ -43,15 +43,15 @@ HTTP handling code taken from the CherryPy WSGI server.
 
 == Classes ==
 
-=== [CogenWebWsgiWsgiserverWsgiconnection WSGIConnection] ===
+=== {{{[CogenWebWsgiWsgiserverWsgiconnection WSGIConnection]}}} ===
 
 
 
-=== [CogenWebWsgiWsgifilewrapper WSGIFileWrapper] ===
+=== {{{[CogenWebWsgiWsgifilewrapper WSGIFileWrapper]}}} ===
 
 
 
-=== [CogenWebWsgiWsgiserver WSGIServer] ===
+=== {{{[CogenWebWsgiWsgiserver WSGIServer]}}} ===
 An HTTP server for WSGI.
 || Option || Description ||
 || bind_addr || The interface on which to listen for connections. For TCP sockets, a (host, port) tuple. Host values may be any IPv4 or IPv6 address, or any valid hostname. The string 'localhost' is a synonym for '127.0.0.1' (or '::1', if your hosts file prefers IPv6). The string '0.0.0.0' is a special IPv4 entry meaning "any active interface" (INADDR_ANY), and '::' is the similar IN6ADDR_ANY for IPv6. The empty string or None are not allowed.  For UNIX sockets, supply the filename as a string. ||

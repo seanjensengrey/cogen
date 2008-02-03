@@ -10,7 +10,7 @@
 
 == Attributes ==
 
-=== STATE_NEED_INIT ===
+=== {{{STATE_NEED_INIT}}} ===
 
 {{{0}}}
 

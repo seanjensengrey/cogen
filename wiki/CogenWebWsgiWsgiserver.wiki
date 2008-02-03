@@ -18,40 +18,40 @@ An HTTP server for WSGI.
 
 == Classes ==
 
-=== WSGIConnection ===
+=== {{{WSGIConnection}}} ===
 
 
 
 == Methods ==
 
-=== bind ===
+=== {{{bind}}} ===
 signature: {{{bind(self, family, type, proto=0)}}}
 Create (or recreate) the actual socket object.
 
-=== serve ===
+=== {{{serve}}} ===
 signature: {{{serve(*args, **kws)}}}
 Run the server forever.
 
 
 == Attributes ==
 
-=== STATE_NEED_INIT ===
+=== {{{STATE_NEED_INIT}}} ===
 
 {{{0}}}
 
-=== bind_addr ===
+=== {{{bind_addr}}} ===
 
 {{{<property object at 0x00C341E8>}}}
 
-=== environ ===
+=== {{{environ}}} ===
 
 {{{{}}}}
 
-=== protocol ===
+=== {{{protocol}}} ===
 
 {{{'HTTP/1.1'}}}
 
-=== version ===
+=== {{{version}}} ===
 
 {{{'cogen.web.wsgi/0.1.5 Python/2.5.1'}}}
 

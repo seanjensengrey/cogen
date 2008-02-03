@@ -10,36 +10,36 @@
 
 == Methods ==
 
-=== add ===
+=== {{{add}}} ===
 signature: {{{add(self, coro, args=(), kwargs={}, first=True)}}}
 
 
-=== add_timeout ===
+=== {{{add_timeout}}} ===
 signature: {{{add_timeout(self, op, coro, weak_timeout)}}}
 
 
-=== handle_timeouts ===
+=== {{{handle_timeouts}}} ===
 signature: {{{handle_timeouts(self)}}}
 
 
-=== next_timer_delta ===
+=== {{{next_timer_delta}}} ===
 signature: {{{next_timer_delta(self)}}}
 
 
-=== process_op ===
+=== {{{process_op}}} ===
 signature: {{{process_op(self, op, coro)}}}
 ~ @debug(0)        
 
 
-=== run ===
+=== {{{run}}} ===
 signature: {{{run(self)}}}
 
 
-=== run_poller ===
+=== {{{run_poller}}} ===
 signature: {{{run_poller(self)}}}
 
 
-=== run_timer ===
+=== {{{run_timer}}} ===
 signature: {{{run_timer(self)}}}
 
 

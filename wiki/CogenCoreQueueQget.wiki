@@ -11,46 +11,46 @@ A operation for the queue get call.
 
 == Methods ==
 
-=== finalize ===
+=== {{{finalize}}} ===
 signature: {{{finalize(self)}}}
 
 
-=== process ===
+=== {{{process}}} ===
 signature: {{{process(self, sched, coro)}}}
 
 
 
 == Attributes ==
 
-=== block ===
+=== {{{block}}} ===
 
 {{{<member 'block' of 'QGet' objects>}}}
 
-=== caller ===
+=== {{{caller}}} ===
 
 {{{<member 'caller' of 'QGet' objects>}}}
 
-=== finalized ===
+=== {{{finalized}}} ===
 
 {{{<member 'finalized' of 'TimedOperation' objects>}}}
 
-=== prio ===
+=== {{{prio}}} ===
 
 {{{<member 'prio' of 'Operation' objects>}}}
 
-=== queue ===
+=== {{{queue}}} ===
 
 {{{<member 'queue' of 'QGet' objects>}}}
 
-=== result ===
+=== {{{result}}} ===
 
 {{{<member 'result' of 'QGet' objects>}}}
 
-=== timeout ===
+=== {{{timeout}}} ===
 
 {{{None}}}
 
-=== weak_timeout ===
+=== {{{weak_timeout}}} ===
 
 {{{<member 'weak_timeout' of 'TimedOperation' objects>}}}
 

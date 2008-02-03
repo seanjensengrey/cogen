@@ -10,7 +10,7 @@
 
 == Attributes ==
 
-=== STATE_FAILED ===
+=== {{{STATE_FAILED}}} ===
 
 {{{3}}}
 

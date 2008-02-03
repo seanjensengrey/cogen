@@ -13,23 +13,23 @@ coroutine
 
 == Methods ==
 
-=== add_waiter ===
+=== {{{add_waiter}}} ===
 signature: {{{add_waiter(self, coro)}}}
 
 
-=== finalize ===
+=== {{{finalize}}} ===
 signature: {{{finalize(self)}}}
 
 
-=== handle_error ===
+=== {{{handle_error}}} ===
 signature: {{{handle_error(self)}}}
 
 
-=== remove_waiter ===
+=== {{{remove_waiter}}} ===
 signature: {{{remove_waiter(self, coro)}}}
 
 
-=== run_op ===
+=== {{{run_op}}} ===
 signature: {{{run_op(self, op)}}}
 ~ @debug(0)
 
@@ -37,63 +37,63 @@ signature: {{{run_op(self, op)}}}
 
 == Attributes ==
 
-=== STATE_COMPLETED ===
+=== {{{STATE_COMPLETED}}} ===
 
 {{{2}}}
 
-=== STATE_FAILED ===
+=== {{{STATE_FAILED}}} ===
 
 {{{3}}}
 
-=== STATE_NEED_INIT ===
+=== {{{STATE_NEED_INIT}}} ===
 
 {{{0}}}
 
-=== STATE_RUNNING ===
+=== {{{STATE_RUNNING}}} ===
 
 {{{1}}}
 
-=== caller ===
+=== {{{caller}}} ===
 
 {{{<member 'caller' of 'Coroutine' objects>}}}
 
-=== coro ===
+=== {{{coro}}} ===
 
 {{{<member 'coro' of 'Coroutine' objects>}}}
 
-=== exception ===
+=== {{{exception}}} ===
 
 {{{<member 'exception' of 'Coroutine' objects>}}}
 
-=== f_args ===
+=== {{{f_args}}} ===
 
 {{{<member 'f_args' of 'Coroutine' objects>}}}
 
-=== f_kws ===
+=== {{{f_kws}}} ===
 
 {{{<member 'f_kws' of 'Coroutine' objects>}}}
 
-=== name ===
+=== {{{name}}} ===
 
 {{{<member 'name' of 'Coroutine' objects>}}}
 
-=== prio ===
+=== {{{prio}}} ===
 
 {{{<member 'prio' of 'Coroutine' objects>}}}
 
-=== result ===
+=== {{{result}}} ===
 
 {{{<member 'result' of 'Coroutine' objects>}}}
 
-=== running ===
+=== {{{running}}} ===
 
 {{{<property object at 0x00B59418>}}}
 
-=== state ===
+=== {{{state}}} ===
 
 {{{<member 'state' of 'Coroutine' objects>}}}
 
-=== waiters ===
+=== {{{waiters}}} ===
 
 {{{<member 'waiters' of 'Coroutine' objects>}}}
 

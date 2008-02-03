@@ -10,11 +10,11 @@ Returns a (conn, addr) tuple when the operation completes.
 
 == Methods ==
 
-=== __init__ ===
+=== {{{__init__}}} ===
 signature: {{{__init__(self, sock, **kws)}}}
 
 
-=== run ===
+=== {{{run}}} ===
 signature: {{{run(self)}}}
 
 

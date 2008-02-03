@@ -9,31 +9,31 @@
 
 == Classes ==
 
-=== [CogenCoreQueueEmpty Empty] ===
+=== {{{[CogenCoreQueueEmpty Empty]}}} ===
 
 
 
-=== [CogenCoreQueueFull Full] ===
+=== {{{[CogenCoreQueueFull Full]}}} ===
 
 
 
-=== [CogenCoreQueueQdone QDone] ===
+=== {{{[CogenCoreQueueQdone QDone]}}} ===
 A operation for the queue done_task call
 
 
-=== [CogenCoreQueueQget QGet] ===
+=== {{{[CogenCoreQueueQget QGet]}}} ===
 A operation for the queue get call.
 
 
-=== [CogenCoreQueueQjoin QJoin] ===
+=== {{{[CogenCoreQueueQjoin QJoin]}}} ===
 A operation for the queue join call.
 
 
-=== [CogenCoreQueueQput QPut] ===
+=== {{{[CogenCoreQueueQput QPut]}}} ===
 A operation for the queue put call.
 
 
-=== [CogenCoreQueueQueue Queue] ===
+=== {{{[CogenCoreQueueQueue Queue]}}} ===
 This class attempts to mimic the exact functionality of the 
 python standard library Queue.Queue class, but with a coroutine context:
 

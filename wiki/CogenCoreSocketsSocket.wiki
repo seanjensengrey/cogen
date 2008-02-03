@@ -11,7 +11,7 @@
 
 == Methods ==
 
-=== accept ===
+=== {{{accept}}} ===
 signature: {{{accept(self)}}}
 accept() -> (socket object, address info)
 
@@ -19,7 +19,7 @@ Wait for an incoming connection.  Return a new socket representing the
 connection, and the address of the client.  For IP sockets, the address
 info is a pair (hostaddr, port).
 
-=== bind ===
+=== {{{bind}}} ===
 signature: {{{bind(self, *args)}}}
 bind(address)
 
@@ -27,53 +27,53 @@ Bind the socket to a local address.  For IP sockets, the address is a
 pair (host, port); the host must refer to the local host. For raw packet
 sockets the address is a tuple (ifname, proto [,pkttype [,hatype]])
 
-=== close ===
+=== {{{close}}} ===
 signature: {{{close(self)}}}
 close()
 
 Close the socket.  It cannot be used after this call.
 
-=== connect ===
+=== {{{connect}}} ===
 signature: {{{connect(self, *args)}}}
 connect(address)
 
 Connect the socket to a remote address.  For IP sockets, the address
 is a pair (host, port).
 
-=== connect_ex ===
+=== {{{connect_ex}}} ===
 signature: {{{connect_ex(self, *args)}}}
 connect_ex(address) -> errno
 
 This is like connect(address), but returns an error code (the errno value)
 instead of raising an exception when an error occurs.
 
-=== dup ===
+=== {{{dup}}} ===
 signature: {{{dup(self)}}}
 dup() -> socket object
 
 Return a new socket object connected to the same system resource.
 
-=== fileno ===
+=== {{{fileno}}} ===
 signature: {{{fileno(self, *args)}}}
 fileno() -> integer
 
 Return the integer file descriptor of the socket.
 
-=== getpeername ===
+=== {{{getpeername}}} ===
 signature: {{{getpeername(self, *args)}}}
 getpeername() -> address info
 
 Return the address of the remote endpoint.  For IP sockets, the address
 info is a pair (hostaddr, port).
 
-=== getsockname ===
+=== {{{getsockname}}} ===
 signature: {{{getsockname(self, *args)}}}
 getsockname() -> address info
 
 Return the address of the local endpoint.  For IP sockets, the address
 info is a pair (hostaddr, port).
 
-=== getsockopt ===
+=== {{{getsockopt}}} ===
 signature: {{{getsockopt(self, *args)}}}
 getsockopt(level, option[, buffersize]) -> value
 
@@ -81,7 +81,7 @@ Get a socket option.  See the Unix manual for level and option.
 If a nonzero buffersize argument is given, the return value is a
 string of that length; otherwise it is an integer.
 
-=== gettimeout ===
+=== {{{gettimeout}}} ===
 signature: {{{gettimeout(self, *args)}}}
 gettimeout() -> timeout
 
@@ -89,7 +89,7 @@ Returns the timeout in floating seconds associated with socket
 operations. A timeout of None indicates that timeouts on socket 
 operations are disabled.
 
-=== listen ===
+=== {{{listen}}} ===
 signature: {{{listen(self, *args)}}}
 listen(backlog)
 
@@ -97,14 +97,14 @@ Enable a server to accept connections.  The backlog argument must be at
 least 1; it specifies the number of unaccepted connection that the system
 will allow before refusing new connections.
 
-=== makefile ===
+=== {{{makefile}}} ===
 signature: {{{makefile(self, mode='r', bufsize=-1)}}}
 makefile([mode[, bufsize]]) -> file object
 
 Return a regular file object corresponding to the socket.  The mode
 and bufsize arguments are as for the built-in open() function.
 
-=== sendall ===
+=== {{{sendall}}} ===
 signature: {{{sendall(self, *args)}}}
 sendall(data[, flags])
 
@@ -113,7 +113,7 @@ argument, see the Unix manual.  This calls send() repeatedly
 until all data is sent.  If an error occurs, it's impossible
 to tell how much data has been sent.
 
-=== setblocking ===
+=== {{{setblocking}}} ===
 signature: {{{setblocking(self, *args)}}}
 setblocking(flag)
 
@@ -121,14 +121,14 @@ Set the socket to blocking (flag is true) or non-blocking (false).
 setblocking(True) is equivalent to settimeout(None);
 setblocking(False) is equivalent to settimeout(0.0).
 
-=== setsockopt ===
+=== {{{setsockopt}}} ===
 signature: {{{setsockopt(self, *args)}}}
 setsockopt(level, option, value)
 
 Set a socket option.  See the Unix manual for level and option.
 The value argument can either be an integer or a string.
 
-=== settimeout ===
+=== {{{settimeout}}} ===
 signature: {{{settimeout(self, *args)}}}
 settimeout(timeout)
 
@@ -137,7 +137,7 @@ giving in seconds, or None.  Setting a timeout of None disables
 the timeout feature and is equivalent to setblocking(1).
 Setting a timeout of zero is the same as setblocking(0).
 
-=== shutdown ===
+=== {{{shutdown}}} ===
 signature: {{{shutdown(self, *args)}}}
 shutdown(flag)
 
@@ -147,39 +147,39 @@ of the socket (flag == SHUT_WR), or both ends (flag == SHUT_RDWR).
 
 == Attributes ==
 
-=== family ===
+=== {{{family}}} ===
 
 {{{<property object at 0x00B468C8>}}}
 
-=== proto ===
+=== {{{proto}}} ===
 
 {{{<property object at 0x00B46918>}}}
 
-=== recv ===
+=== {{{recv}}} ===
 
 {{{<member 'recv' of '_socketobject' objects>}}}
 
-=== recv_into ===
+=== {{{recv_into}}} ===
 
 {{{<member 'recv_into' of '_socketobject' objects>}}}
 
-=== recvfrom ===
+=== {{{recvfrom}}} ===
 
 {{{<member 'recvfrom' of '_socketobject' objects>}}}
 
-=== recvfrom_into ===
+=== {{{recvfrom_into}}} ===
 
 {{{<member 'recvfrom_into' of '_socketobject' objects>}}}
 
-=== send ===
+=== {{{send}}} ===
 
 {{{<member 'send' of '_socketobject' objects>}}}
 
-=== sendto ===
+=== {{{sendto}}} ===
 
 {{{<member 'sendto' of '_socketobject' objects>}}}
 
-=== type ===
+=== {{{type}}} ===
 
 {{{<property object at 0x00B468F0>}}}
 

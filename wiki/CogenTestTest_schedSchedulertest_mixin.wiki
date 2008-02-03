@@ -10,27 +10,27 @@
 
 == Methods ==
 
-=== setUp ===
+=== {{{setUp}}} ===
 signature: {{{setUp(self)}}}
 
 
-=== tearDown ===
+=== {{{tearDown}}} ===
 signature: {{{tearDown(self)}}}
 
 
-=== test_add_coro ===
+=== {{{test_add_coro}}} ===
 signature: {{{test_add_coro(self)}}}
 
 
-=== test_call ===
+=== {{{test_call}}} ===
 signature: {{{test_call(self)}}}
 
 
-=== test_join ===
+=== {{{test_join}}} ===
 signature: {{{test_join(self)}}}
 
 
-=== test_signal ===
+=== {{{test_signal}}} ===
 signature: {{{test_signal(self)}}}
 
 
