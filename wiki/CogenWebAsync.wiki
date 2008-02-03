@@ -33,25 +33,25 @@ buff.seek(0)
 
 == Classes ==
 
-=== {{{[CogenWebAsyncCogenoperationcall COGENOperationCall]}}} ===
+=== [CogenWebAsyncCogenoperationcall {{{COGENOperationCall}}}] ===
 
 
 
-=== {{{[CogenWebAsyncCogenoperationwrapper COGENOperationWrapper]}}} ===
+=== [CogenWebAsyncCogenoperationwrapper {{{COGENOperationWrapper}}}] ===
 
 
 
-=== {{{[CogenWebAsyncCogenproxy COGENProxy]}}} ===
+=== [CogenWebAsyncCogenproxy {{{COGENProxy}}}] ===
 
 
 
-=== {{{[CogenWebAsyncRead Read]}}} ===
+=== [CogenWebAsyncRead {{{Read}}}] ===
 This is actually a hack that mixes ReadAll and ReadLine and 
 patches their state attributes. Hopefully i'll evolve it to
 something more elegant at some point.
 
 
-=== {{{[CogenWebAsyncSynchronousinputmiddleware SynchronousInputMiddleware]}}} ===
+=== [CogenWebAsyncSynchronousinputmiddleware {{{SynchronousInputMiddleware}}}] ===
 Middleware for providing wsgi.input to the app.
 
 
