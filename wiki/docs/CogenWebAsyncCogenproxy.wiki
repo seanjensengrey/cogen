@@ -1,9 +1,0 @@
-#summary cogen.web.async.COGENProxy Documentation
-#labels Documentation
-
-==== Parent: [CogenWebAsync cogen.web.async] ====
-
-= Class: COGENProxy =
-
-
-

@@ -1,0 +1,10 @@
+#summary cogen.core.events.OperationTimeout Documentation
+#labels Documentation
+
+==== Parent: [Docs_CogenCoreEvents cogen.core.events] ====
+
+= Class: OperationTimeout =
+
+Raised when the timeout for a operation expires. The exception 
+message will be the operation
+

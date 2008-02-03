@@ -1,0 +1,9 @@
+#summary cogen.core.events.ConnectionClosed Documentation
+#labels Documentation
+
+==== Parent: [Docs_CogenCoreEvents cogen.core.events] ====
+
+= Class: ConnectionClosed =
+
+Raised when the other peer has closed connection.
+

@@ -1,0 +1,38 @@
+#summary cogen.test.test_queue.QueueTest_MixIn Documentation
+#labels Documentation
+
+==== Parent: [Docs_CogenTestTest_queue cogen.test.test_queue] ====
+==== Methods: [#setUp setUp] [#tearDown tearDown] [#test_join test_join] [#test_queue test_queue] [#test_signal_1s2w test_signal_1s2w] ====
+
+= Class: QueueTest_MixIn =
+
+
+
+== Methods ==
+
+=== {{{setUp}}} ===
+signature: {{{setUp(self)}}}
+
+
+
+=== {{{tearDown}}} ===
+signature: {{{tearDown(self)}}}
+
+
+
+=== {{{test_join}}} ===
+signature: {{{test_join(self)}}}
+
+
+
+=== {{{test_queue}}} ===
+signature: {{{test_queue(self)}}}
+
+
+
+=== {{{test_signal_1s2w}}} ===
+signature: {{{test_signal_1s2w(self)}}}
+
+
+
+

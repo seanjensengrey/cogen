@@ -1,0 +1,53 @@
+#summary cogen.core.queue Documentation
+#labels Documentation
+
+==== Parent: [Docs_CogenCore cogen.core] ====
+==== Classes: [Docs_CogenCoreQueueEmpty Empty] [Docs_CogenCoreQueueFull Full] [Docs_CogenCoreQueueQdone QDone] [Docs_CogenCoreQueueQget QGet] [Docs_CogenCoreQueueQjoin QJoin] [Docs_CogenCoreQueueQput QPut] [Docs_CogenCoreQueueQueue Queue] ====
+
+= Module: queue =
+
+
+== Classes ==
+
+=== [Docs_CogenCoreQueueEmpty Empty] ===
+
+
+
+=== [Docs_CogenCoreQueueFull Full] ===
+
+
+
+=== [Docs_CogenCoreQueueQdone QDone] ===
+A operation for the queue done_task call
+
+
+=== [Docs_CogenCoreQueueQget QGet] ===
+A operation for the queue get call.
+
+
+=== [Docs_CogenCoreQueueQjoin QJoin] ===
+A operation for the queue join call.
+
+
+=== [Docs_CogenCoreQueueQput QPut] ===
+A operation for the queue put call.
+
+
+=== [Docs_CogenCoreQueueQueue Queue] ===
+This class attempts to mimic the exact functionality of the 
+python standard library Queue.Queue class, but with a coroutine context:
+
+* the queue calls return coroutine operations
+
+So, to use this you write someting like:
+
+{{{
+@coroutine
+def foo():
+    q = cogen.core.queue.Queue()
+    yield q.put(123)
+    val = yield q.get()
+}}}
+
+
+

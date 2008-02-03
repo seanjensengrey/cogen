@@ -1,0 +1,23 @@
+#summary cogen.core.sockets.Write Documentation
+#labels Documentation
+
+==== Parent: [Docs_CogenCoreSockets cogen.core.sockets] ====
+==== Methods: [#__init__ __init__] [#run run] ====
+
+= Class: Write =
+
+Write the buffer to the socket and return the number of bytes written.
+
+== Methods ==
+
+=== {{{__init__}}} ===
+signature: {{{__init__(self, sock, buff, **kws)}}}
+
+
+
+=== {{{run}}} ===
+signature: {{{run(self)}}}
+
+
+
+

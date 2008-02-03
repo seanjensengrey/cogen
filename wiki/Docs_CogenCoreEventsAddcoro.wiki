@@ -1,0 +1,23 @@
+#summary cogen.core.events.AddCoro Documentation
+#labels Documentation
+
+==== Parent: [Docs_CogenCoreEvents cogen.core.events] ====
+==== Methods: [#__init__ __init__] ====
+
+= Class: AddCoro =
+
+A operator for adding a coroutine in the scheduler.
+Example:
+
+{{{
+yield events.AddCoro(some_coro, args=(), kwargs={})
+}}}
+
+== Methods ==
+
+=== {{{__init__}}} ===
+signature: {{{__init__(self, coro, args=None, kwargs=None, **kws)}}}
+
+
+
+

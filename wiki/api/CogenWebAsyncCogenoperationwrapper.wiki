@@ -1,9 +1,0 @@
-#summary cogen.web.async.COGENOperationWrapper Documentation
-#labels Documentation
-
-==== Parent: [CogenWebAsync cogen.web.async] ====
-
-= Class: COGENOperationWrapper =
-
-
-

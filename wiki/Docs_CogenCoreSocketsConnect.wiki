@@ -1,0 +1,25 @@
+#summary cogen.core.sockets.Connect Documentation
+#labels Documentation
+
+==== Parent: [Docs_CogenCoreSockets cogen.core.sockets] ====
+==== Methods: [#__init__ __init__] [#run run] ====
+
+= Class: Connect =
+
+Connect to the given `addr` using `sock`.
+
+== Methods ==
+
+=== {{{__init__}}} ===
+signature: {{{__init__(self, sock, addr, **kws)}}}
+
+
+
+=== {{{run}}} ===
+signature: {{{run(self)}}}
+
+We need to avoid some non-blocking socket connect quirks: 
+  - if you attempt a connect in NB mode you will always 
+  get EWOULDBLOCK, presuming the addr is correct.
+
+

@@ -1,0 +1,100 @@
+#summary cogen Documentation
+#labels Documentation
+
+==== Modules: [Docs_CogenCommon common] [Docs_CogenCore core] [Docs_CogenDocs docs] [Docs_CogenTest test] [Docs_CogenWeb web] ====
+
+= Module: cogen =
+This is a library for network oriented, coroutine based programming. 
+The interfaces and events/operations aim to mimic thread features. Coroutines 
+work as simple generators, the operations and events work as objects passed in 
+and out of the generator, these objects are managed by the scheduler/network 
+poller. 
+
+Check each modules for specific help.
+
+== Modules ==
+
+=== [Docs_CogenCommon common] ===
+A module for quick importing the essential core stuff. 
+(coroutine, Scheduler, events, sockets, priority)
+
+
+=== [Docs_CogenCore core] ===
+This module holds the essential stuff.
+
+Programming with this library should be straghtforward. A coroutine is just 
+a generator wrapped in a operation handling class:
+
+{{{
+@coroutine
+def mycoro(bla):
+    yield 
+    yield 
+}}}
+    
+  * the `operation` instructs the scheduler what to do with the 
+  coroutine: suspend it till someting happens, add another coro in 
+  the scheduler, raise a event and so on.
+  * the `operations` are split up in 2 modules: events and sockets
+    * the `operations` from sockets are related to network, like reading and 
+    writing, and these are done asynchronously but your code in the 
+    coroutine will see them as a regular synchronous or blocking call.
+    * the `operations` from events are related to signals and 
+    coroutine/scheduler management.
+  * if a `operation` has a result associated then the yield will return that 
+  result (eg. a string or a (connection, address) tuple) otherwise it will 
+  return the operation instance.
+
+Typical example:
+
+{{{
+import sys, os
+from cogen.common import *
+
+@coroutine
+def server():
+    srv = sockets.Socket()
+    srv.setblocking(0)
+    srv.bind(('localhost',777))
+    srv.listen(10)
+    while 1:
+        print "Listening..."
+        conn, addr = yield sockets.Accept(srv)
+        print "Connection from %s:%s" % addr
+        m.add(handler, conn, addr)
+        
+@coroutine
+def handler(sock, addr):
+    yield sockets.Write(sock, "WELCOME TO ECHO SERVER !\r\n")
+    while 1:
+        line = yield sockets.ReadLine(sock, 8192)
+        if line.strip() == 'exit':
+            yield sockets.Write(sock, "GOOD BYE")
+            sock.close()
+            return
+            
+        yield sockets.Write(sock, line)
+        
+m = Scheduler()
+m.add(server)
+m.run()
+}}}
+
+
+=== [Docs_CogenDocs docs] ===
+Apydia entrypoints for custom theme and other stuff we need to tweak when 
+generating the docs.
+
+
+=== [Docs_CogenTest test] ===
+To run the unittests get the source package and run setup.py test
+
+
+TODO: test for timeout: operator runs before the timeout but it remains allocated.
+
+
+=== [Docs_CogenWeb web] ===
+This module holds a wsgi server and future web-related code.
+
+
+
