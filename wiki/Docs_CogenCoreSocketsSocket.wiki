@@ -1,4 +1,4 @@
-#summary cogen.core.sockets.Socket Documentation
+#summary cogen.core.sockets.Socket Documentation for trunk
 #labels Documentation
 
 ==== Parent module: [Docs_CogenCoreSockets cogen.core.sockets] ====
@@ -171,11 +171,11 @@ of the socket (flag == SHUT_WR), or both ends (flag == SHUT_RDWR).
 
 === {{{family}}} ===
 
-{{{<property object at 0x00B46968>}}}
+{{{<property object at 0x00B46918>}}}
 
 === {{{proto}}} ===
 
-{{{<property object at 0x00B469B8>}}}
+{{{<property object at 0x00B46968>}}}
 
 === {{{recv}}} ===
 
@@ -203,5 +203,5 @@ of the socket (flag == SHUT_WR), or both ends (flag == SHUT_RDWR).
 
 === {{{type}}} ===
 
-{{{<property object at 0x00B46990>}}}
+{{{<property object at 0x00B46940>}}}
 

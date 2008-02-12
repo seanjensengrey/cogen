@@ -1,14 +1,13 @@
-#summary cogen.web.async.Read Documentation for trunk
+#summary cogen.web.async.ReadLine Documentation for trunk
 #labels Documentation
 
 ==== Parent module: [Docs_CogenWebAsync cogen.web.async] ====
 ==== Methods: [#__init__ __init__] [#run run] ====
 
-= Class: Read =
+= Class: ReadLine =
 
-This is actually a hack that mixes ReadAll and ReadLine and 
-patches their state attributes. Hopefully i'll evolve it to
-something more elegant at some point.
+Same a async.Read but doesn't work with chunked input (it would complicate
+things too much at the moment).
 
 == Methods ==
 

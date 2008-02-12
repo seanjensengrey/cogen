@@ -1,4 +1,4 @@
-#summary cogen.web.wsgi.WSGIConnection Documentation
+#summary cogen.web.wsgi.WSGIConnection Documentation for trunk
 #labels Documentation
 
 ==== Parent module: [Docs_CogenWebWsgiWsgiserver cogen.web.wsgi.WSGIServer] ====

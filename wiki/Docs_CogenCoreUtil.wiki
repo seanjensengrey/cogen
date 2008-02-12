@@ -1,4 +1,4 @@
-#summary cogen.core.util Documentation
+#summary cogen.core.util Documentation for trunk
 #labels Documentation
 
 ==== Parent module: [Docs_CogenCore cogen.core] ====

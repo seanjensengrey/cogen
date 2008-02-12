@@ -1,4 +1,4 @@
-#summary cogen.core.sockets.Write Documentation
+#summary cogen.core.sockets.Write Documentation for trunk
 #labels Documentation
 
 ==== Parent module: [Docs_CogenCoreSockets cogen.core.sockets] ====

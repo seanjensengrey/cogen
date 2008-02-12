@@ -1,4 +1,4 @@
-#summary cogen.core.events.ConnectionClosed Documentation
+#summary cogen.core.events.ConnectionClosed Documentation for trunk
 #labels Documentation
 
 ==== Parent module: [Docs_CogenCoreEvents cogen.core.events] ====

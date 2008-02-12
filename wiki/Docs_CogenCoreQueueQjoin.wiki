@@ -1,4 +1,4 @@
-#summary cogen.core.queue.QJoin Documentation
+#summary cogen.core.queue.QJoin Documentation for trunk
 #labels Documentation
 
 ==== Parent module: [Docs_CogenCoreQueue cogen.core.queue] ====

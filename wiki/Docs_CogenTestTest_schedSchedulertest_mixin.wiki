@@ -1,4 +1,4 @@
-#summary cogen.test.test_sched.SchedulerTest_MixIn Documentation
+#summary cogen.test.test_sched.SchedulerTest_MixIn Documentation for trunk
 #labels Documentation
 
 ==== Parent module: [Docs_CogenTestTest_sched cogen.test.test_sched] ====

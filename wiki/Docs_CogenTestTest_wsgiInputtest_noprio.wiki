@@ -1,12 +1,12 @@
-#summary cogen.test.test_timer.TimerTest_Prio Documentation for trunk
+#summary cogen.test.test_wsgi.InputTest_NoPrio Documentation for trunk
 #labels Documentation
 
-==== Parent module: [Docs_CogenTestTest_timer cogen.test.test_timer] ====
-==== Classes: [Docs_CogenTestTest_wsgiSimpleapptest_prioAssertionerror AssertionError] [Docs_CogenTestTest_timerTimertest_prioScheduler Scheduler] ====
-==== Methods: [#countTestCases countTestCases] [#debug debug] [#defaultTestResult defaultTestResult] [#fail fail] [#failIf failIf] [#failIf failIf] [#failIfAlmostEqual failIfAlmostEqual] [#failIfAlmostEqual failIfAlmostEqual] [#failIfAlmostEqual failIfAlmostEqual] [#failIfEqual failIfEqual] [#failIfEqual failIfEqual] [#failIfEqual failIfEqual] [#failUnless failUnless] [#failUnless failUnless] [#failUnless failUnless] [#failUnlessAlmostEqual failUnlessAlmostEqual] [#failUnlessAlmostEqual failUnlessAlmostEqual] [#failUnlessAlmostEqual failUnlessAlmostEqual] [#failUnlessEqual failUnlessEqual] [#failUnlessEqual failUnlessEqual] [#failUnlessEqual failUnlessEqual] [#failUnlessRaises failUnlessRaises] [#failUnlessRaises failUnlessRaises] [#id id] [#run run] [#setUp setUp] [#shortDescription shortDescription] [#tearDown tearDown] [#test_sock_connect_timeout test_sock_connect_timeout] ====
-==== Attributes: [#STATE_FAILED STATE_FAILED] ====
+==== Parent module: [Docs_CogenTestTest_wsgi cogen.test.test_wsgi] ====
+==== Classes: [Docs_CogenTestTest_wsgiSimpleapptest_prioAssertionerror AssertionError] ====
+==== Methods: [#app app] [#countTestCases countTestCases] [#debug debug] [#defaultTestResult defaultTestResult] [#fail fail] [#failIf failIf] [#failIf failIf] [#failIfAlmostEqual failIfAlmostEqual] [#failIfAlmostEqual failIfAlmostEqual] [#failIfAlmostEqual failIfAlmostEqual] [#failIfEqual failIfEqual] [#failIfEqual failIfEqual] [#failIfEqual failIfEqual] [#failUnless failUnless] [#failUnless failUnless] [#failUnless failUnless] [#failUnlessAlmostEqual failUnlessAlmostEqual] [#failUnlessAlmostEqual failUnlessAlmostEqual] [#failUnlessAlmostEqual failUnlessAlmostEqual] [#failUnlessEqual failUnlessEqual] [#failUnlessEqual failUnlessEqual] [#failUnlessEqual failUnlessEqual] [#failUnlessRaises failUnlessRaises] [#failUnlessRaises failUnlessRaises] [#id id] [#make_str make_str] [#run run] [#setUp setUp] [#shortDescription shortDescription] [#tearDown tearDown] [#test_chunked test_chunked] [#test_nonchunked test_nonchunked] ====
+==== Attributes: [#STATE_NEED_INIT STATE_NEED_INIT] [#middleware middleware] ====
 
-= Class: TimerTest_Prio =
+= Class: InputTest_NoPrio =
 
 
 
@@ -15,11 +15,14 @@
 === {{{AssertionError}}} ===
 Assertion failed.
 
-=== {{{Scheduler}}} ===
-
-
 
 == Methods ==
+
+=== {{{app}}} ===
+signature: {{{app(self, environ, start_response)}}}
+
+~ @debug(0)
+
 
 === {{{countTestCases}}} ===
 signature: {{{countTestCases(self)}}}
@@ -187,6 +190,11 @@ signature: {{{id(self)}}}
 
 
 
+=== {{{make_str}}} ===
+signature: {{{make_str(self, pieces, psize=1048576, chunked=True)}}}
+
+
+
 === {{{run}}} ===
 signature: {{{run(self, result=None)}}}
 
@@ -211,15 +219,24 @@ signature: {{{tearDown(self)}}}
 
 
 
-=== {{{test_sock_connect_timeout}}} ===
-signature: {{{test_sock_connect_timeout(self)}}}
+=== {{{test_chunked}}} ===
+signature: {{{test_chunked(self)}}}
+
+
+
+=== {{{test_nonchunked}}} ===
+signature: {{{test_nonchunked(self)}}}
 
 
 
 
 == Attributes ==
 
-=== {{{STATE_FAILED}}} ===
+=== {{{STATE_NEED_INIT}}} ===
 
-{{{3}}}
+{{{0}}}
+
+=== {{{middleware}}} ===
+
+{{{[<function validator at 0x00F350B0>, <function sync_input at 0x00C2D5F0>]}}}
 

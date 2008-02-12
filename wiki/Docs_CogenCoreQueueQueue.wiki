@@ -1,4 +1,4 @@
-#summary cogen.core.queue.Queue Documentation
+#summary cogen.core.queue.Queue Documentation for trunk
 #labels Documentation
 
 ==== Parent module: [Docs_CogenCoreQueue cogen.core.queue] ====

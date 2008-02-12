@@ -1,4 +1,4 @@
-#summary cogen.core.schedulers.DebugginWrapper Documentation
+#summary cogen.core.schedulers.DebugginWrapper Documentation for trunk
 #labels Documentation
 
 ==== Parent module: [Docs_CogenCoreSchedulers cogen.core.schedulers] ====

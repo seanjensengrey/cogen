@@ -1,4 +1,4 @@
-#summary cogen.test.test_queue Documentation
+#summary cogen.test.test_queue Documentation for trunk
 #labels Documentation
 
 ==== Parent module: [Docs_CogenTest cogen.test] ====

@@ -1,4 +1,4 @@
-#summary cogen.web.async.SynchronousInputMiddleware Documentation
+#summary cogen.web.async.SynchronousInputMiddleware Documentation for trunk
 #labels Documentation
 
 ==== Parent module: [Docs_CogenWebAsync cogen.web.async] ====

@@ -1,8 +1,8 @@
-#summary cogen.test.test_socket.SocketTest_NoPrio Documentation
+#summary cogen.test.test_socket.SocketTest_NoPrio Documentation for trunk
 #labels Documentation
 
 ==== Parent module: [Docs_CogenTestTest_socket cogen.test.test_socket] ====
-==== Classes: [Docs_CogenTestTest_timerTimertest_prioAssertionerror AssertionError] [Docs_CogenTestTest_timerTimertest_prioScheduler Scheduler] ====
+==== Classes: [Docs_CogenTestTest_wsgiSimpleapptest_prioAssertionerror AssertionError] [Docs_CogenTestTest_timerTimertest_prioScheduler Scheduler] ====
 ==== Methods: [#countTestCases countTestCases] [#debug debug] [#defaultTestResult defaultTestResult] [#fail fail] [#failIf failIf] [#failIf failIf] [#failIfAlmostEqual failIfAlmostEqual] [#failIfAlmostEqual failIfAlmostEqual] [#failIfAlmostEqual failIfAlmostEqual] [#failIfEqual failIfEqual] [#failIfEqual failIfEqual] [#failIfEqual failIfEqual] [#failUnless failUnless] [#failUnless failUnless] [#failUnless failUnless] [#failUnlessAlmostEqual failUnlessAlmostEqual] [#failUnlessAlmostEqual failUnlessAlmostEqual] [#failUnlessAlmostEqual failUnlessAlmostEqual] [#failUnlessEqual failUnlessEqual] [#failUnlessEqual failUnlessEqual] [#failUnlessEqual failUnlessEqual] [#failUnlessRaises failUnlessRaises] [#failUnlessRaises failUnlessRaises] [#id id] [#run run] [#setUp setUp] [#shortDescription shortDescription] [#tearDown tearDown] [#test_read_all test_read_all] [#test_read_lines test_read_lines] [#test_write_all test_write_all] ====
 ==== Attributes: [#STATE_NEED_INIT STATE_NEED_INIT] ====
 

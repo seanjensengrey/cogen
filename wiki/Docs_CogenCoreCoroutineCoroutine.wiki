@@ -1,15 +1,15 @@
-#summary cogen.core.coroutine.Coroutine Documentation
+#summary cogen.core.coroutine.Coroutine Documentation for trunk
 #labels Documentation
 
 ==== Parent module: [Docs_CogenCoreCoroutine cogen.core.coroutine] ====
-==== Methods: [#add_waiter add_waiter] [#finalize finalize] [#handle_error handle_error] [#remove_waiter remove_waiter] [#run_op run_op] ====
-==== Attributes: [#STATE_COMPLETED STATE_COMPLETED] [#STATE_FAILED STATE_FAILED] [#STATE_NEED_INIT STATE_NEED_INIT] [#STATE_RUNNING STATE_RUNNING] [#caller caller] [#coro coro] [#exception exception] [#f_args f_args] [#f_kws f_kws] [#name name] [#prio prio] [#result result] [#running running] [#state state] [#waiters waiters] ====
+==== Methods: [#add_waiter add_waiter] [#finalize finalize] [#handle_error handle_error] [#process process] [#remove_waiter remove_waiter] [#run_op run_op] ====
+==== Attributes: [#STATE_COMPLETED STATE_COMPLETED] [#STATE_FAILED STATE_FAILED] [#STATE_FINALIZED STATE_FINALIZED] [#STATE_NEED_INIT STATE_NEED_INIT] [#STATE_RUNNING STATE_RUNNING] [#caller caller] [#coro coro] [#exception exception] [#f_args f_args] [#f_kws f_kws] [#name name] [#prio prio] [#result result] [#running running] [#state state] [#waiters waiters] ====
 
 = Class: Coroutine =
 
 We need a coroutine wrapper for generators and function alike because
 we want to run functions that don't return generators just like a
-coroutine 
+coroutine.
 
 == Methods ==
 
@@ -28,6 +28,11 @@ signature: {{{handle_error(self)}}}
 
 
 
+=== {{{process}}} ===
+signature: {{{process(self, sched, coro)}}}
+
+
+
 === {{{remove_waiter}}} ===
 signature: {{{remove_waiter(self, coro)}}}
 
@@ -36,8 +41,17 @@ signature: {{{remove_waiter(self, coro)}}}
 === {{{run_op}}} ===
 signature: {{{run_op(self, op)}}}
 
-~ @debug(0)
+Handle the operation:
+  * if coro is in STATE_RUNNING, send or throw the given op
+  * if coro is in STATE_NEED_INIT, call the init function and if it 
+  doesn't return a generator, set STATE_COMPLETED and set the result
+  to whatever the function returned. 
+    * if StopIteration is raised, set STATE_COMPLETED and return self.
+    * if any other exception is raised, set STATE_FAILED, handle error
+    or send it to the caller, return self
 
+Return self is used as a optimization. Coroutine is also a Operation 
+which handles it's own completion (resuming the caller and the waiters).
 
 
 == Attributes ==
@@ -49,6 +63,10 @@ signature: {{{run_op(self, op)}}}
 === {{{STATE_FAILED}}} ===
 
 {{{3}}}
+
+=== {{{STATE_FINALIZED}}} ===
+
+{{{4}}}
 
 === {{{STATE_NEED_INIT}}} ===
 
@@ -92,7 +110,7 @@ signature: {{{run_op(self, op)}}}
 
 === {{{running}}} ===
 
-{{{<property object at 0x00B574B8>}}}
+{{{<property object at 0x00B59530>}}}
 
 === {{{state}}} ===
 

@@ -1,4 +1,4 @@
-#summary cogen.test.base.NoPrioMixIn Documentation
+#summary cogen.test.base.NoPrioMixIn Documentation for trunk
 #labels Documentation
 
 ==== Parent module: [Docs_CogenTestBase cogen.test.base] ====

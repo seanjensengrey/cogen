@@ -1,4 +1,4 @@
-#summary cogen.core.pollers.Poller Documentation
+#summary cogen.core.pollers.Poller Documentation for trunk
 #labels Documentation
 
 ==== Parent module: [Docs_CogenCorePollers cogen.core.pollers] ====

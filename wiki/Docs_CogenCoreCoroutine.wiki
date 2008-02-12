@@ -1,4 +1,4 @@
-#summary cogen.core.coroutine Documentation
+#summary cogen.core.coroutine Documentation for trunk
 #labels Documentation
 
 ==== Parent module: [Docs_CogenCore cogen.core] ====
@@ -13,7 +13,7 @@ Coroutine related boilerplate and wrappers.
 === [Docs_CogenCoreCoroutineCoroutine Coroutine] ===
 We need a coroutine wrapper for generators and function alike because
 we want to run functions that don't return generators just like a
-coroutine 
+coroutine.
 
 
 

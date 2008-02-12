@@ -1,8 +1,9 @@
-#summary cogen.web.async Documentation
+#summary cogen.web.async Documentation for trunk
 #labels Documentation
 
 ==== Parent module: [Docs_CogenWeb cogen.web] ====
-==== Classes: [Docs_CogenWebAsyncCogenoperationcall COGENOperationCall] [Docs_CogenWebAsyncCogenoperationwrapper COGENOperationWrapper] [Docs_CogenWebAsyncCogenproxy COGENProxy] [Docs_CogenWebAsyncRead Read] [Docs_CogenWebAsyncSynchronousinputmiddleware SynchronousInputMiddleware] ====
+==== Classes: [Docs_CogenWebAsyncCogenoperationcall COGENOperationCall] [Docs_CogenWebAsyncCogenoperationwrapper COGENOperationWrapper] [Docs_CogenWebAsyncCogenproxy COGENProxy] [Docs_CogenWebAsyncRead Read] [Docs_CogenWebAsyncReadline ReadLine] [Docs_CogenWebAsyncSynchronousinputmiddleware SynchronousInputMiddleware] ====
+==== Functions: [#sync_input sync_input] ====
 
 = Module: async =
 cogen.web.wsgi server is asynchronous by default. If you need to run a app that
@@ -51,8 +52,22 @@ patches their state attributes. Hopefully i'll evolve it to
 something more elegant at some point.
 
 
+=== [Docs_CogenWebAsyncReadline ReadLine] ===
+Same a async.Read but doesn't work with chunked input (it would complicate
+things too much at the moment).
+
+
 === [Docs_CogenWebAsyncSynchronousinputmiddleware SynchronousInputMiddleware] ===
 Middleware for providing wsgi.input to the app.
+
+
+
+== Functions ==
+
+=== {{{sync_input}}} ===
+signature: {{{sync_input(app)}}}
+
+
 
 
 

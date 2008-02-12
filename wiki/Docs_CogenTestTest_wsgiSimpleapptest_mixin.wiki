@@ -1,0 +1,23 @@
+#summary cogen.test.test_wsgi.SimpleAppTest_MixIn Documentation for trunk
+#labels Documentation
+
+==== Parent module: [Docs_CogenTestTest_wsgi cogen.test.test_wsgi] ====
+==== Methods: [#app app] [#test_app test_app] ====
+
+= Class: SimpleAppTest_MixIn =
+
+
+
+== Methods ==
+
+=== {{{app}}} ===
+signature: {{{app(self, environ, start_response)}}}
+
+
+
+=== {{{test_app}}} ===
+signature: {{{test_app(self)}}}
+
+
+
+

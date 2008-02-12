@@ -1,4 +1,4 @@
-#summary cogen.core.pollers.KQueuePoller Documentation
+#summary cogen.core.pollers.KQueuePoller Documentation for trunk
 #labels Documentation
 
 ==== Parent module: [Docs_CogenCorePollers cogen.core.pollers] ====

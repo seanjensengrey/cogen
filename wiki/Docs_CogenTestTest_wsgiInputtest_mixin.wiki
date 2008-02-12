@@ -1,0 +1,34 @@
+#summary cogen.test.test_wsgi.InputTest_MixIn Documentation for trunk
+#labels Documentation
+
+==== Parent module: [Docs_CogenTestTest_wsgi cogen.test.test_wsgi] ====
+==== Methods: [#app app] [#make_str make_str] [#test_chunked test_chunked] [#test_nonchunked test_nonchunked] ====
+
+= Class: InputTest_MixIn =
+
+
+
+== Methods ==
+
+=== {{{app}}} ===
+signature: {{{app(self, environ, start_response)}}}
+
+~ @debug(0)
+
+
+=== {{{make_str}}} ===
+signature: {{{make_str(self, pieces, psize=1048576, chunked=True)}}}
+
+
+
+=== {{{test_chunked}}} ===
+signature: {{{test_chunked(self)}}}
+
+
+
+=== {{{test_nonchunked}}} ===
+signature: {{{test_nonchunked(self)}}}
+
+
+
+
