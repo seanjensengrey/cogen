@@ -1,0 +1,30 @@
+#summary cogen.test.base_web.WebTest_Base Documentation for trunk
+#labels Documentation
+
+==== Parent module: [Docs_CogenTestBase_web cogen.test.base_web] ====
+==== Methods: [#setUp setUp] [#tearDown tearDown] ====
+==== Attributes: [#middleware middleware] ====
+
+= Class: WebTest_Base =
+
+
+
+== Methods ==
+
+=== {{{setUp}}} ===
+signature: {{{setUp(self)}}}
+
+
+
+=== {{{tearDown}}} ===
+signature: {{{tearDown(self)}}}
+
+
+
+
+== Attributes ==
+
+=== {{{middleware}}} ===
+
+{{{[<function validator at 0x00F350B0>, <function sync_input at 0x00C2D5F0>]}}}
+
