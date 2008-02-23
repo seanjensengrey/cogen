@@ -3,7 +3,7 @@
 
 ==== Parent module: [Docs_CogenCoreQueue cogen.core.queue] ====
 ==== Methods: [#finalize finalize] [#process process] ====
-==== Attributes: [#block block] [#caller caller] [#finalized finalized] [#prio prio] [#queue queue] [#result result] [#timeout timeout] [#weak_timeout weak_timeout] ====
+==== Attributes: [#block block] [#caller caller] [#finalized finalized] [#prio prio] [#queue queue] [#result result] [#weak_timeout weak_timeout] ====
 
 = Class: QGet =
 
@@ -47,10 +47,6 @@ signature: {{{process(self, sched, coro)}}}
 === {{{result}}} ===
 
 {{{<member 'result' of 'QGet' objects>}}}
-
-=== {{{timeout}}} ===
-
-{{{None}}}
 
 === {{{weak_timeout}}} ===
 

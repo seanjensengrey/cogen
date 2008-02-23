@@ -3,7 +3,7 @@
 
 ==== Parent module: [Docs_CogenCoreQueue cogen.core.queue] ====
 ==== Methods: [#finalize finalize] [#process process] ====
-==== Attributes: [#block block] [#caller caller] [#finalized finalized] [#item item] [#prio prio] [#queue queue] [#result result] [#timeout timeout] [#weak_timeout weak_timeout] ====
+==== Attributes: [#block block] [#caller caller] [#finalized finalized] [#item item] [#prio prio] [#queue queue] [#result result] [#weak_timeout weak_timeout] ====
 
 = Class: QPut =
 
@@ -51,10 +51,6 @@ signature: {{{process(self, sched, coro)}}}
 === {{{result}}} ===
 
 {{{<member 'result' of 'QPut' objects>}}}
-
-=== {{{timeout}}} ===
-
-{{{None}}}
 
 === {{{weak_timeout}}} ===
 
