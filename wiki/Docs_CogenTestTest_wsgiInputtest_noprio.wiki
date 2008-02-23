@@ -238,5 +238,5 @@ signature: {{{test_nonchunked(self)}}}
 
 === {{{middleware}}} ===
 
-{{{[<function validator at 0x00F8AA70>, <function sync_input at 0x00C28AF0>]}}}
+{{{[<function validator at 0x00F93C30>, <function sync_input at 0x00C28AF0>]}}}
 
