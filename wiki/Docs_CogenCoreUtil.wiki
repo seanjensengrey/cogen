@@ -3,7 +3,7 @@
 
 ==== Parent module: [Docs_CogenCore cogen.core] ====
 ==== Classes: [Docs_CogenCoreUtilTimeoutdesc TimeoutDesc] [Docs_CogenCoreUtilPriority priority] ====
-==== Functions: [#debug debug] ====
+==== Functions: [#debug debug] [#fmt_list fmt_list] ====
 
 = Module: util =
 Mischelaneous or common.
@@ -28,6 +28,12 @@ Mischelaneous or common.
 
 === {{{debug}}} ===
 signature: {{{debug(trace=True, backtrace=1, other=None)}}}
+
+
+
+
+=== {{{fmt_list}}} ===
+signature: {{{fmt_list(lst, lim=100)}}}
 
 
 

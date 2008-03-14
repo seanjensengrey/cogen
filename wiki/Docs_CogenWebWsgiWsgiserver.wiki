@@ -43,7 +43,7 @@ Run the server forever.
 
 === {{{bind_addr}}} ===
 
-{{{<property object at 0x00C27DC8>}}}
+{{{<property object at 0x00DEB4E0>}}}
 
 === {{{environ}}} ===
 
@@ -55,5 +55,5 @@ Run the server forever.
 
 === {{{version}}} ===
 
-{{{'cogen.web.wsgi/0.1.5 Python/2.5.1'}}}
+{{{'cogen.web.wsgi/0.1.6 Python/2.5.1'}}}
 

@@ -2,7 +2,7 @@
 #labels Documentation
 
 ==== Parent module: [Docs_CogenCore cogen.core] ====
-==== Classes: [Docs_CogenCoreSchedulersDebugginwrapper DebugginWrapper] [Docs_CogenTestTest_timerTimertest_prioScheduler Scheduler] [Docs_CogenCoreSchedulersTimeout Timeout] ====
+==== Classes: [Docs_CogenCoreSchedulersDebugginwrapper DebugginWrapper] [Docs_CogenCoreSchedulersScheduler Scheduler] [Docs_CogenCoreSchedulersTimeout Timeout] ====
 
 = Module: schedulers =
 Scheduling framework.
@@ -13,7 +13,7 @@ Scheduling framework.
 
 
 
-=== [Docs_CogenTestTest_timerTimertest_prioScheduler Scheduler] ===
+=== [Docs_CogenCoreSchedulersScheduler Scheduler] ===
 
 
 

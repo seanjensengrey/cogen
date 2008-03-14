@@ -16,7 +16,7 @@ signature: {{{__init__(self, sock, **kws)}}}
 
 
 === {{{run}}} ===
-signature: {{{run(self)}}}
+signature: {{{run(self, reactor=True)}}}
 
 
 
