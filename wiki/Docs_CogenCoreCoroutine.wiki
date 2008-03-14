@@ -1,0 +1,37 @@
+#summary cogen.core.coroutine Documentation for trunk
+#labels Documentation
+
+==== Parent module: [Docs_CogenCore cogen.core] ====
+==== Classes: [Docs_CogenCoreCoroutineCoroutine Coroutine] ====
+==== Functions: [#coroutine coroutine] ====
+
+= Module: coroutine =
+Coroutine related boilerplate and wrappers.
+
+== Classes ==
+
+=== [Docs_CogenCoreCoroutineCoroutine Coroutine] ===
+We need a coroutine wrapper for generators and function alike because
+we want to run functions that don't return generators just like a
+coroutine.
+
+
+
+== Functions ==
+
+=== {{{coroutine}}} ===
+signature: {{{coroutine(func)}}}
+
+A decorator function for generators.
+Example:
+
+{{{
+@coroutine
+def plain_ol_generator():
+    yield bla
+    yield bla
+    ...
+}}}
+
+
+

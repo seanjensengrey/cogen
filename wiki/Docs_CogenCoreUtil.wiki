@@ -1,0 +1,41 @@
+#summary cogen.core.util Documentation for trunk
+#labels Documentation
+
+==== Parent module: [Docs_CogenCore cogen.core] ====
+==== Classes: [Docs_CogenCoreUtilTimeoutdesc TimeoutDesc] [Docs_CogenCoreUtilPriority priority] ====
+==== Functions: [#debug debug] [#fmt_list fmt_list] ====
+
+= Module: util =
+Mischelaneous or common.
+
+== Classes ==
+
+=== [Docs_CogenCoreUtilTimeoutdesc TimeoutDesc] ===
+
+
+
+=== [Docs_CogenCoreUtilPriority priority] ===
+|| Property || Description || 
+|| DEFAULT || Use the default_priority set in the Scheduler || 
+|| LAST, NOPRIO || Allways scheduler the operation/coroutine at the end of the queue ||   
+|| CORO || Favor the coroutine - if it's the case. || 
+|| OP || Favor the operation - if it's the case. || 
+|| FIRST, PRIO || Allways schedule with priority || 
+
+
+
+== Functions ==
+
+=== {{{debug}}} ===
+signature: {{{debug(trace=True, backtrace=1, other=None)}}}
+
+
+
+
+=== {{{fmt_list}}} ===
+signature: {{{fmt_list(lst, lim=100)}}}
+
+
+
+
+

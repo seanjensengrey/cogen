@@ -1,0 +1,30 @@
+#summary cogen.core.events.Sleep Documentation for trunk
+#labels Documentation
+
+==== Parent module: [Docs_CogenCoreEvents cogen.core.events] ====
+==== Methods: [#__init__ __init__] ====
+
+= Class: Sleep =
+
+Usage:
+
+{{{
+yield events.Sleep(time_object)
+}}}
+
+  * timeoject - a datetime or timedelta object, or a number of seconds
+    
+{{{
+yield events.Sleep(timestamp=ts)
+}}}
+
+  * ts - a timestamp
+
+== Methods ==
+
+=== {{{__init__}}} ===
+signature: {{{__init__(self, val=None, timestamp=None)}}}
+
+
+
+

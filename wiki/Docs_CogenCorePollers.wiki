@@ -1,0 +1,29 @@
+#summary cogen.core.pollers Documentation for trunk
+#labels Documentation
+
+==== Parent module: [Docs_CogenCore cogen.core] ====
+==== Classes: [Docs_CogenCorePollersEpollpoller EpollPoller] [Docs_CogenCorePollersKqueuepoller KQueuePoller] [Docs_CogenCorePollersPoller Poller] [Docs_CogenCorePollersSelectpoller SelectPoller] ====
+
+= Module: pollers =
+Network polling code.
+
+== Classes ==
+
+=== [Docs_CogenCorePollersEpollpoller EpollPoller] ===
+
+
+
+=== [Docs_CogenCorePollersKqueuepoller KQueuePoller] ===
+
+
+
+=== [Docs_CogenCorePollersPoller Poller] ===
+A poller just checks if there are ready-sockets for the operations.
+The operations are not done here, they are done in the socket ops instances.
+
+
+=== [Docs_CogenCorePollersSelectpoller SelectPoller] ===
+
+
+
+

@@ -1,0 +1,24 @@
+#summary cogen.web.async.SynchronousInputMiddleware Documentation for trunk
+#labels Documentation
+
+==== Parent module: [Docs_CogenWebAsync cogen.web.async] ====
+==== Methods: [#__call__ __call__] [#__init__ __init__] ====
+
+= Class: SynchronousInputMiddleware =
+
+Middleware for providing wsgi.input to the app.
+
+== Methods ==
+
+=== {{{__call__}}} ===
+signature: {{{__call__(self, environ, start_response)}}}
+
+~ @debug(0, 25)
+
+
+=== {{{__init__}}} ===
+signature: {{{__init__(self, app, global_conf={}, buffer_length=1024)}}}
+
+
+
+
