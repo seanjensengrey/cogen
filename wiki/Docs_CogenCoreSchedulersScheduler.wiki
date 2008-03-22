@@ -2,7 +2,7 @@
 #labels Documentation
 
 ==== Parent module: [Docs_CogenCoreSchedulers cogen.core.schedulers] ====
-==== Methods: [#add add] [#add_timeout add_timeout] [#handle_timeouts handle_timeouts] [#next_timer_delta next_timer_delta] [#process_op process_op] [#run run] [#run_poller run_poller] [#run_timer run_timer] [#stop stop] ====
+==== Methods: [#add add] [#add_timeout add_timeout] [#handle_timeouts handle_timeouts] [#next_timer_delta next_timer_delta] [#process_op process_op] [#run run] [#run_timer run_timer] [#stop stop] ====
 
 = Class: Scheduler =
 
@@ -10,9 +10,9 @@ Basic deque-based scheduler with timeout support and primitive
 prioritisaiton parameters.
 
 Usage:
-{{{Scheduler(poller=DefaultPoller, default_priority=priority.LAST, default_timeout=None)}}}
+{{{Scheduler(reactor=DefaultReactor, default_priority=priority.LAST, default_timeout=None)}}}
 
-  * poller: a poller class to use
+  * reactor: a reactor class to use
   * default_priority: a default priority option for operations that do not 
   set it. check [Docs_CogenCoreUtilPriority priority].
   * default_timeout: a default timedelta or number of seconds to wait for 
@@ -49,11 +49,7 @@ signature: {{{process_op(self, op, coro)}}}
 === {{{run}}} ===
 signature: {{{run(self)}}}
 
-
-
-=== {{{run_poller}}} ===
-signature: {{{run_poller(self)}}}
-
+~ @debug()    
 
 
 === {{{run_timer}}} ===

@@ -4,7 +4,7 @@
 ==== Parent module: [Docs_CogenWebWsgi cogen.web.wsgi] ====
 ==== Classes: [Docs_CogenWebWsgiWsgiserverWsgiconnection WSGIConnection] ====
 ==== Methods: [#bind bind] [#serve serve] ====
-==== Attributes: [#STATE_NEED_INIT STATE_NEED_INIT] [#bind_addr bind_addr] [#environ environ] [#protocol protocol] [#version version] ====
+==== Attributes: [#STATE_NEED_INIT STATE_NEED_INIT] [#bind_addr bind_addr] [#environ environ] [#protocol protocol] ====
 
 = Class: WSGIServer =
 
@@ -43,7 +43,7 @@ Run the server forever.
 
 === {{{bind_addr}}} ===
 
-{{{<property object at 0x00DEB4E0>}}}
+{{{<property object at 0x00DF1AF8>}}}
 
 === {{{environ}}} ===
 
@@ -52,8 +52,4 @@ Run the server forever.
 === {{{protocol}}} ===
 
 {{{'HTTP/1.1'}}}
-
-=== {{{version}}} ===
-
-{{{'cogen.web.wsgi/0.1.6 Python/2.5.1'}}}
 

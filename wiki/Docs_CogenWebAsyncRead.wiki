@@ -26,7 +26,7 @@ reading the input and it requires to have these attributes:
 These have to be initialized in the request.
 
 === {{{run}}} ===
-signature: {{{run(self, reactor=True)}}}
+signature: {{{run(self, reactor)}}}
 
 ~ @debug(0)        
 

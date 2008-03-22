@@ -7,13 +7,8 @@
 = Class: Socket =
 
 A wrapper for socket objects, sets nonblocking mode and
-add some attributes we need:
-  * rl_pending - for unchecked for linebreaks buffer
-  * rl_list - for checked for linebreaks buffers
-  * rl_list_sz - a cached size of the summed sizes of rl_list buffers
-
-Regular calls to the usual socket methods return operations for use in a
-coroutine.
+adds some internal bufers and wrappers. Regular calls to the usual 
+socket methods return operations for use in a coroutine.
 
 == Methods ==
 

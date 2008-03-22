@@ -2,7 +2,7 @@
 #labels Documentation
 
 ==== Parent module: [Docs_Cogen cogen] ====
-==== Modules: [Docs_CogenCoreCoroutine coroutine] [Docs_CogenCoreEvents events] [Docs_CogenCorePollers pollers] [Docs_CogenCoreQueue queue] [Docs_CogenCoreSchedulers schedulers] [Docs_CogenCoreSockets sockets] [Docs_CogenCoreUtil util] ====
+==== Modules: [Docs_CogenCoreCoroutine coroutine] [Docs_CogenCoreEvents events] [Docs_CogenCoreQueue queue] [Docs_CogenCoreReactors reactors] [Docs_CogenCoreSchedulers schedulers] [Docs_CogenCoreSockets sockets] [Docs_CogenCoreUtil util] ====
 
 = Module: core =
 This module holds the essential stuff.
@@ -75,12 +75,12 @@ Coroutine related boilerplate and wrappers.
 Base events (coroutine operations) and coroutine exceptions.
 
 
-=== [Docs_CogenCorePollers pollers] ===
-Network polling code.
-
-
 === [Docs_CogenCoreQueue queue] ===
 Port of Queue.Queue from the python standard library.
+
+
+=== [Docs_CogenCoreReactors reactors] ===
+Network polling code.
 
 
 === [Docs_CogenCoreSchedulers schedulers] ===

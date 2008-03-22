@@ -33,7 +33,7 @@ signature: {{{__init__(self, file_handle, sock, offset=None, length=None, blocks
 
 
 === {{{run}}} ===
-signature: {{{run(self, reactor=True)}}}
+signature: {{{run(self, reactor)}}}
 
 
 

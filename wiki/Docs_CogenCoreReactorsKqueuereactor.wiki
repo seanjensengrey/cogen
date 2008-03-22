@@ -1,10 +1,10 @@
-#summary cogen.core.pollers.KQueuePoller Documentation for trunk
+#summary cogen.core.reactors.KQueueReactor Documentation for trunk
 #labels Documentation
 
-==== Parent module: [Docs_CogenCorePollers cogen.core.pollers] ====
+==== Parent module: [Docs_CogenCoreReactors cogen.core.reactors] ====
 ==== Methods: [#__init__ __init__] [#__len__ __len__] [#add add] [#handle_errored handle_errored] [#remove remove] [#run run] [#run_once run_once] [#run_operation run_operation] [#run_or_add run_or_add] [#waiting_op waiting_op] ====
 
-= Class: KQueuePoller =
+= Class: KQueueReactor =
 
 
 
@@ -40,7 +40,7 @@ signature: {{{remove(self, op, coro)}}}
 === {{{run}}} ===
 signature: {{{run(self, timeout=0)}}}
 
-Run a poller loop and return new socket events. Timeout is a timedelta 
+Run a reactor loop and return new socket events. Timeout is a timedelta 
 object, 0 if active coros or None. 
 
 kqueue timeout param is a integer number of nanoseconds (seconds/10**9).
@@ -48,8 +48,8 @@ kqueue timeout param is a integer number of nanoseconds (seconds/10**9).
 === {{{run_once}}} ===
 signature: {{{run_once(self, fdesc, waiting_ops)}}}
 
-Run a operation, remove it from the poller and return the result. 
-Called from the main poller loop. 
+Run a operation, remove it from the reactor and return the result. 
+Called from the main reactor loop. 
 
 === {{{run_operation}}} ===
 signature: {{{run_operation(self, op, reactor=True)}}}
@@ -59,8 +59,9 @@ Run the socket op and return result or exception.
 === {{{run_or_add}}} ===
 signature: {{{run_or_add(self, op, coro)}}}
 
-Perform operation or add the operation in the poller if socket isn't
-ready. Called from the scheduller. 
+Perform operation and return result or add the operation in 
+the reactor if socket isn't ready and return none. 
+Called from the scheduller via SocketOperation.process. 
 
 === {{{waiting_op}}} ===
 signature: {{{waiting_op(self, testcoro)}}}
