@@ -46,5 +46,5 @@ except (KeyboardInterrupt, SystemExit):
 = Extensions =
 
 This server has coroutine extensions that support 
-use of middleware in your application. Here's the 
+use of cogen async calls in your wsgi application. Here's the 
 introduction: [AsynchronousWsgiApp]
