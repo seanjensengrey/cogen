@@ -1,0 +1,237 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+
+<!-- remove old header -->
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>cogen API Reference Documentation
+        - Module: sockets</title><meta name="MSSmartTagsPreventParsing" content="true" /><meta http-equiv="imagetoolbar" content="no" /><link href="css/default.css" rel="stylesheet" type="text/css" /><link href="css/pygments.css" rel="stylesheet" type="text/css" />
+    <!-- <link rel="shortcut icon" href="/images/favicon.ico" type="image/vnd.microsoft.icon"/> -->
+    <link rel="stylesheet" href="css/apydia.css" type="text/css" />
+    <script src="js/jquery-1.2.1.pack.js" type="text/javascript"></script>
+    <script src="js/apydia.js" type="text/javascript"></script>
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+    <div id="page">
+        <div id="browser">
+            <div class="browser-section">
+                <h2>Module Index</h2>
+                <ul>
+                    <li>
+                        <a href="cogen.html">cogen</a>
+                    </li><li>
+                        <a href="cogen.common.html">cogen.common</a>
+                    </li><li>
+                        <a href="cogen.core.html">cogen.core</a>
+                    </li><li>
+                        <a href="cogen.core.coroutine.html">cogen.core.coroutine</a>
+                    </li><li>
+                        <a href="cogen.core.events.html">cogen.core.events</a>
+                    </li><li>
+                        <a href="cogen.core.queue.html">cogen.core.queue</a>
+                    </li><li>
+                        <a href="cogen.core.reactors.html">cogen.core.reactors</a>
+                    </li><li>
+                        <a href="cogen.core.schedulers.html">cogen.core.schedulers</a>
+                    </li><li class="active">
+                        <a href="cogen.core.sockets.html">cogen.core.sockets</a>
+                    </li><li>
+                        <a href="cogen.core.util.html">cogen.core.util</a>
+                    </li><li>
+                        <a href="cogen.web.html">cogen.web</a>
+                    </li><li>
+                        <a href="cogen.web.async.html">cogen.web.async</a>
+                    </li><li>
+                        <a href="cogen.web.wsgi.html">cogen.web.wsgi</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="browser-section">
+                <h2>Classes</h2>
+                <ul>
+                    <li>
+                        <a href="cogen.core.sockets.Accept.html">Accept</a>
+                    </li><li>
+                        <a href="cogen.core.sockets.Connect.html">Connect</a>
+                    </li><li>
+                        <a href="cogen.core.sockets.Read.html">Read</a>
+                    </li><li>
+                        <a href="cogen.core.sockets.ReadAll.html">ReadAll</a>
+                    </li><li>
+                        <a href="cogen.core.sockets.ReadLine.html">ReadLine</a>
+                    </li><li>
+                        <a href="cogen.core.sockets.SendFile.html">SendFile</a>
+                    </li><li>
+                        <a href="cogen.core.sockets.Socket.html">Socket</a>
+                    </li><li>
+                        <a href="cogen.core.sockets.Write.html">Write</a>
+                    </li><li>
+                        <a href="cogen.core.sockets.WriteAll.html">WriteAll</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="content">
+    <h1>Module:
+        cogen.core.sockets
+    </h1>
+    <div class="docstring plain">Socket-only coroutine operations and <code name="code" class="python">Socket</code> wrapper.</div>
+    <ul class="link-bar">
+    <li class="top"><a href="#header">Top</a></li>
+    <li class="link-to-sourcecode">
+        <a href="http://cogen.googlecode.com/svn/trunk/cogen\cogen\core\sockets.py#L1">View source</a>
+    </li>
+</ul>
+    <div>
+        <h2>Classes</h2>
+            <h3>
+                <a href="cogen.core.sockets.Accept.html">Accept</a>
+            </h3>
+            <div class="docstring plain">Returns a (conn, addr) tuple when the operation completes.</div>
+            <ul class="link-bar">
+    <li class="top"><a href="#header">Top</a></li>
+    <li>
+        <a href="cogen.core.sockets.Accept.html">Details</a>
+    </li>
+    <li class="link-to-sourcecode">
+        <a href="http://cogen.googlecode.com/svn/trunk/cogen\cogen\core\sockets.py#L644">View source</a>
+    </li>
+</ul>
+            <h3>
+                <a href="cogen.core.sockets.Connect.html">Connect</a>
+            </h3>
+            <div class="docstring plain">Connect to the given <code name="code" class="python">addr</code> using <code name="code" class="python">sock</code>.</div>
+            <ul class="link-bar">
+    <li class="top"><a href="#header">Top</a></li>
+    <li>
+        <a href="cogen.core.sockets.Connect.html">Details</a>
+    </li>
+    <li class="link-to-sourcecode">
+        <a href="http://cogen.googlecode.com/svn/trunk/cogen\cogen\core\sockets.py#L698">View source</a>
+    </li>
+</ul>
+            <h3>
+                <a href="cogen.core.sockets.Read.html">Read</a>
+            </h3>
+            <div class="docstring plain"><code name="code" class="python">len</code> is max read size, BUT, if if there are buffers from ReadLine
+return them first.
+Example usage:<br /><br /><pre class="codeblock python python python python python python python python python python python python python python python python python python python python" name="code">
+yield sockets.Read(socket_object, buffer_length)
+</pre></div>
+            <ul class="link-bar">
+    <li class="top"><a href="#header">Top</a></li>
+    <li>
+        <a href="cogen.core.sockets.Read.html">Details</a>
+    </li>
+    <li class="link-to-sourcecode">
+        <a href="http://cogen.googlecode.com/svn/trunk/cogen\cogen\core\sockets.py#L315">View source</a>
+    </li>
+</ul>
+            <h3>
+                <a href="cogen.core.sockets.ReadAll.html">ReadAll</a>
+            </h3>
+            <div class="docstring plain">Run this operator till we've read <code name="code" class="python">len</code> bytes.</div>
+            <ul class="link-bar">
+    <li class="top"><a href="#header">Top</a></li>
+    <li>
+        <a href="cogen.core.sockets.ReadAll.html">Details</a>
+    </li>
+    <li class="link-to-sourcecode">
+        <a href="http://cogen.googlecode.com/svn/trunk/cogen\cogen\core\sockets.py#L379">View source</a>
+    </li>
+</ul>
+            <h3>
+                <a href="cogen.core.sockets.ReadLine.html">ReadLine</a>
+            </h3>
+            <div class="docstring plain">Run this operator till we read a newline (\n) or we have a overflow.<br /><br /><code name="code" class="python">len</code> is the max size for a line</div>
+            <ul class="link-bar">
+    <li class="top"><a href="#header">Top</a></li>
+    <li>
+        <a href="cogen.core.sockets.ReadLine.html">Details</a>
+    </li>
+    <li class="link-to-sourcecode">
+        <a href="http://cogen.googlecode.com/svn/trunk/cogen\cogen\core\sockets.py#L458">View source</a>
+    </li>
+</ul>
+            <h3>
+                <a href="cogen.core.sockets.SendFile.html">SendFile</a>
+            </h3>
+            <div class="docstring plain">Uses underling OS sendfile call or a regular memory copy operation if
+there is no sendfile.
+You can use this as a WriteAll if you specify the length.
+Usage:
+<blockquote></blockquote><pre class="codeblock python python python python python python python python python python python python python python python python python python python python python" name="code">
+yield sockets.SendFile(&lt;file handle&gt;, &lt;sock&gt;, 0) 
+    # will send till send operations return 0
+    
+yield sockets.SendFile(&lt;file handle&gt;, &lt;sock&gt;, 0, blocksize=0)
+    # there will be only one send operation (if successfull)
+    # that meas the whole file will be read in memory if there is 
+    #no sendfile
+    
+yield sockets.SendFile(&lt;file handle&gt;, &lt;sock&gt;, 0, &lt;file size&gt;)
+    # this will hang if we can't read &lt;file size&gt; bytes
+    #from the file
+</pre></div>
+            <ul class="link-bar">
+    <li class="top"><a href="#header">Top</a></li>
+    <li>
+        <a href="cogen.core.sockets.SendFile.html">Details</a>
+    </li>
+    <li class="link-to-sourcecode">
+        <a href="http://cogen.googlecode.com/svn/trunk/cogen\cogen\core\sockets.py#L211">View source</a>
+    </li>
+</ul>
+            <h3>
+                <a href="cogen.core.sockets.Socket.html">Socket</a>
+            </h3>
+            <div class="docstring plain">A wrapper for socket objects, sets nonblocking mode and
+adds some internal bufers and wrappers. Regular calls to the usual
+socket methods return operations for use in a coroutine.</div>
+            <ul class="link-bar">
+    <li class="top"><a href="#header">Top</a></li>
+    <li>
+        <a href="cogen.core.sockets.Socket.html">Details</a>
+    </li>
+    <li class="link-to-sourcecode">
+        <a href="http://cogen.googlecode.com/svn/trunk/cogen\cogen\core\sockets.py#L47">View source</a>
+    </li>
+</ul>
+            <h3>
+                <a href="cogen.core.sockets.Write.html">Write</a>
+            </h3>
+            <div class="docstring plain">Write the buffer to the socket and return the number of bytes written.</div>
+            <ul class="link-bar">
+    <li class="top"><a href="#header">Top</a></li>
+    <li>
+        <a href="cogen.core.sockets.Write.html">Details</a>
+    </li>
+    <li class="link-to-sourcecode">
+        <a href="http://cogen.googlecode.com/svn/trunk/cogen\cogen\core\sockets.py#L561">View source</a>
+    </li>
+</ul>
+            <h3>
+                <a href="cogen.core.sockets.WriteAll.html">WriteAll</a>
+            </h3>
+            <div class="docstring plain">Run this operation till all the bytes have been written.</div>
+            <ul class="link-bar">
+    <li class="top"><a href="#header">Top</a></li>
+    <li>
+        <a href="cogen.core.sockets.WriteAll.html">Details</a>
+    </li>
+    <li class="link-to-sourcecode">
+        <a href="http://cogen.googlecode.com/svn/trunk/cogen\cogen\core\sockets.py#L601">View source</a>
+    </li>
+</ul>
+    </div>
+        </div>
+        <div id="footer">
+            Generated with <a href="http://apydia.ematia.de/" class="extern">
+            Apydia 0.0.3</a>
+        </div>
+    </div>
+</body>
+</html>
