@@ -11,7 +11,7 @@
 == Methods ==
 
 === {{{__init__}}} ===
-signature: {{{__init__(self, scheduler, default_size=1024)}}}
+signature: {{{__init__(self, scheduler, res, default_size=1024)}}}
 
 
 

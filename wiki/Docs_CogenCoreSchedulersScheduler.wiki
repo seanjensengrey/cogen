@@ -2,7 +2,7 @@
 #labels Documentation
 
 ==== Parent module: [Docs_CogenCoreSchedulers cogen.core.schedulers] ====
-==== Methods: [#add add] [#add_timeout add_timeout] [#handle_timeouts handle_timeouts] [#next_timer_delta next_timer_delta] [#process_op process_op] [#run run] [#run_timer run_timer] [#stop stop] ====
+==== Methods: [#add add] [#add_timeout add_timeout] [#handle_timeouts handle_timeouts] [#next_timer_delta next_timer_delta] [#process_op process_op] [#run_timer run_timer] [#stop stop] [#wrapped wrapped] ====
 
 = Class: Scheduler =
 
@@ -38,18 +38,13 @@ signature: {{{handle_timeouts(self)}}}
 === {{{next_timer_delta}}} ===
 signature: {{{next_timer_delta(self)}}}
 
+~ @debug(0)
 
 
 === {{{process_op}}} ===
 signature: {{{process_op(self, op, coro)}}}
 
 ~ @debug(0)        
-
-
-=== {{{run}}} ===
-signature: {{{run(self)}}}
-
-~ @debug()    
 
 
 === {{{run_timer}}} ===
@@ -59,6 +54,11 @@ signature: {{{run_timer(self)}}}
 
 === {{{stop}}} ===
 signature: {{{stop(self)}}}
+
+
+
+=== {{{wrapped}}} ===
+signature: {{{wrapped(*a, **k)}}}
 
 
 

@@ -12,7 +12,7 @@ The operations are not done here, they are done in the socket ops instances.
 == Methods ==
 
 === {{{__init__}}} ===
-signature: {{{__init__(self, scheduler)}}}
+signature: {{{__init__(self, scheduler, resolution)}}}
 
 
 
