@@ -87,12 +87,12 @@ Here's the basic workflow:
 
   * the coroutine yields a operation
   * the scheduler runs that operation (the [Docs_CogenCoreEventsOperation#process process] method)
-    Note: all the socket operations share the same [Docs_CogenCoreSocketsSocketOperation#process process] method
+    Note: all the socket operations share the same [Docs_CogenCoreSocketsSocketoperation#process process] method
     * if run_or_add is False then the operation is added in the reactor for 
     polling (with the exception that if we have data in out internal buffers
     the operation is runned first)
     * if run_or_add is set (it's default) in the operation then in process 
-    method the reactor's [Docs_CogenCoreReactorsReactorBase#run_or_add run_or_add] 
+    method the reactor's [Docs_CogenCoreReactorsReactorbase#run_or_add run_or_add] 
     is called with the operation and coroutine
 
   
