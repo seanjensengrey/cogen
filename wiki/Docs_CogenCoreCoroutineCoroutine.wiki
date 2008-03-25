@@ -118,7 +118,7 @@ which handles it's own completion (resuming the caller and the waiters).
 
 === {{{running}}} ===
 
-{{{<property object at 0x00C79BC0>}}}
+{{{<property object at 0x00C6FC88>}}}
 
 === {{{state}}} ===
 

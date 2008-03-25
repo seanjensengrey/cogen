@@ -114,6 +114,8 @@ Most of those operations work with attributes we set in the scheduler.
 
 === [Docs_CogenCoreSockets sockets] ===
 Socket-only coroutine operations and `Socket` wrapper.
+Really - the only thing you need to know for most stuff is 
+the [Docs_CogenCoreSocketsSocket Socket] class.
 
 
 === [Docs_CogenCoreUtil util] ===

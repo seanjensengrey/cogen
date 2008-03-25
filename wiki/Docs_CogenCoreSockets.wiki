@@ -8,6 +8,8 @@
 
 = Module: `sockets` =
 Socket-only coroutine operations and `Socket` wrapper.
+Really - the only thing you need to know for most stuff is 
+the [Docs_CogenCoreSocketsSocket Socket] class.
 
 == Classes ==
 
@@ -50,16 +52,16 @@ You can use this as a WriteAll if you specify the length.
 Usage:
     
 {{{
-yield sockets.SendFile(, , 0) 
+yield sockets.SendFile(file_object, socket_object, 0) 
     # will send till send operations return 0
     
-yield sockets.SendFile(, , 0, blocksize=0)
+yield sockets.SendFile(file_object, socket_object, 0, blocksize=0)
     # there will be only one send operation (if successfull)
     # that meas the whole file will be read in memory if there is 
     #no sendfile
     
-yield sockets.SendFile(, , 0, )
-    # this will hang if we can't read  bytes
+yield sockets.SendFile(file_object, socket_object, 0, file_size)
+    # this will hang if we can't read file_size bytes
     #from the file
 }}}
 
@@ -68,6 +70,16 @@ yield sockets.SendFile(, , 0, )
 A wrapper for socket objects, sets nonblocking mode and
 adds some internal bufers and wrappers. Regular calls to the usual 
 socket methods return operations for use in a coroutine.
+
+    Socket([family[, type[, proto]]]) -> socket object
+
+Open a socket of the given type.  The family argument specifies the
+address family; it defaults to AF_INET.  The type argument specifies
+whether this is a stream (SOCK_STREAM, this is the default)
+or datagram (SOCK_DGRAM) socket.  The protocol argument defaults to 0,
+specifying the default protocol.  Keyword arguments are accepted.
+
+A socket object represents one endpoint of a network connection.
 
 
 === [Docs_CogenCoreSocketsSocketoperation SocketOperation] ===

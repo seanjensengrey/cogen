@@ -12,16 +12,16 @@ You can use this as a WriteAll if you specify the length.
 Usage:
     
 {{{
-yield sockets.SendFile(, , 0) 
+yield sockets.SendFile(file_object, socket_object, 0) 
     # will send till send operations return 0
     
-yield sockets.SendFile(, , 0, blocksize=0)
+yield sockets.SendFile(file_object, socket_object, 0, blocksize=0)
     # there will be only one send operation (if successfull)
     # that meas the whole file will be read in memory if there is 
     #no sendfile
     
-yield sockets.SendFile(, , 0, )
-    # this will hang if we can't read  bytes
+yield sockets.SendFile(file_object, socket_object, 0, file_size)
+    # this will hang if we can't read file_size bytes
     #from the file
 }}}
 
