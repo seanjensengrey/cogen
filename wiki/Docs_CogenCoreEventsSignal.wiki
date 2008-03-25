@@ -11,10 +11,18 @@ This will resume the coroutines that where paused with WaitForSignal.
 Usage:
 
 {{{
-nr = yield events.Signal(name, value)
+nr = yield events.Signal(
+    name, 
+    value,
+    prio=priority.DEFAULT
+)
 }}}
 
   * nr - the number of coroutines woken up
+  * name - object that coroutines wait on, can be a string 
+  * value - object that the waiting coros recieve when they are resumed.
+  
+See: [Docs_CogenCoreEventsOperation Operation]
 
 == Methods ==
 

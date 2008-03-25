@@ -6,7 +6,7 @@
 
 = Class: `Pass` =
 
-A operator for setting the next (coro, op) pair to be runned by the 
+A operation for setting the next (coro, op) pair to be runned by the 
 scheduler. Used internally.
 
 == Methods ==

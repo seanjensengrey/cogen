@@ -6,13 +6,15 @@
 
 = Class: `Sleep` =
 
+A operation to pausing the coroutine for a specified amount of time.
+
 Usage:
 
 {{{
 yield events.Sleep(time_object)
 }}}
 
-  * timeoject - a datetime or timedelta object, or a number of seconds
+  * time_object - a datetime or timedelta object, or a number of seconds
     
 {{{
 yield events.Sleep(timestamp=ts)

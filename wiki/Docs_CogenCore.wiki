@@ -109,6 +109,7 @@ Scheduling framework.
 The scheduler handles the timeouts, run the operations and does very basic 
 management of coroutines. Most of the heavy logic is in each operation class.
 See: [Docs_CogenCoreEvents events] and [Docs_CogenCoreSockets sockets]
+Most of those operations work with attributes we set in the scheduler.
 
 
 === [Docs_CogenCoreSockets sockets] ===

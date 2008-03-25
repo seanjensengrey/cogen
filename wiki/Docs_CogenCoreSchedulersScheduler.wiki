@@ -38,14 +38,12 @@ signature: {{{handle_timeouts(self)}}}
 === {{{next_timer_delta}}} ===
 signature: {{{next_timer_delta(self)}}}
 
-~ @debug(0)
 
 
 === {{{process_op}}} ===
 signature: {{{process_op(self, op, coro)}}}
 
-~ @debug(0)        
-
+Process a (op, coro) pair and return another pair. Handles exceptions.
 
 === {{{run}}} ===
 signature: {{{run(self)}}}

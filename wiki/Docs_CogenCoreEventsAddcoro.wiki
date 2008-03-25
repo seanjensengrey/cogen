@@ -13,6 +13,9 @@ Example:
 yield events.AddCoro(some_coro, args=(), kwargs={})
 }}}
 
+This is similar to Call, but it doesn't pause the current coroutine.
+See: [Docs_CogenCoreEventsOperation Operation]
+
 == Methods ==
 
 === {{{__init__}}} ===

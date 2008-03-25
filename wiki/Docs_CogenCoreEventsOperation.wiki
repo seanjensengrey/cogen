@@ -13,12 +13,17 @@ the priority flag.
 Eg:
 
 {{{
-yield Operation(prio=)
+yield Operation(prio=priority.DEFAULT)
 }}}        
+
+  * prio - a priority constant, where the coro is appended on the active 
+    coroutine queue and how the coroutine is runned depend on this.
 
 If you need something that can't be done in a coroutine fashion you 
 probabily need to subclass this and make a custom operation for your
 issue.
+
+Note: you don't really use this, this is for subclassing for other operations.
 
 == Methods ==
 

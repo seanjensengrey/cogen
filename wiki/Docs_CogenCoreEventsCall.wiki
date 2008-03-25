@@ -7,15 +7,19 @@
 = Class: `Call` =
 
 This will pause the current coroutine, add a new coro in the scheduler and 
-resume the callee when it returns.
+resume the callee when it returns. 
 
 Usage:
 {{{
-result = yield events.Call(mycoro, args=, kwargs=, prio=)
+result = yield events.Call(mycoro, args=(), kwargs={}, prio=priority.DEFAULT)
 }}}
 
+  * mycoro - the coroutine to add.
+  * args, kwargs - params to call the coroutine with
   * if `prio` is set the new coroutine will be added in the top of the 
   scheduler queue
+  
+See: [Docs_CogenCoreEventsOperation Operation]
 
 == Methods ==
 

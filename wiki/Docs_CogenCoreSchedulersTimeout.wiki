@@ -6,7 +6,9 @@
 
 = Class: `Timeout` =
 
-
+This wrapps a (op, coro) pair in weakreferences, extracts the timeout 
+value from the operation. We add instances of this class in the timeouts 
+heapq.
 
 == Attributes ==
 

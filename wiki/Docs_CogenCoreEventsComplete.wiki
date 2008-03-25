@@ -6,7 +6,7 @@
 
 = Class: `Complete` =
 
-A operator for adding a list of (coroutine, operator) pairs. Used 
+A operation for adding a list of (coroutine, operator) pairs. Used 
 internally.
 
 == Methods ==

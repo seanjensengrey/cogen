@@ -6,7 +6,7 @@
 
 = Class: `Join` =
 
-A operator for waiting on a coroutine. 
+A operation for waiting on a coroutine. 
 Example:
 
 {{{
@@ -23,6 +23,9 @@ def coro_b():
 ref = scheduler.add(coro_b)
 scheduler.add(coro_a)
 }}}
+
+This will pause the coroutine and resume it when the other coroutine 
+(`ref` in the example) has died.
 
 == Methods ==
 
