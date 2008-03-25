@@ -45,5 +45,3 @@ The operations are not done here, they are done in the socket ops instances.
 === [Docs_CogenCoreReactorsSelectreactor SelectReactor] ===
 
 
-
-
