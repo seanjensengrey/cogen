@@ -1,0 +1,38 @@
+#summary cogen.core.sockets.ReadOperation Documentation for trunk
+#labels Documentation
+
+==== Parent module: [Docs_CogenCoreSockets cogen.core.sockets] ====
+==== Methods: [#__init__ __init__] [#try_run try_run] ====
+
+= Class: `ReadOperation` =
+
+
+
+== Methods ==
+
+=== {{{__init__}}} ===
+signature: {{{__init__(self, sock, run_or_add=True, **kws)}}}
+
+All the socket operations have these generic properties that the 
+poller and scheduler interprets:
+
+  * timeout - the ammout of time in seconds or timedelta, or the datetime 
+  value till the poller should wait for this operation.
+  * weak_timeout - if this is True the timeout handling code will take 
+  into account the time of last activity (that would be the time of last
+  `try_run` call)
+  * prio - a flag for the scheduler
+
+=== {{{try_run}}} ===
+signature: {{{try_run(self, reactor)}}}
+
+This method will return a None value or raise a exception if the 
+operation can't complete at this time.
+
+The socket poller will run this method if the socket is 
+readable/writeable.
+
+If this returns a value that evaluates to False, the poller will try to
+run this at a later time (when the socket is readable/writeable again).
+
+

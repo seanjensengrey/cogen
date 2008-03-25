@@ -2,7 +2,9 @@
 #labels Documentation
 
 ==== Parent module: [Docs_CogenCore cogen.core] ====
-==== Classes: [Docs_CogenCoreSocketsAccept Accept] [Docs_CogenCoreSocketsConnect Connect] [Docs_CogenCoreSocketsRead Read] [Docs_CogenCoreSocketsReadall ReadAll] [Docs_CogenCoreSocketsReadline ReadLine] [Docs_CogenCoreSocketsSendfile SendFile] [Docs_CogenCoreSocketsSocket Socket] [Docs_CogenCoreSocketsWrite Write] [Docs_CogenCoreSocketsWriteall WriteAll] ====
+==== Classes: [Docs_CogenCoreSocketsAccept Accept] [Docs_CogenCoreSocketsConnect Connect] [Docs_CogenCoreSocketsRead Read] [Docs_CogenCoreSocketsReadall ReadAll] [Docs_CogenCoreSocketsReadline ReadLine] [Docs_CogenCoreSocketsReadoperation ReadOperation] [Docs_CogenCoreSocketsSendfile SendFile] [Docs_CogenCoreSocketsSocket Socket] [Docs_CogenCoreSocketsSocketoperation SocketOperation] [Docs_CogenCoreSocketsWrite Write] [Docs_CogenCoreSocketsWriteall WriteAll] [Docs_CogenCoreSocketsWriteoperation WriteOperation] ====
+==== Functions: [#getdefaulttimeout getdefaulttimeout] [#setdefaulttimeout setdefaulttimeout] ====
+==== Attributes: [#sendfile sendfile] ====
 
 = Module: `sockets` =
 Socket-only coroutine operations and `Socket` wrapper.
@@ -37,6 +39,10 @@ Run this operator till we read a newline (\n) or we have a overflow.
 `len` is the max size for a line
 
 
+=== [Docs_CogenCoreSocketsReadoperation ReadOperation] ===
+
+
+
 === [Docs_CogenCoreSocketsSendfile SendFile] ===
 Uses underling OS sendfile call or a regular memory copy operation if 
 there is no sendfile.
@@ -64,12 +70,47 @@ adds some internal bufers and wrappers. Regular calls to the usual
 socket methods return operations for use in a coroutine.
 
 
+=== [Docs_CogenCoreSocketsSocketoperation SocketOperation] ===
+This is a generic class for a operation that involves some socket call.
+    
+A socket operation should subclass WriteOperation or ReadOperation, define a
+`run` method and call the __init__ method of the superclass.
+
+
 === [Docs_CogenCoreSocketsWrite Write] ===
 Write the buffer to the socket and return the number of bytes written.
 
 
 === [Docs_CogenCoreSocketsWriteall WriteAll] ===
 Run this operation till all the bytes have been written.
+
+
+=== [Docs_CogenCoreSocketsWriteoperation WriteOperation] ===
+
+
+
+
+== Functions ==
+
+=== {{{getdefaulttimeout}}} ===
+signature: {{{getdefaulttimeout()}}}
+
+
+
+
+=== {{{setdefaulttimeout}}} ===
+signature: {{{setdefaulttimeout(timeout)}}}
+
+Set the default timeout used by the socket wrapper 
+([Docs_CogenCoreSocketsSocket Socket] class)
+
+
+
+== Attributes ==
+
+=== {{{sendfile}}} ===
+
+{{{None}}}
 
 
 
