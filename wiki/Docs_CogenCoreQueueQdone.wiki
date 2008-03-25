@@ -5,7 +5,7 @@
 ==== Methods: [#finalize finalize] [#process process] ====
 ==== Attributes: [#prio prio] [#queue queue] ====
 
-= Class: QDone =
+= Class: `QDone` =
 
 A operation for the queue done_task call
 

@@ -4,7 +4,7 @@
 ==== Parent module: [Docs_CogenCoreSockets cogen.core.sockets] ====
 ==== Methods: [#accept accept] [#bind bind] [#close close] [#connect connect] [#fileno fileno] [#getpeername getpeername] [#getsockname getsockname] [#gettimeout gettimeout] [#listen listen] [#read read] [#readall readall] [#readline readline] [#setblocking setblocking] [#setsockopt setsockopt] [#settimeout settimeout] [#shutdown shutdown] [#write write] [#writeall writeall] ====
 
-= Class: Socket =
+= Class: `Socket` =
 
 A wrapper for socket objects, sets nonblocking mode and
 adds some internal bufers and wrappers. Regular calls to the usual 

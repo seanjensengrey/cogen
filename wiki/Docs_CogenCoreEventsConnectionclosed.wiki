@@ -3,7 +3,7 @@
 
 ==== Parent module: [Docs_CogenCoreEvents cogen.core.events] ====
 
-= Class: ConnectionClosed =
+= Class: `ConnectionClosed` =
 
 Raised when the other peer has closed connection.
 

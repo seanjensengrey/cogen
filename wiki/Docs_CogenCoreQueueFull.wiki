@@ -4,7 +4,7 @@
 ==== Parent module: [Docs_CogenCoreQueue cogen.core.queue] ====
 ==== Attributes: [#args args] [#message message] ====
 
-= Class: Full =
+= Class: `Full` =
 
 
 

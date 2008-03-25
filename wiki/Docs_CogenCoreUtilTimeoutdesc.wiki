@@ -3,7 +3,7 @@
 
 ==== Parent module: [Docs_CogenCoreUtil cogen.core.util] ====
 
-= Class: TimeoutDesc =
+= Class: `TimeoutDesc` =
 
 
 

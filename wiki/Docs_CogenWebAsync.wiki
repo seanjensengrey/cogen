@@ -5,7 +5,7 @@
 ==== Classes: [Docs_CogenWebAsyncCogenoperationcall COGENOperationCall] [Docs_CogenWebAsyncCogenoperationwrapper COGENOperationWrapper] [Docs_CogenWebAsyncCogenproxy COGENProxy] [Docs_CogenWebAsyncRead Read] [Docs_CogenWebAsyncReadline ReadLine] [Docs_CogenWebAsyncSynchronousinputmiddleware SynchronousInputMiddleware] ====
 ==== Functions: [#sync_input sync_input] ====
 
-= Module: async =
+= Module: `async` =
 cogen.web.wsgi server is asynchronous by default. If you need to run a app that
 uses wsgi.input synchronously you need to wrapp it in 
 `SynchronousInputMiddleware`.

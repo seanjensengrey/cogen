@@ -3,7 +3,7 @@
 
 ==== Parent module: [Docs_CogenCoreUtil cogen.core.util] ====
 
-= Class: priority =
+= Class: `priority` =
 
 || Property || Description || 
 || DEFAULT || Use the default_priority set in the Scheduler || 

@@ -4,8 +4,12 @@
 ==== Parent module: [Docs_CogenCore cogen.core] ====
 ==== Classes: [Docs_CogenCoreSchedulersDebugginwrapper DebugginWrapper] [Docs_CogenCoreSchedulersScheduler Scheduler] [Docs_CogenCoreSchedulersTimeout Timeout] ====
 
-= Module: schedulers =
+= Module: `schedulers` =
 Scheduling framework.
+
+The scheduler handles the timeouts, run the operations and does very basic 
+management of coroutines. Most of the heavy logic is in each operation class.
+See: [events Docs_CogenCoreEvents] and [sockets Docs_CogenCoreSockets]
 
 == Classes ==
 

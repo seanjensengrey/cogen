@@ -3,7 +3,7 @@
 
 ==== Parent module: [Docs_CogenCoreEvents cogen.core.events] ====
 
-= Class: OperationTimeout =
+= Class: `OperationTimeout` =
 
 Raised when the timeout for a operation expires. The exception 
 message will be the operation

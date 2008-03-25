@@ -2,9 +2,9 @@
 #labels Documentation
 
 ==== Parent module: [Docs_CogenCoreSchedulers cogen.core.schedulers] ====
-==== Methods: [#add add] [#add_timeout add_timeout] [#handle_timeouts handle_timeouts] [#next_timer_delta next_timer_delta] [#process_op process_op] [#run_timer run_timer] [#stop stop] [#wrapped wrapped] ====
+==== Methods: [#add add] [#add_timeout add_timeout] [#handle_timeouts handle_timeouts] [#next_timer_delta next_timer_delta] [#process_op process_op] [#run run] [#run_timer run_timer] [#stop stop] ====
 
-= Class: Scheduler =
+= Class: `Scheduler` =
 
 Basic deque-based scheduler with timeout support and primitive 
 prioritisaiton parameters.
@@ -47,6 +47,13 @@ signature: {{{process_op(self, op, coro)}}}
 ~ @debug(0)        
 
 
+=== {{{run}}} ===
+signature: {{{run(self)}}}
+
+This is the main loop.
+This loop will exit when there are no more coroutines to run or stop has
+been called.
+
 === {{{run_timer}}} ===
 signature: {{{run_timer(self)}}}
 
@@ -54,11 +61,6 @@ signature: {{{run_timer(self)}}}
 
 === {{{stop}}} ===
 signature: {{{stop(self)}}}
-
-
-
-=== {{{wrapped}}} ===
-signature: {{{wrapped(*a, **k)}}}
 
 
 

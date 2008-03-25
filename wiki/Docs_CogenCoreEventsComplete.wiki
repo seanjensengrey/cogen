@@ -1,0 +1,19 @@
+#summary cogen.core.events.Complete Documentation for trunk
+#labels Documentation
+
+==== Parent module: [Docs_CogenCoreEvents cogen.core.events] ====
+==== Methods: [#__init__ __init__] ====
+
+= Class: `Complete` =
+
+A operator for adding a list of (coroutine, operator) pairs. Used 
+internally.
+
+== Methods ==
+
+=== {{{__init__}}} ===
+signature: {{{__init__(self, *args, **kws)}}}
+
+
+
+

@@ -1,0 +1,45 @@
+#summary cogen.core.events.Operation Documentation for trunk
+#labels Documentation
+
+==== Parent module: [Docs_CogenCoreEvents cogen.core.events] ====
+==== Methods: [#finalize finalize] [#process process] ====
+==== Attributes: [#prio prio] ====
+
+= Class: `Operation` =
+
+All operations derive from this. This base class handles 
+the priority flag. 
+
+Eg:
+
+{{{
+yield Operation(prio=)
+}}}        
+
+If you need something that can't be done in a coroutine fashion you 
+probabily need to subclass this and make a custom operation for your
+issue.
+
+== Methods ==
+
+=== {{{finalize}}} ===
+signature: {{{finalize(self)}}}
+
+Called just before the Coroutine wrapper passes the operation back
+in the generator. Return value is the value actualy sent in the 
+generator.
+
+=== {{{process}}} ===
+signature: {{{process(self, sched, coro)}}}
+
+This is called when the operation is to be processed by the 
+scheduler. Code here works modifies the scheduler and it's usualy 
+very crafty.
+
+
+== Attributes ==
+
+=== {{{prio}}} ===
+
+{{{<member 'prio' of 'Operation' objects>}}}
+

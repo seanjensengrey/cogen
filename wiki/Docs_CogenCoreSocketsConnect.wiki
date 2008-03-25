@@ -4,7 +4,7 @@
 ==== Parent module: [Docs_CogenCoreSockets cogen.core.sockets] ====
 ==== Methods: [#__init__ __init__] [#run run] ====
 
-= Class: Connect =
+= Class: `Connect` =
 
 Connect to the given `addr` using `sock`.
 

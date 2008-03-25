@@ -4,7 +4,7 @@
 ==== Parent module: [Docs_CogenCoreSockets cogen.core.sockets] ====
 ==== Methods: [#__init__ __init__] [#run run] ====
 
-= Class: Read =
+= Class: `Read` =
 
 `len` is max read size, BUT, if if there are buffers from ReadLine 
 return them first.

@@ -3,7 +3,7 @@
 
 ==== Parent module: [Docs_Cogen cogen] ====
 
-= Module: common =
+= Module: `common` =
 A module for quick importing the essential core stuff. 
 (coroutine, Scheduler, events, sockets, priority)
 

@@ -4,7 +4,7 @@
 ==== Parent module: [Docs_CogenCoreSockets cogen.core.sockets] ====
 ==== Methods: [#__init__ __init__] [#run run] ====
 
-= Class: ReadLine =
+= Class: `ReadLine` =
 
 Run this operator till we read a newline (\n) or we have a overflow.
 

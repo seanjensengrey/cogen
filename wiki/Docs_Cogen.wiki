@@ -3,7 +3,7 @@
 
 ==== Modules: [Docs_CogenCommon common] [Docs_CogenCore core] [Docs_CogenDocs docs] [Docs_CogenTest test] [Docs_CogenWeb web] ====
 
-= Module: cogen =
+= Module: `cogen` =
 This is a library for network oriented, coroutine based programming. 
 The interfaces and events/operations aim to mimic thread features. Coroutines 
 work as simple generators, the operations and events work as objects passed in 

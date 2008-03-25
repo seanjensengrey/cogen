@@ -2,9 +2,9 @@
 #labels Documentation
 
 ==== Parent module: [Docs_CogenCore cogen.core] ====
-==== Classes: [Docs_CogenCoreEventsAddcoro AddCoro] [Docs_CogenCoreEventsCall Call] [Docs_CogenCoreEventsConnectionclosed ConnectionClosed] [Docs_CogenCoreEventsJoin Join] [Docs_CogenCoreEventsOperationtimeout OperationTimeout] [Docs_CogenCoreEventsSignal Signal] [Docs_CogenCoreEventsSleep Sleep] [Docs_CogenCoreEventsWaitforsignal WaitForSignal] ====
+==== Classes: [Docs_CogenCoreEventsAddcoro AddCoro] [Docs_CogenCoreEventsCall Call] [Docs_CogenCoreEventsComplete Complete] [Docs_CogenCoreEventsConnectionclosed ConnectionClosed] [Docs_CogenCoreEventsConnectionerror ConnectionError] [Docs_CogenCoreEventsCoroutineexception CoroutineException] [Docs_CogenCoreEventsJoin Join] [Docs_CogenCoreEventsOperation Operation] [Docs_CogenCoreEventsOperationtimeout OperationTimeout] [Docs_CogenCoreEventsPass Pass] [Docs_CogenCoreEventsSignal Signal] [Docs_CogenCoreEventsSleep Sleep] [Docs_CogenCoreEventsTimedoperation TimedOperation] [Docs_CogenCoreEventsWaitforsignal WaitForSignal] ====
 
-= Module: events =
+= Module: `events` =
 Base events (coroutine operations) and coroutine exceptions.
 
 == Classes ==
@@ -31,8 +31,22 @@ result = yield events.Call(mycoro, args=, kwargs=, prio=)
   scheduler queue
 
 
+=== [Docs_CogenCoreEventsComplete Complete] ===
+A operator for adding a list of (coroutine, operator) pairs. Used 
+internally.
+
+
 === [Docs_CogenCoreEventsConnectionclosed ConnectionClosed] ===
 Raised when the other peer has closed connection.
+
+
+=== [Docs_CogenCoreEventsConnectionerror ConnectionError] ===
+Raised when a socket has a error flag (in epoll or select)
+
+
+=== [Docs_CogenCoreEventsCoroutineexception CoroutineException] ===
+This is used intenally to carry exception state in the poller and 
+scheduler.
 
 
 === [Docs_CogenCoreEventsJoin Join] ===
@@ -55,9 +69,29 @@ scheduler.add(coro_a)
 }}}
 
 
+=== [Docs_CogenCoreEventsOperation Operation] ===
+All operations derive from this. This base class handles 
+the priority flag. 
+
+Eg:
+
+{{{
+yield Operation(prio=)
+}}}        
+
+If you need something that can't be done in a coroutine fashion you 
+probabily need to subclass this and make a custom operation for your
+issue.
+
+
 === [Docs_CogenCoreEventsOperationtimeout OperationTimeout] ===
 Raised when the timeout for a operation expires. The exception 
 message will be the operation
+
+
+=== [Docs_CogenCoreEventsPass Pass] ===
+A operator for setting the next (coro, op) pair to be runned by the 
+scheduler. Used internally.
 
 
 === [Docs_CogenCoreEventsSignal Signal] ===
@@ -86,6 +120,20 @@ yield events.Sleep(timestamp=ts)
 }}}
 
   * ts - a timestamp
+
+
+=== [Docs_CogenCoreEventsTimedoperation TimedOperation] ===
+Operations that have a timeout derive from this.
+
+Eg:
+
+{{{
+yield TimedOperation(
+    timeout=, 
+    weak_timeout=,
+    prio=
+)
+}}}
 
 
 === [Docs_CogenCoreEventsWaitforsignal WaitForSignal] ===

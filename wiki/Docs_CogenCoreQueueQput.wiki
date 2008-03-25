@@ -5,7 +5,7 @@
 ==== Methods: [#finalize finalize] [#process process] ====
 ==== Attributes: [#block block] [#caller caller] [#finalized finalized] [#item item] [#prio prio] [#queue queue] [#result result] [#weak_timeout weak_timeout] ====
 
-= Class: QPut =
+= Class: `QPut` =
 
 A operation for the queue put call.
 

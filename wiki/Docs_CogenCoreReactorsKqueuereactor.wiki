@@ -4,7 +4,7 @@
 ==== Parent module: [Docs_CogenCoreReactors cogen.core.reactors] ====
 ==== Methods: [#__init__ __init__] [#__len__ __len__] [#add add] [#handle_errored handle_errored] [#remove remove] [#run run] [#run_once run_once] [#run_operation run_operation] [#run_or_add run_or_add] [#waiting_op waiting_op] ====
 
-= Class: KQueueReactor =
+= Class: `KQueueReactor` =
 
 
 

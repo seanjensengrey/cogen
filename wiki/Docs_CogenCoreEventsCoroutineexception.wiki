@@ -1,0 +1,10 @@
+#summary cogen.core.events.CoroutineException Documentation for trunk
+#labels Documentation
+
+==== Parent module: [Docs_CogenCoreEvents cogen.core.events] ====
+
+= Class: `CoroutineException` =
+
+This is used intenally to carry exception state in the poller and 
+scheduler.
+

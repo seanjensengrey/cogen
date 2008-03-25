@@ -5,7 +5,7 @@
 ==== Methods: [#finalize finalize] [#process process] ====
 ==== Attributes: [#prio prio] [#queue queue] ====
 
-= Class: QJoin =
+= Class: `QJoin` =
 
 A operation for the queue join call.
 

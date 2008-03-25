@@ -4,7 +4,7 @@
 ==== Parent module: [Docs_CogenWebAsync cogen.web.async] ====
 ==== Methods: [#__init__ __init__] [#run run] ====
 
-= Class: Read =
+= Class: `Read` =
 
 This is actually a hack that mixes ReadAll and ReadLine and 
 patches their state attributes. Hopefully i'll evolve it to

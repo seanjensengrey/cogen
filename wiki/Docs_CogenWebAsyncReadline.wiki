@@ -4,7 +4,7 @@
 ==== Parent module: [Docs_CogenWebAsync cogen.web.async] ====
 ==== Methods: [#__init__ __init__] [#run run] ====
 
-= Class: ReadLine =
+= Class: `ReadLine` =
 
 Same a async.Read but doesn't work with chunked input (it would complicate
 things too much at the moment).

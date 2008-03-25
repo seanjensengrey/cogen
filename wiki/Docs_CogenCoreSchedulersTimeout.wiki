@@ -4,7 +4,7 @@
 ==== Parent module: [Docs_CogenCoreSchedulers cogen.core.schedulers] ====
 ==== Attributes: [#coro coro] [#delta delta] [#last_checkpoint last_checkpoint] [#op op] [#timeout timeout] [#weak_timeout weak_timeout] ====
 
-= Class: Timeout =
+= Class: `Timeout` =
 
 
 

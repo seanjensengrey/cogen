@@ -4,7 +4,7 @@
 ==== Parent module: [Docs_CogenCoreSockets cogen.core.sockets] ====
 ==== Methods: [#__init__ __init__] [#run run] ====
 
-= Class: Write =
+= Class: `Write` =
 
 Write the buffer to the socket and return the number of bytes written.
 

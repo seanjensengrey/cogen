@@ -4,7 +4,7 @@
 ==== Parent module: [Docs_CogenCoreEvents cogen.core.events] ====
 ==== Methods: [#__init__ __init__] ====
 
-= Class: Join =
+= Class: `Join` =
 
 A operator for waiting on a coroutine. 
 Example:

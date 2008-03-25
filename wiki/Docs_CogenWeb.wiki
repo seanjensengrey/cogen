@@ -4,7 +4,7 @@
 ==== Parent module: [Docs_Cogen cogen] ====
 ==== Modules: [Docs_CogenWebAsync async] [Docs_CogenWebWsgi wsgi] ====
 
-= Module: web =
+= Module: `web` =
 This module holds a wsgi server and future web-related code.
 
 == Modules ==

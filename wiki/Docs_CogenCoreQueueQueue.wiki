@@ -4,7 +4,7 @@
 ==== Parent module: [Docs_CogenCoreQueue cogen.core.queue] ====
 ==== Methods: [#empty empty] [#full full] [#get get] [#get_nowait get_nowait] [#join join] [#put put] [#put_nowait put_nowait] [#qsize qsize] [#task_done task_done] ====
 
-= Class: Queue =
+= Class: `Queue` =
 
 This class attempts to mimic the exact functionality of the 
 python standard library Queue.Queue class, but with a coroutine context:

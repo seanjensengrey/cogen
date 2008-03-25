@@ -5,7 +5,7 @@
 ==== Classes: [Docs_CogenCoreUtilTimeoutdesc TimeoutDesc] [Docs_CogenCoreUtilPriority priority] ====
 ==== Functions: [#debug debug] [#fmt_list fmt_list] ====
 
-= Module: util =
+= Module: `util` =
 Mischelaneous or common.
 
 == Classes ==

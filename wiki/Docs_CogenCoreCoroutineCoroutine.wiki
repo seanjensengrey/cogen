@@ -3,9 +3,9 @@
 
 ==== Parent module: [Docs_CogenCoreCoroutine cogen.core.coroutine] ====
 ==== Methods: [#add_waiter add_waiter] [#finalize finalize] [#handle_error handle_error] [#process process] [#remove_waiter remove_waiter] [#run_op run_op] ====
-==== Attributes: [#STATE_COMPLETED STATE_COMPLETED] [#STATE_FAILED STATE_FAILED] [#STATE_FINALIZED STATE_FINALIZED] [#STATE_NEED_INIT STATE_NEED_INIT] [#STATE_RUNNING STATE_RUNNING] [#caller caller] [#coro coro] [#exception exception] [#f_args f_args] [#f_kws f_kws] [#name name] [#prio prio] [#result result] [#running running] [#state state] [#waiters waiters] ====
+==== Attributes: [#STATE_COMPLETED STATE_COMPLETED] [#STATE_FAILED STATE_FAILED] [#STATE_FINALIZED STATE_FINALIZED] [#STATE_NEED_INIT STATE_NEED_INIT] [#STATE_RUNNING STATE_RUNNING] [#caller caller] [#coro coro] [#debug debug] [#exception exception] [#f_args f_args] [#f_kws f_kws] [#lastop lastop] [#name name] [#prio prio] [#result result] [#running running] [#state state] [#waiters waiters] ====
 
-= Class: Coroutine =
+= Class: `Coroutine` =
 
 We need a coroutine wrapper for generators and function alike because
 we want to run functions that don't return generators just like a
@@ -84,6 +84,10 @@ which handles it's own completion (resuming the caller and the waiters).
 
 {{{<member 'coro' of 'Coroutine' objects>}}}
 
+=== {{{debug}}} ===
+
+{{{<member 'debug' of 'Coroutine' objects>}}}
+
 === {{{exception}}} ===
 
 {{{<member 'exception' of 'Coroutine' objects>}}}
@@ -95,6 +99,10 @@ which handles it's own completion (resuming the caller and the waiters).
 === {{{f_kws}}} ===
 
 {{{<member 'f_kws' of 'Coroutine' objects>}}}
+
+=== {{{lastop}}} ===
+
+{{{<member 'lastop' of 'Coroutine' objects>}}}
 
 === {{{name}}} ===
 
@@ -110,7 +118,7 @@ which handles it's own completion (resuming the caller and the waiters).
 
 === {{{running}}} ===
 
-{{{<property object at 0x00CB3EB8>}}}
+{{{<property object at 0x00C770F8>}}}
 
 === {{{state}}} ===
 

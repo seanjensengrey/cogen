@@ -4,7 +4,7 @@
 ==== Parent module: [Docs_CogenCoreSockets cogen.core.sockets] ====
 ==== Methods: [#__init__ __init__] [#run run] ====
 
-= Class: Accept =
+= Class: `Accept` =
 
 Returns a (conn, addr) tuple when the operation completes.
 

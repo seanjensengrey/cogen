@@ -4,7 +4,7 @@
 ==== Parent module: [Docs_CogenCore cogen.core] ====
 ==== Classes: [Docs_CogenCoreSocketsAccept Accept] [Docs_CogenCoreSocketsConnect Connect] [Docs_CogenCoreSocketsRead Read] [Docs_CogenCoreSocketsReadall ReadAll] [Docs_CogenCoreSocketsReadline ReadLine] [Docs_CogenCoreSocketsSendfile SendFile] [Docs_CogenCoreSocketsSocket Socket] [Docs_CogenCoreSocketsWrite Write] [Docs_CogenCoreSocketsWriteall WriteAll] ====
 
-= Module: sockets =
+= Module: `sockets` =
 Socket-only coroutine operations and `Socket` wrapper.
 
 == Classes ==

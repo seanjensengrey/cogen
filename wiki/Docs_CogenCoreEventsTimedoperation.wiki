@@ -1,0 +1,48 @@
+#summary cogen.core.events.TimedOperation Documentation for trunk
+#labels Documentation
+
+==== Parent module: [Docs_CogenCoreEvents cogen.core.events] ====
+==== Methods: [#finalize finalize] [#process process] ====
+==== Attributes: [#finalized finalized] [#prio prio] [#weak_timeout weak_timeout] ====
+
+= Class: `TimedOperation` =
+
+Operations that have a timeout derive from this.
+
+Eg:
+
+{{{
+yield TimedOperation(
+    timeout=, 
+    weak_timeout=,
+    prio=
+)
+}}}
+
+== Methods ==
+
+=== {{{finalize}}} ===
+signature: {{{finalize(self)}}}
+
+
+
+=== {{{process}}} ===
+signature: {{{process(self, sched, coro)}}}
+
+
+
+
+== Attributes ==
+
+=== {{{finalized}}} ===
+
+{{{<member 'finalized' of 'TimedOperation' objects>}}}
+
+=== {{{prio}}} ===
+
+{{{<member 'prio' of 'Operation' objects>}}}
+
+=== {{{weak_timeout}}} ===
+
+{{{<member 'weak_timeout' of 'TimedOperation' objects>}}}
+
