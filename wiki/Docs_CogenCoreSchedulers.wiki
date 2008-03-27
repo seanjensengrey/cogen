@@ -3,6 +3,7 @@
 
 ==== Parent module: [Docs_CogenCore cogen.core] ====
 ==== Classes: [Docs_CogenCoreSchedulersDebugginwrapper DebugginWrapper] [Docs_CogenCoreSchedulersScheduler Scheduler] [Docs_CogenCoreSchedulersTimeout Timeout] ====
+==== Attributes: [#getnow getnow] ====
 
 = Module: `schedulers` =
 Scheduling framework.
@@ -29,13 +30,21 @@ Usage:
   * default_priority: a default priority option for operations that do not 
   set it. check [Docs_CogenCoreUtilPriority priority].
   * default_timeout: a default timedelta or number of seconds to wait for 
-  the operation
+  the operation, -1 means no timeout.
 
 
 === [Docs_CogenCoreSchedulersTimeout Timeout] ===
 This wrapps a (op, coro) pair in weakreferences, extracts the timeout 
 value from the operation. We add instances of this class in the timeouts 
 heapq.
+
+
+
+== Attributes ==
+
+=== {{{getnow}}} ===
+
+{{{<built-in method now of type object at 0x1E1CAD88>}}}
 
 
 

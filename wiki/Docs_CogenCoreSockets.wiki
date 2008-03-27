@@ -4,7 +4,7 @@
 ==== Parent module: [Docs_CogenCore cogen.core] ====
 ==== Classes: [Docs_CogenCoreSocketsAccept Accept] [Docs_CogenCoreSocketsConnect Connect] [Docs_CogenCoreSocketsRead Read] [Docs_CogenCoreSocketsReadall ReadAll] [Docs_CogenCoreSocketsReadline ReadLine] [Docs_CogenCoreSocketsReadoperation ReadOperation] [Docs_CogenCoreSocketsSendfile SendFile] [Docs_CogenCoreSocketsSocket Socket] [Docs_CogenCoreSocketsSocketoperation SocketOperation] [Docs_CogenCoreSocketsWrite Write] [Docs_CogenCoreSocketsWriteall WriteAll] [Docs_CogenCoreSocketsWriteoperation WriteOperation] ====
 ==== Functions: [#getdefaulttimeout getdefaulttimeout] [#setdefaulttimeout setdefaulttimeout] ====
-==== Attributes: [#sendfile sendfile] ====
+==== Attributes: [#getnow getnow] [#sendfile sendfile] ====
 
 = Module: `sockets` =
 Socket-only coroutine operations and `Socket` wrapper.
@@ -71,8 +71,16 @@ A wrapper for socket objects, sets nonblocking mode and
 adds some internal bufers and wrappers. Regular calls to the usual 
 socket methods return operations for use in a coroutine.
 
-    Socket([family[, type[, proto]]]) -> socket object
+So you use this in a coroutine like:
+{{{
+    sock = Socket(family, type, proto) # just like the builtin socket module
+    yield sock.read(1024)
+}}}
 
+Constructor details:
+{{{
+    Socket([family[, type[, proto]]]) -> socket object
+}}}
 Open a socket of the given type.  The family argument specifies the
 address family; it defaults to AF_INET.  The type argument specifies
 whether this is a stream (SOCK_STREAM, this is the default)
@@ -119,6 +127,11 @@ Set the default timeout used by the socket wrapper
 
 
 == Attributes ==
+
+=== {{{getnow}}} ===
+
+{{{<built-in method now of type object at 0x1E1CAD88>}}}
+
 
 === {{{sendfile}}} ===
 

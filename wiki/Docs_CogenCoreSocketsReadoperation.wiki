@@ -11,17 +11,9 @@
 == Methods ==
 
 === {{{__init__}}} ===
-signature: {{{__init__(self, sock, run_or_add=True, **kws)}}}
+signature: {{{__init__(self, sock, **kws)}}}
 
-All the socket operations have these generic properties that the 
-poller and scheduler interprets:
 
-  * timeout - the ammout of time in seconds or timedelta, or the datetime 
-  value till the poller should wait for this operation.
-  * weak_timeout - if this is True the timeout handling code will take 
-  into account the time of last activity (that would be the time of last
-  `try_run` call)
-  * prio - a flag for the scheduler
 
 === {{{try_run}}} ===
 signature: {{{try_run(self, reactor)}}}

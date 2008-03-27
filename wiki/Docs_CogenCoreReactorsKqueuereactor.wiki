@@ -23,7 +23,6 @@ signature: {{{__len__(self)}}}
 === {{{add}}} ===
 signature: {{{add(self, op, coro)}}}
 
-~ @debug(0)    
 
 
 === {{{handle_errored}}} ===
@@ -34,7 +33,6 @@ Handles descriptors that have errors.
 === {{{remove}}} ===
 signature: {{{remove(self, op, coro)}}}
 
-~ @debug(0)
 
 
 === {{{run}}} ===

@@ -3,6 +3,7 @@
 
 ==== Parent module: [Docs_CogenCore cogen.core] ====
 ==== Classes: [Docs_CogenCoreEventsAddcoro AddCoro] [Docs_CogenCoreEventsCall Call] [Docs_CogenCoreEventsComplete Complete] [Docs_CogenCoreEventsConnectionclosed ConnectionClosed] [Docs_CogenCoreEventsConnectionerror ConnectionError] [Docs_CogenCoreEventsCoroutineexception CoroutineException] [Docs_CogenCoreEventsJoin Join] [Docs_CogenCoreEventsOperation Operation] [Docs_CogenCoreEventsOperationtimeout OperationTimeout] [Docs_CogenCoreEventsPass Pass] [Docs_CogenCoreEventsSignal Signal] [Docs_CogenCoreEventsSleep Sleep] [Docs_CogenCoreEventsTimedoperation TimedOperation] [Docs_CogenCoreEventsWaitforsignal WaitForSignal] ====
+==== Attributes: [#getnow getnow] ====
 
 = Module: `events` =
 Base events (coroutine operations) and coroutine exceptions.
@@ -187,6 +188,14 @@ value = yield events.WaitForSignal(
   * value - a object sent with the signal. see: [Docs_CogenCoreEventsSignal Signal]
   
 See: [Docs_CogenCoreEventsTimedoperation TimedOperation]
+
+
+
+== Attributes ==
+
+=== {{{getnow}}} ===
+
+{{{<built-in method now of type object at 0x1E1CAD88>}}}
 
 
 

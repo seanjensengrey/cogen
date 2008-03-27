@@ -13,7 +13,6 @@ Middleware for providing wsgi.input to the app.
 === {{{__call__}}} ===
 signature: {{{__call__(self, environ, start_response)}}}
 
-~ @debug(0, 25)
 
 
 === {{{__init__}}} ===

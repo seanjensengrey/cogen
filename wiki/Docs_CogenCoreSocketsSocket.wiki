@@ -2,7 +2,7 @@
 #labels Documentation
 
 ==== Parent module: [Docs_CogenCoreSockets cogen.core.sockets] ====
-==== Methods: [#accept accept] [#bind bind] [#close close] [#connect connect] [#fileno fileno] [#getpeername getpeername] [#getsockname getsockname] [#gettimeout gettimeout] [#listen listen] [#read read] [#readall readall] [#readline readline] [#setsockopt setsockopt] [#settimeout settimeout] [#shutdown shutdown] [#write write] [#writeall writeall] ====
+==== Methods: [#accept accept] [#bind bind] [#close close] [#connect connect] [#fileno fileno] [#getpeername getpeername] [#getsockname getsockname] [#gettimeout gettimeout] [#listen listen] [#read read] [#readall readall] [#readline readline] [#setblocking setblocking] [#setsockopt setsockopt] [#settimeout settimeout] [#shutdown shutdown] [#write write] [#writeall writeall] ====
 
 = Class: `Socket` =
 
@@ -10,8 +10,16 @@ A wrapper for socket objects, sets nonblocking mode and
 adds some internal bufers and wrappers. Regular calls to the usual 
 socket methods return operations for use in a coroutine.
 
-    Socket([family[, type[, proto]]]) -> socket object
+So you use this in a coroutine like:
+{{{
+    sock = Socket(family, type, proto) # just like the builtin socket module
+    yield sock.read(1024)
+}}}
 
+Constructor details:
+{{{
+    Socket([family[, type[, proto]]]) -> socket object
+}}}
 Open a socket of the given type.  The family argument specifies the
 address family; it defaults to AF_INET.  The type argument specifies
 whether this is a stream (SOCK_STREAM, this is the default)
@@ -102,6 +110,11 @@ Receive one line of data from the socket. The return value is a string
 representing the data received. The amount of data will at most
 ammount specified by _size_. If no line separator has been found and the 
 ammount received has reached _size_ an OverflowException will be raised.
+
+=== {{{setblocking}}} ===
+signature: {{{setblocking(self, val)}}}
+
+
 
 === {{{setsockopt}}} ===
 signature: {{{setsockopt(self, *args)}}}
