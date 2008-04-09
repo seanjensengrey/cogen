@@ -1,0 +1,19 @@
+#summary cogen.core.coroutines.local Documentation for trunk
+#labels Documentation
+
+==== Parent module: [Docs_CogenCoreCoroutines cogen.core.coroutines] ====
+
+= Class: `local` =
+
+A threadlocal-like object that works in the context of coroutines.
+That means, the current running coroutine has the _ident_.
+
+Coroutine.run_op sets the indent before running a step and unsets after.
+
+Example:
+{{{
+loc = local() 
+loc.foo = 1
+}}}
+The *loc* instance's values will be different for separate coroutines.
+

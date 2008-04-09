@@ -27,6 +27,7 @@ These have to be initialized in the request.
 === {{{run}}} ===
 signature: {{{run(self, reactor=True)}}}
 
+~ @debug(0)        
 
 
 

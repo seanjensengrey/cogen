@@ -23,16 +23,18 @@ signature: {{{__len__(self)}}}
 === {{{add}}} ===
 signature: {{{add(self, op, coro)}}}
 
+~ @debug(0)    
 
 
 === {{{handle_errored}}} ===
-signature: {{{handle_errored(self, desc)}}}
+signature: {{{handle_errored(self, desc, code=None)}}}
 
 Handles descriptors that have errors.
 
 === {{{remove}}} ===
 signature: {{{remove(self, op, coro)}}}
 
+~ @debug(0)
 
 
 === {{{run}}} ===

@@ -31,7 +31,7 @@ A socket object represents one endpoint of a network connection.
 == Methods ==
 
 === {{{accept}}} ===
-signature: {{{accept(self)}}}
+signature: {{{accept(self, **kws)}}}
 
 Accept a connection. The socket must be bound to an address and 
 listening for connections. The return value is a pair (conn, address) 
@@ -58,7 +58,7 @@ fail. The remote end will receive no more data (after queued data is
 flushed). Sockets are automatically closed when they are garbage-collected. 
 
 === {{{connect}}} ===
-signature: {{{connect(self, address)}}}
+signature: {{{connect(self, address, **kws)}}}
 
 Connect to a remote socket at _address_. 
 
@@ -90,21 +90,21 @@ specifies the maximum number of queued connections and should be at
 least 1; the maximum value is system-dependent (usually 5). 
 
 === {{{read}}} ===
-signature: {{{read(self, bufsize)}}}
+signature: {{{read(self, bufsize, **kws)}}}
 
 Receive data from the socket. The return value is a string 
 representing the data received. The amount of data may be less than the
 ammount specified by _bufsize_. 
 
 === {{{readall}}} ===
-signature: {{{readall(self, bufsize)}}}
+signature: {{{readall(self, bufsize, **kws)}}}
 
 Receive data from the socket. The return value is a string 
 representing the data received. The amount of data will be the exact
 ammount specified by _bufsize_. 
 
 === {{{readline}}} ===
-signature: {{{readline(self, size)}}}
+signature: {{{readline(self, size, **kws)}}}
 
 Receive one line of data from the socket. The return value is a string 
 representing the data received. The amount of data will at most
@@ -135,13 +135,13 @@ Shut down one or both halves of the connection. Same as the usual
 socket method.
 
 === {{{write}}} ===
-signature: {{{write(self, data)}}}
+signature: {{{write(self, data, **kws)}}}
 
 Send data to the socket. The socket must be connected to a remote 
 socket. Ammount sent may be less than the data provided.
 
 === {{{writeall}}} ===
-signature: {{{writeall(self, data)}}}
+signature: {{{writeall(self, data, **kws)}}}
 
 Send data to the socket. The socket must be connected to a remote 
 socket. All the data is guaranteed to be sent.

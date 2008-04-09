@@ -14,7 +14,7 @@ A socket operation should subclass WriteOperation or ReadOperation, define a
 == Methods ==
 
 === {{{__init__}}} ===
-signature: {{{__init__(self, sock, run_or_add=True, **kws)}}}
+signature: {{{__init__(self, sock, run_first=True, **kws)}}}
 
 All the socket operations have these generic properties that the 
 poller and scheduler interprets:

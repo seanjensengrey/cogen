@@ -28,7 +28,7 @@ Implemented by the child class that actualy implements the polling.
 Registers an operation.
 
 === {{{handle_errored}}} ===
-signature: {{{handle_errored(self, desc)}}}
+signature: {{{handle_errored(self, desc, code=None)}}}
 
 Handles descriptors that have errors.
 

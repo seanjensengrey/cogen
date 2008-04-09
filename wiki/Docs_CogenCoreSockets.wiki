@@ -4,7 +4,7 @@
 ==== Parent module: [Docs_CogenCore cogen.core] ====
 ==== Classes: [Docs_CogenCoreSocketsAccept Accept] [Docs_CogenCoreSocketsConnect Connect] [Docs_CogenCoreSocketsRead Read] [Docs_CogenCoreSocketsReadall ReadAll] [Docs_CogenCoreSocketsReadline ReadLine] [Docs_CogenCoreSocketsReadoperation ReadOperation] [Docs_CogenCoreSocketsSendfile SendFile] [Docs_CogenCoreSocketsSocket Socket] [Docs_CogenCoreSocketsSocketoperation SocketOperation] [Docs_CogenCoreSocketsWrite Write] [Docs_CogenCoreSocketsWriteall WriteAll] [Docs_CogenCoreSocketsWriteoperation WriteOperation] ====
 ==== Functions: [#getdefaulttimeout getdefaulttimeout] [#setdefaulttimeout setdefaulttimeout] ====
-==== Attributes: [#getnow getnow] [#sendfile sendfile] ====
+==== Attributes: [#getnow getnow] [#ident ident] ====
 
 = Module: `sockets` =
 Socket-only coroutine operations and `Socket` wrapper.
@@ -133,7 +133,7 @@ Set the default timeout used by the socket wrapper
 {{{<built-in method now of type object at 0x1E1CAD88>}}}
 
 
-=== {{{sendfile}}} ===
+=== {{{ident}}} ===
 
 {{{None}}}
 

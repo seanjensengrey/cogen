@@ -1,0 +1,81 @@
+#summary cogen.core.coroutines Documentation for trunk
+#labels Documentation
+
+==== Parent module: [Docs_CogenCore cogen.core] ====
+==== Classes: [Docs_CogenCoreCoroutinesCoroutine Coroutine] [Docs_CogenCoreCoroutinesLocal local] ====
+==== Functions: [#coroutine coroutine] [#coroutine coroutine] [#debug_coroutine debug_coroutine] ====
+==== Attributes: [#ident ident] ====
+
+= Module: `coroutines` =
+Coroutine related boilerplate and wrappers.
+
+== Classes ==
+
+=== [Docs_CogenCoreCoroutinesCoroutine Coroutine] ===
+We need a coroutine wrapper for generators and function alike because
+we want to run functions that don't return generators just like a
+coroutine.
+
+
+=== [Docs_CogenCoreCoroutinesLocal local] ===
+A threadlocal-like object that works in the context of coroutines.
+That means, the current running coroutine has the _ident_.
+
+Coroutine.run_op sets the indent before running a step and unsets after.
+
+Example:
+{{{
+loc = local() 
+loc.foo = 1
+}}}
+The *loc* instance's values will be different for separate coroutines.
+
+
+
+== Functions ==
+
+=== {{{coroutine}}} ===
+signature: {{{coroutine(func)}}}
+
+A decorator function for generators.
+Example:
+
+{{{
+@coroutine
+def plain_ol_generator():
+    yield bla
+    yield bla
+    ...
+}}}
+
+
+=== {{{coroutine}}} ===
+signature: {{{coroutine(func)}}}
+
+A decorator function for generators.
+Example:
+
+{{{
+@coroutine
+def plain_ol_generator():
+    yield bla
+    yield bla
+    ...
+}}}
+
+
+=== {{{debug_coroutine}}} ===
+signature: {{{debug_coroutine(func)}}}
+
+
+
+
+
+== Attributes ==
+
+=== {{{ident}}} ===
+
+{{{None}}}
+
+
+
