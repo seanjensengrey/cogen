@@ -1,0 +1,18 @@
+#summary cogen.web.async.LazyStartResponseMiddleware Documentation for trunk
+#labels Documentation
+
+==== Parent module: [Docs_CogenWebAsync cogen.web.async] ====
+==== Methods: [#start_response start_response] ====
+
+= Class: `LazyStartResponseMiddleware` =
+
+
+
+== Methods ==
+
+=== {{{start_response}}} ===
+signature: {{{start_response(self, status, headers, exc=None)}}}
+
+
+
+

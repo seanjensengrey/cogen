@@ -1,7 +1,7 @@
 #summary cogen Documentation for trunk
 #labels Documentation
 
-==== Modules: [Docs_CogenCommon common] [Docs_CogenCore core] [Docs_CogenDocs docs] [Docs_CogenTest test] [Docs_CogenWeb web] ====
+==== Modules: [Docs_CogenCommon common] [Docs_CogenCore core] [Docs_CogenWeb web] ====
 
 = Module: `cogen` =
 This is a library for network oriented, coroutine based programming. 
@@ -79,18 +79,6 @@ m = Scheduler()
 m.add(server)
 m.run()
 }}}
-
-
-=== [Docs_CogenDocs docs] ===
-Apydia entrypoints for custom theme and other stuff we need to tweak when 
-generating the docs.
-
-
-=== [Docs_CogenTest test] ===
-To run the unittests get the source package and run setup.py test
-
-
-TODO: test for timeout: operator runs before the timeout but it remains allocated.
 
 
 === [Docs_CogenWeb web] ===

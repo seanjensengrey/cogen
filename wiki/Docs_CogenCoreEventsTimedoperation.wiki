@@ -2,7 +2,7 @@
 #labels Documentation
 
 ==== Parent module: [Docs_CogenCoreEvents cogen.core.events] ====
-==== Methods: [#finalize finalize] [#process process] ====
+==== Methods: [#cleanup cleanup] [#finalize finalize] [#process process] ====
 ==== Attributes: [#finalized finalized] [#prio prio] [#weak_timeout weak_timeout] ====
 
 = Class: `TimedOperation` =
@@ -28,6 +28,13 @@ See: [Docs_CogenCoreEventsOperation Operation]
 Note: you don't really use this, this is for subclassing for other operations.
 
 == Methods ==
+
+=== {{{cleanup}}} ===
+signature: {{{cleanup(self, sched)}}}
+
+Clean up after a timeout. Implemented in ops that need cleanup.
+If return value evaluated to false the sched won't raise the timeout in 
+the coroutine.
 
 === {{{finalize}}} ===
 signature: {{{finalize(self)}}}

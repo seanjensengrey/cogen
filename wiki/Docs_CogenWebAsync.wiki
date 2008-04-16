@@ -2,8 +2,7 @@
 #labels Documentation
 
 ==== Parent module: [Docs_CogenWeb cogen.web] ====
-==== Classes: [Docs_CogenWebAsyncCogenoperationcall COGENOperationCall] [Docs_CogenWebAsyncCogenoperationwrapper COGENOperationWrapper] [Docs_CogenWebAsyncCogenproxy COGENProxy] [Docs_CogenWebAsyncRead Read] [Docs_CogenWebAsyncReadline ReadLine] [Docs_CogenWebAsyncSynchronousinputmiddleware SynchronousInputMiddleware] ====
-==== Functions: [#sync_input sync_input] ====
+==== Classes: [Docs_CogenWebAsyncCogencallwrapper COGENCallWrapper] [Docs_CogenWebAsyncCogenoperationcall COGENOperationCall] [Docs_CogenWebAsyncCogenoperationwrapper COGENOperationWrapper] [Docs_CogenWebAsyncCogenproxy COGENProxy] [Docs_CogenWebAsyncLazystartresponsemiddleware LazyStartResponseMiddleware] [Docs_CogenWebAsyncLazystartresponsemiddleware LazyStartResponseMiddleware] [Docs_CogenWebAsyncRead Read] [Docs_CogenWebAsyncReadline ReadLine] [Docs_CogenWebAsyncSynchronousinputmiddleware SynchronousInputMiddleware] [Docs_CogenWebAsyncSynchronousinputmiddleware SynchronousInputMiddleware] ====
 
 = Module: `async` =
 cogen.web.wsgi server is asynchronous by default. If you need to run a app that
@@ -34,6 +33,10 @@ buff.seek(0)
 
 == Classes ==
 
+=== [Docs_CogenWebAsyncCogencallwrapper COGENCallWrapper] ===
+
+
+
 === [Docs_CogenWebAsyncCogenoperationcall COGENOperationCall] ===
 
 
@@ -43,6 +46,14 @@ buff.seek(0)
 
 
 === [Docs_CogenWebAsyncCogenproxy COGENProxy] ===
+
+
+
+=== [Docs_CogenWebAsyncLazystartresponsemiddleware LazyStartResponseMiddleware] ===
+
+
+
+=== [Docs_CogenWebAsyncLazystartresponsemiddleware LazyStartResponseMiddleware] ===
 
 
 
@@ -61,13 +72,8 @@ things too much at the moment).
 Middleware for providing wsgi.input to the app.
 
 
-
-== Functions ==
-
-=== {{{sync_input}}} ===
-signature: {{{sync_input(app)}}}
-
-
+=== [Docs_CogenWebAsyncSynchronousinputmiddleware SynchronousInputMiddleware] ===
+Middleware for providing wsgi.input to the app.
 
 
 

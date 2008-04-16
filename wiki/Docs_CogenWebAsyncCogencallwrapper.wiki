@@ -1,0 +1,9 @@
+#summary cogen.web.async.COGENCallWrapper Documentation for trunk
+#labels Documentation
+
+==== Parent module: [Docs_CogenWebAsync cogen.web.async] ====
+
+= Class: `COGENCallWrapper` =
+
+
+
