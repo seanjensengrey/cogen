@@ -1,4 +1,3 @@
-
 Although not the most relevant thing here are some figures:
 
 {{{ab -n 10000 -c 60 }}}
@@ -15,4 +14,8 @@ and
 ||TwistedWeb/8.0.1      ||1315.25            ||191.24       ||19 bytes       ||600        ||
 ||Apache/2.2.4          ||3168.39            ||820.93       ||19 bytes       ||600        ||
 
-All servers have the same document length, apaches serves a file, and the example files for the other servers can be found in [here http://code.google.com/p/cogen/source/browse/trunk/examples/]
+All servers have the same document length, apache serves a file, and the example files for the other servers can be found in [http://code.google.com/p/cogen/source/browse/trunk/examples/ here].
+
+Well, not exactly made in the ideal conditions - i wouldn't call a virtual machine ideal but you get the hang of it.
+
+cogen 0.1.8 is the trunk code actually.
