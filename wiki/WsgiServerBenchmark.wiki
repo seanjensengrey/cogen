@@ -3,7 +3,7 @@ Although not the most relevant thing here are some figures:
 
 {{{ab -n 10000 -c 60 }}}
 and
-{{{ab -n 10000 -c 60 }}}
+{{{ab -n 20000 -c 600 }}}
 
 ||Server Software       ||Requests per second||Transfer rate||Document Length||Concurrency||
 ||cogen/0.1.8           ||1290.32            ||178.84       ||19 bytes       ||60         ||
