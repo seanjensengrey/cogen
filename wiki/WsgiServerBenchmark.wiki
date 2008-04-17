@@ -1,5 +1,5 @@
 #labels Featured
-Although not the most relevant thing here are some figures:
+Although not the most relevant thing here are some figures for a synthetic helloworld benchmark:
 
 {{{ab -n 10000 -c 60 }}}
 and
