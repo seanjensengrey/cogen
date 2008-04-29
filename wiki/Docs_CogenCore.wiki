@@ -2,7 +2,7 @@
 #labels Documentation
 
 ==== Parent module: [Docs_Cogen cogen] ====
-==== Modules: [Docs_CogenCoreCoroutines coroutines] [Docs_CogenCoreEvents events] [Docs_CogenCoreQueue queue] [Docs_CogenCoreReactors reactors] [Docs_CogenCoreSchedulers schedulers] [Docs_CogenCoreSockets sockets] [Docs_CogenCoreUtil util] ====
+==== Modules: [Docs_CogenCoreCoroutines coroutines] [Docs_CogenCoreEvents events] [Docs_CogenCorePubsub pubsub] [Docs_CogenCoreQueue queue] [Docs_CogenCoreReactors reactors] [Docs_CogenCoreSchedulers schedulers] [Docs_CogenCoreSockets sockets] [Docs_CogenCoreUtil util] ====
 
 = Module: `core` =
 This module holds the essential stuff.
@@ -73,6 +73,10 @@ Coroutine related boilerplate and wrappers.
 
 === [Docs_CogenCoreEvents events] ===
 Base events (coroutine operations) and coroutine exceptions.
+
+
+=== [Docs_CogenCorePubsub pubsub] ===
+
 
 
 === [Docs_CogenCoreQueue queue] ===

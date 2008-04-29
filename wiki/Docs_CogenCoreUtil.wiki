@@ -2,17 +2,13 @@
 #labels Documentation
 
 ==== Parent module: [Docs_CogenCore cogen.core] ====
-==== Classes: [Docs_CogenCoreUtilTimeoutdesc TimeoutDesc] [Docs_CogenCoreUtilPriority priority] ====
+==== Classes: [Docs_CogenCoreUtilPriority priority] ====
 ==== Functions: [#debug debug] [#fmt_list fmt_list] ====
 
 = Module: `util` =
 Mischelaneous or common.
 
 == Classes ==
-
-=== [Docs_CogenCoreUtilTimeoutdesc TimeoutDesc] ===
-
-
 
 === [Docs_CogenCoreUtilPriority priority] ===
 || Property || Description || 

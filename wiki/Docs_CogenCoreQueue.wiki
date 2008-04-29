@@ -2,7 +2,7 @@
 #labels Documentation
 
 ==== Parent module: [Docs_CogenCore cogen.core] ====
-==== Classes: [Docs_CogenCoreQueueEmpty Empty] [Docs_CogenCoreQueueFull Full] [Docs_CogenCoreQueueQdone QDone] [Docs_CogenCoreQueueQget QGet] [Docs_CogenCoreQueueQjoin QJoin] [Docs_CogenCoreQueueQput QPut] [Docs_CogenCoreQueueQueue Queue] ====
+==== Classes: [Docs_CogenCoreQueueEmpty Empty] [Docs_CogenCoreQueueFull Full] [Docs_CogenCoreQueueQueue Queue] ====
 
 = Module: `queue` =
 Port of Queue.Queue from the python standard library.
@@ -15,22 +15,6 @@ Port of Queue.Queue from the python standard library.
 
 === [Docs_CogenCoreQueueFull Full] ===
 
-
-
-=== [Docs_CogenCoreQueueQdone QDone] ===
-A operation for the queue done_task call
-
-
-=== [Docs_CogenCoreQueueQget QGet] ===
-A operation for the queue get call.
-
-
-=== [Docs_CogenCoreQueueQjoin QJoin] ===
-A operation for the queue join call.
-
-
-=== [Docs_CogenCoreQueueQput QPut] ===
-A operation for the queue put call.
 
 
 === [Docs_CogenCoreQueueQueue Queue] ===

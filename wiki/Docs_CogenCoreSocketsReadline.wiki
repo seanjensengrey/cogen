@@ -20,6 +20,7 @@ signature: {{{__init__(self, sock, len=4096, **kws)}}}
 === {{{run}}} ===
 signature: {{{run(self, reactor)}}}
 
+~ @debug(0)
 
 
 

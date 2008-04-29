@@ -25,7 +25,7 @@ yield events.Sleep(timestamp=ts)
 == Methods ==
 
 === {{{__init__}}} ===
-signature: {{{__init__(self, val=None, timestamp=None)}}}
+signature: {{{__init__(self, val)}}}
 
 
 

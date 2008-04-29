@@ -3,8 +3,7 @@
 
 ==== Parent module: [Docs_CogenCore cogen.core] ====
 ==== Classes: [Docs_CogenCoreCoroutinesCoroutine Coroutine] [Docs_CogenCoreCoroutinesLocal local] ====
-==== Functions: [#coroutine coroutine] [#coroutine coroutine] [#debug_coroutine debug_coroutine] ====
-==== Attributes: [#ident ident] ====
+==== Functions: [#coroutine coroutine] [#coroutine coroutine] ====
 
 = Module: `coroutines` =
 Coroutine related boilerplate and wrappers.
@@ -62,20 +61,6 @@ def plain_ol_generator():
     yield bla
     ...
 }}}
-
-
-=== {{{debug_coroutine}}} ===
-signature: {{{debug_coroutine(func)}}}
-
-
-
-
-
-== Attributes ==
-
-=== {{{ident}}} ===
-
-{{{None}}}
 
 
 

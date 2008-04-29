@@ -11,7 +11,7 @@
 == Methods ==
 
 === {{{__init__}}} ===
-signature: {{{__init__(self, sock, wsgi_app, environ, sockoper_run_first, sendfile_timeout)}}}
+signature: {{{__init__(self, sock, wsgi_app, environ, sockoper_run_first, sockoper_timeout, sendfile_timeout)}}}
 
 
 
