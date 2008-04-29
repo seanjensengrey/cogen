@@ -1,0 +1,18 @@
+#summary cogen.core.pubsub Documentation for trunk
+#labels Documentation
+
+==== Parent module: [Docs_CogenCore cogen.core] ====
+==== Classes: [Docs_CogenCorePubsubPublishsubscribequeue PublishSubscribeQueue] ====
+
+= Module: `pubsub` =
+
+
+== Classes ==
+
+=== [Docs_CogenCorePubsubPublishsubscribequeue PublishSubscribeQueue] ===
+A more robust replacement for the signal operations.
+A coroutine subscribes itself to a PublishSubscribeQueue and get new
+published messages with _fetch_ method.
+
+
+
