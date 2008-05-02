@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+
+<!-- remove old header -->
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>cogen API Reference Documentation
+        - Module: cogen</title><meta name="MSSmartTagsPreventParsing" content="true" /><meta http-equiv="imagetoolbar" content="no" /><link href="css/default.css" rel="stylesheet" type="text/css" /><link href="css/pygments.css" rel="stylesheet" type="text/css" />
+    <!-- <link rel="shortcut icon" href="/images/favicon.ico" type="image/vnd.microsoft.icon"/> -->
+    <link rel="stylesheet" href="css/apydia.css" type="text/css" />
+    <script src="js/jquery-1.2.1.pack.js" type="text/javascript"></script>
+    <script src="js/apydia.js" type="text/javascript"></script>
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+    <div id="page">
+        <div id="browser">
+            <div class="browser-section">
+                <h2>Module Index</h2>
+                <ul>
+                    <li class="active">
+                        <a href="cogen.html">cogen</a>
+                    </li><li>
+                        <a href="cogen.common.html">cogen.common</a>
+                    </li><li>
+                        <a href="cogen.core.html">cogen.core</a>
+                    </li><li>
+                        <a href="cogen.core.coroutines.html">cogen.core.coroutines</a>
+                    </li><li>
+                        <a href="cogen.core.events.html">cogen.core.events</a>
+                    </li><li>
+                        <a href="cogen.core.pubsub.html">cogen.core.pubsub</a>
+                    </li><li>
+                        <a href="cogen.core.queue.html">cogen.core.queue</a>
+                    </li><li>
+                        <a href="cogen.core.reactors.html">cogen.core.reactors</a>
+                    </li><li>
+                        <a href="cogen.core.schedulers.html">cogen.core.schedulers</a>
+                    </li><li>
+                        <a href="cogen.core.sockets.html">cogen.core.sockets</a>
+                    </li><li>
+                        <a href="cogen.core.util.html">cogen.core.util</a>
+                    </li><li>
+                        <a href="cogen.web.html">cogen.web</a>
+                    </li><li>
+                        <a href="cogen.web.async.html">cogen.web.async</a>
+                    </li><li>
+                        <a href="cogen.web.wsgi.html">cogen.web.wsgi</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="browser-section">
+                <h2>Submodules</h2>
+                <ul>
+                    <li>
+                        <a href="cogen.common.html">common</a>
+                    </li><li>
+                        <a href="cogen.core.html">core</a>
+                    </li><li>
+                        <a href="cogen.web.html">web</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="content">
+    <h1>Module:
+        cogen
+    </h1>
+    <div class="docstring rst"><p>This is a library for network oriented, coroutine based programming.
+The interfaces and events/operations aim to mimic some of the regular thread
+and socket features.</p>
+<p>cogen uses the <a class="reference" href="http://www.python.org/dev/peps/pep-0342/">enhanced generators</a>
+in python 2.5. These generators are bidirectional: they allow to pass values in
+and out of the generator. The whole framework is based on this.</p>
+<p>The generator yields a <cite>Operation</cite> instance and will receive the result from
+that yield when the operation is ready.</p>
+<pre class="literal-block">
+Roughly the cogen internals works like this:
+
++------------------------+
+| @coroutine             |
+| def foo():             |
+|     ...                |             op.process(sched, coro)
+|  +-&gt;result = yield op--|----------------+------------+
+|  |  ...                |                |            |
++--|---------------------+    +---------------+  +---------------------+
+   |                          | the operation |  | the operation can't |
+  result = op.finalize()      | is ready      |  | complete right now  |
+   |                          +------|--------+  +----------|----------+
+  scheduler runs foo                 |                      |
+   |                                 |                      |
+  foo gets in the active             |                      |
+  coroutines queue                   |                      |
+   |                                 |                      |
+   +----------------------&lt;----------+                      |
+   |                                                    depening on the op
+  op.run()                                               +---------+
+   |      socket is ready               add it in        |         |
+   +-------------&lt;------------  ......  the reactor   &lt;--+         |
+   |                         later                                 |
+   +------&lt;-------------------  ......  add it in some other     &lt;-+
+    some event decides                  queue for later run
+    this op is ready
+
+
+The scheduler basicaly does 3 things:
+ - runs active (coroutine,operations) pairs (calls process on the op)
+ - runs the reactor
+ - checks for timeouts
+
+The reactor basicaly does 2 things:
+ - calls the system to check what descriptors are ready
+ - runs the operations that have ready descriptors
+
+The operation does most of the work (via the process, finalize, cleanup,
+run methods):
+ - adds itself in the reactor (if it's a socket operation)
+ - adds itself in some structure to be activated later by some other event
+ - adds itself and the coro in the scheduler's active coroutines queue
+
+The coroutine decorator wrappes foo in a Coroutine class that does some
+niceties like exception handling, getting the result from finalize() etc.
+</pre>
+</div>
+    <ul class="link-bar">
+    <li class="link-to-sourcecode">
+        <a href="http://code.google.com/p/cogen/source/browse/trunk/cogen/__init__.py#1">View source</a>
+    </li>
+</ul>
+    <div>
+        <h2>Modules</h2>
+            <h3>
+                <a href="cogen.common.html">common</a>
+            </h3>
+            <div class="docstring rst"><p>A module for quick importing the essential core stuff.
+(coroutine, Scheduler, events, sockets, priority)</p></div>
+            <ul class="link-bar">
+    <li>
+        <a href="cogen.common.html">Details</a>
+    </li>
+    <li class="link-to-sourcecode">
+        <a href="http://code.google.com/p/cogen/source/browse/trunk/cogen/common.py#1">View source</a>
+    </li>
+</ul>
+            <h3>
+                <a href="cogen.core.html">core</a>
+            </h3>
+            <div class="docstring rst"><p>This module holds the essential stuff.</p></div>
+            <ul class="link-bar">
+    <li>
+        <a href="cogen.core.html">Details</a>
+    </li>
+    <li class="link-to-sourcecode">
+        <a href="http://code.google.com/p/cogen/source/browse/trunk/cogen/core/__init__.py#1">View source</a>
+    </li>
+</ul>
+            <h3>
+                <a href="cogen.web.html">web</a>
+            </h3>
+            <div class="docstring rst"><p>This module holds a wsgi server and future web-related code.</p></div>
+            <ul class="link-bar">
+    <li>
+        <a href="cogen.web.html">Details</a>
+    </li>
+    <li class="link-to-sourcecode">
+        <a href="http://code.google.com/p/cogen/source/browse/trunk/cogen/web/__init__.py#1">View source</a>
+    </li>
+</ul>
+    </div>
+        </div>
+        <div id="footer">
+            Generated with <a href="http://apydia.ematia.de/" class="extern">
+            Apydia 0.0.3</a>
+        </div>
+    </div>
+</body>
+</html>
