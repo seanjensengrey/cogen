@@ -1,9 +1,0 @@
-#summary cogen.core.util.TimeoutDesc Documentation for trunk
-#labels Documentation
-
-==== Parent module: [Docs_CogenCoreUtil cogen.core.util] ====
-
-= Class: `TimeoutDesc` =
-
-
-
