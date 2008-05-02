@@ -1,9 +1,0 @@
-#summary cogen.common Documentation for trunk
-#labels Documentation
-
-==== Parent module: [Docs_Cogen cogen] ====
-
-= Module: `common` =
-A module for quick importing the essential core stuff. 
-(coroutine, Scheduler, events, sockets, priority)
-

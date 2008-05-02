@@ -1,9 +1,0 @@
-#summary cogen.core.events.ConnectionClosed Documentation for trunk
-#labels Documentation
-
-==== Parent module: [Docs_CogenCoreEvents cogen.core.events] ====
-
-= Class: `ConnectionClosed` =
-
-Raised when the other peer has closed connection.
-

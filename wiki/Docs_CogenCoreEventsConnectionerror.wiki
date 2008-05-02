@@ -1,9 +1,0 @@
-#summary cogen.core.events.ConnectionError Documentation for trunk
-#labels Documentation
-
-==== Parent module: [Docs_CogenCoreEvents cogen.core.events] ====
-
-= Class: `ConnectionError` =
-
-Raised when a socket has a error flag (in epoll or select)
-
