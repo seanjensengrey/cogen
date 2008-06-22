@@ -1,5 +1,0 @@
-* more detailed doc strings
-* support for named parameters for EV_SET(), kevent()
-* for EV_SET(), allow any object as 'ident', as long as it has 'fileno'
-  method (and transparently use the value returned by fileno method)
-  this would be very convenient for files
