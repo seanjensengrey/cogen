@@ -1,0 +1,19 @@
+0.1.9:
+
+ * splited platform specific network code in separate modules
+ * improved timeouts to save some memory
+ * added reactor_greedy and ops_greedy options on the scheduler
+ * removed qt reactor
+ * improved the coroutine call
+
+0.1.8:
+
+ * added support for ConnectEx (via IOCPProactor)
+ * added content-length checking and adding chunking boudaries when app returns
+ wsgi.file_wrapper
+ * added a option for sendfile_timeout to the wsgi server
+ * added support for a threading.local-like object in cogen.core.coroutines.local
+ * changed epoll and kqueue to use ONE-SHOT events
+ * reworked the IOCPProactor
+ * added a QtReactor for using cogen within a Qt app (unstable)
+ 
