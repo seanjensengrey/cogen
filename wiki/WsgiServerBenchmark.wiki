@@ -1,4 +1,6 @@
 #labels Featured
+_These are old (made against cogen 0.1.8)_
+
 Although not the most relevant thing here are some figures for a synthetic helloworld benchmark:
 
 {{{ab -n 10000 -c 60 }}}
@@ -16,5 +18,3 @@ and
 All servers have the same document length, the example files for the servers can be found in [http://code.google.com/p/cogen/source/browse/trunk/examples/ here].
 
 Well, not exactly made in the ideal conditions - i wouldn't call a virtual machine ideal but you get the hang of it.
-
-cogen 0.1.8 is the trunk code actually.
