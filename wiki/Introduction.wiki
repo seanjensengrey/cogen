@@ -1,4 +1,5 @@
 #summary Introduction
+#labels Deprecated
 = Introduction =
 
 Ok, introductory stuff: before python 2.5 generators were just a unidirectional computation structure. That means one could get values out of the generator. In python 2.5 we have the enhancements from [http://www.python.org/dev/peps/pep-0342/ PEP 342: Coroutines via Enhanced Generators] - generators have 3 extra methods: sent, throw and close and the yield statement is a expression now. So the idea is that the generators are now a bidirectional computation structure: we can get values out and in the generator.
