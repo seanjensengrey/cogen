@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>cogen.core.proactors.select_impl &mdash; cogen v0.2.0 documentation</title>
+    <link rel="stylesheet" href="../_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.2.0',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="top" title="cogen v0.2.0 documentation" href="../index.html" />
+    <link rel="up" title="Core" href="index.html" />
+    <link rel="next" title="cogen.core.pubsub" href="cogen.core.pubsub.html" />
+    <link rel="prev" title="cogen.core.proactors.base" href="cogen.core.proactors.base.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="cogen.core.pubsub.html" title="cogen.core.pubsub"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="cogen.core.proactors.base.html" title="cogen.core.proactors.base"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">cogen v0.2.0 documentation</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Core</a> &raquo;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="cogen.core.proactors.base.html" title="previous chapter"><tt class="docutils literal docutils literal docutils literal"><span class="pre">cogen.core.proactors.base</span></tt></a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="cogen.core.pubsub.html" title="next chapter"><tt class="docutils literal"><span class="pre">cogen.core.pubsub</span></tt></a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../_sources/modules/cogen.core.proactors.select_impl.txt" rel="nofollow">Show Source</a></li>
+            </ul>
+          <h3>Quick search</h3>
+            <form class="search" action="../search.html" method="get">
+              <input type="text" name="q" size="18" /> <input type="submit" value="Go" />
+              <input type="hidden" name="check_keywords" value="yes" />
+              <input type="hidden" name="area" value="default" />
+            </form>
+            <p style="font-size: 90%">Enter search terms or a module, class or function name.</p>
+        </div>
+      </div>
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="module-cogen.core.proactors.select_impl">
+<h1><tt class="xref docutils literal"><span class="pre">cogen.core.proactors.select_impl</span></tt><a class="headerlink" href="#module-cogen.core.proactors.select_impl" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="cogen.core.proactors.select_impl.SelectProactor">
+<!--[cogen.core.proactors.select_impl.SelectProactor]-->class <tt class="descclassname">cogen.core.proactors.select_impl.</tt><tt class="descname">SelectProactor</tt><big>(</big><em>scheduler</em>, <em>resolution</em>, <em>**options</em><big>)</big><a class="headerlink" href="#cogen.core.proactors.select_impl.SelectProactor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a title="cogen.core.proactors.base.ProactorBase" class="reference external" href="cogen.core.proactors.base.html#cogen.core.proactors.base.ProactorBase"><tt class="xref docutils literal"><span class="pre">cogen.core.proactors.base.ProactorBase</span></tt></a></p>
+<dl class="method">
+<dt id="cogen.core.proactors.select_impl.SelectProactor.run">
+<!--[cogen.core.proactors.select_impl.SelectProactor.run]--><tt class="descname">run</tt><big>(</big><em>timeout=0</em><big>)</big><a class="headerlink" href="#cogen.core.proactors.select_impl.SelectProactor.run" title="Permalink to this definition">¶</a></dt>
+<dd><p>Run a proactor loop and return new socket events. Timeout is a timedelta 
+object, 0 if active coros or None.</p>
+<p>select timeout param is a float number of seconds.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="cogen.core.pubsub.html" title="cogen.core.pubsub"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="cogen.core.proactors.base.html" title="cogen.core.proactors.base"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">cogen v0.2.0 documentation</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Core</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+      &copy; Copyright 2008, Maries Ionel Cristian.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 0.6.
+    </div>
+  </body>
+</html>

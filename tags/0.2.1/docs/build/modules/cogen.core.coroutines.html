@@ -1,0 +1,282 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>cogen.core.coroutines &mdash; cogen v0.2.0 documentation</title>
+    <link rel="stylesheet" href="../_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.2.0',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="top" title="cogen v0.2.0 documentation" href="../index.html" />
+    <link rel="up" title="Core" href="index.html" />
+    <link rel="next" title="cogen.core.events" href="cogen.core.events.html" />
+    <link rel="prev" title="cogen.core" href="cogen.core.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="cogen.core.events.html" title="cogen.core.events"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="cogen.core.html" title="cogen.core"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">cogen v0.2.0 documentation</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Core</a> &raquo;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="cogen.core.html" title="previous chapter"><tt class="docutils literal docutils literal"><span class="pre">cogen.core</span></tt></a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="cogen.core.events.html" title="next chapter"><tt class="docutils literal"><span class="pre">cogen.core.events</span></tt></a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../_sources/modules/cogen.core.coroutines.txt" rel="nofollow">Show Source</a></li>
+            </ul>
+          <h3>Quick search</h3>
+            <form class="search" action="../search.html" method="get">
+              <input type="text" name="q" size="18" /> <input type="submit" value="Go" />
+              <input type="hidden" name="check_keywords" value="yes" />
+              <input type="hidden" name="area" value="default" />
+            </form>
+            <p style="font-size: 90%">Enter search terms or a module, class or function name.</p>
+        </div>
+      </div>
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="module-cogen.core.coroutines">
+<h1><tt class="xref docutils literal"><span class="pre">cogen.core.coroutines</span></tt><a class="headerlink" href="#module-cogen.core.coroutines" title="Permalink to this headline">¶</a></h1>
+<p>Coroutine related boilerplate and wrappers.</p>
+<dl class="class">
+<dt id="cogen.core.coroutines.local">
+<!--[cogen.core.coroutines.local]-->class <tt class="descclassname">cogen.core.coroutines.</tt><tt class="descname">local</tt><a class="headerlink" href="#cogen.core.coroutines.local" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <tt class="xref docutils literal"><span class="pre">object</span></tt></p>
+<p>A threadlocal-like object that works in the context of coroutines.
+That means, the current running coroutine has the _ident_.</p>
+<p>Coroutine.run_op sets the indent before running a step and unsets after.</p>
+<p>Example:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">loc</span> <span class="o">=</span> <span class="n">local</span><span class="p">()</span> 
+<span class="n">loc</span><span class="o">.</span><span class="n">foo</span> <span class="o">=</span> <span class="mf">1</span>
+</pre></div>
+</div>
+<p>The <em>loc</em> instance&#8217;s values will be different for separate coroutines.</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="cogen.core.coroutines.coro">
+<!--[cogen.core.coroutines.coro]--><tt class="descclassname">cogen.core.coroutines.</tt><tt class="descname">coro</tt><a class="headerlink" href="#cogen.core.coroutines.coro" title="Permalink to this definition">¶</a></dt>
+<dd>alias of <a title="cogen.core.coroutines.Coroutine" class="reference internal" href="#cogen.core.coroutines.Coroutine"><tt class="xref docutils literal"><span class="pre">Coroutine</span></tt></a></dd></dl>
+
+<dl class="data">
+<dt id="cogen.core.coroutines.coroutine">
+<!--[cogen.core.coroutines.coroutine]--><tt class="descclassname">cogen.core.coroutines.</tt><tt class="descname">coroutine</tt><a class="headerlink" href="#cogen.core.coroutines.coroutine" title="Permalink to this definition">¶</a></dt>
+<dd>alias of <a title="cogen.core.coroutines.Coroutine" class="reference internal" href="#cogen.core.coroutines.Coroutine"><tt class="xref docutils literal"><span class="pre">Coroutine</span></tt></a></dd></dl>
+
+<dl class="class">
+<dt id="cogen.core.coroutines.Coroutine">
+<!--[cogen.core.coroutines.Coroutine]-->class <tt class="descclassname">cogen.core.coroutines.</tt><tt class="descname">Coroutine</tt><big>(</big><em>func</em>, <em>constructor=&lt;class 'cogen.core.coroutines.CoroutineInstance'&gt;</em><big>)</big><a class="headerlink" href="#cogen.core.coroutines.Coroutine" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <tt class="xref docutils literal"><span class="pre">object</span></tt></p>
+<p>A decorator function for generators.
+Example:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="nd">@coroutine</span>
+<span class="k">def</span> <span class="nf">plain_ol_generator</span><span class="p">():</span>
+    <span class="k">yield</span> <span class="n">bla</span>
+    <span class="k">yield</span> <span class="n">bla</span>
+    <span class="o">...</span>
+</pre></div>
+</div>
+<dl class="attribute">
+<dt id="cogen.core.coroutines.Coroutine.constructor">
+<!--[cogen.core.coroutines.Coroutine.constructor]--><tt class="descname">constructor</tt><a class="headerlink" href="#cogen.core.coroutines.Coroutine.constructor" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="cogen.core.coroutines.Coroutine.wrapped_func">
+<!--[cogen.core.coroutines.Coroutine.wrapped_func]--><tt class="descname">wrapped_func</tt><a class="headerlink" href="#cogen.core.coroutines.Coroutine.wrapped_func" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="cogen.core.coroutines.CoroutineInstance">
+<!--[cogen.core.coroutines.CoroutineInstance]-->class <tt class="descclassname">cogen.core.coroutines.</tt><tt class="descname">CoroutineInstance</tt><big>(</big><em>coro</em>, <em>*args</em>, <em>**kws</em><big>)</big><a class="headerlink" href="#cogen.core.coroutines.CoroutineInstance" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a title="cogen.core.events.Operation" class="reference external" href="cogen.core.events.html#cogen.core.events.Operation"><tt class="xref docutils literal"><span class="pre">cogen.core.events.Operation</span></tt></a></p>
+<p>We need a coroutine wrapper for generators and functions alike because
+we want to run functions that don&#8217;t return generators just like a
+coroutine, also, we do some exception handling here.</p>
+<dl class="method">
+<dt id="cogen.core.coroutines.CoroutineInstance.add_waiter">
+<!--[cogen.core.coroutines.CoroutineInstance.add_waiter]--><tt class="descname">add_waiter</tt><big>(</big><em>coro</em>, <em>op=None</em><big>)</big><a class="headerlink" href="#cogen.core.coroutines.CoroutineInstance.add_waiter" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="cogen.core.coroutines.CoroutineInstance.caller">
+<!--[cogen.core.coroutines.CoroutineInstance.caller]--><tt class="descname">caller</tt><a class="headerlink" href="#cogen.core.coroutines.CoroutineInstance.caller" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="cogen.core.coroutines.CoroutineInstance.coro">
+<!--[cogen.core.coroutines.CoroutineInstance.coro]--><tt class="descname">coro</tt><a class="headerlink" href="#cogen.core.coroutines.CoroutineInstance.coro" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="cogen.core.coroutines.CoroutineInstance.debug">
+<!--[cogen.core.coroutines.CoroutineInstance.debug]--><tt class="descname">debug</tt><a class="headerlink" href="#cogen.core.coroutines.CoroutineInstance.debug" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="cogen.core.coroutines.CoroutineInstance.exception">
+<!--[cogen.core.coroutines.CoroutineInstance.exception]--><tt class="descname">exception</tt><a class="headerlink" href="#cogen.core.coroutines.CoroutineInstance.exception" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="cogen.core.coroutines.CoroutineInstance.f_args">
+<!--[cogen.core.coroutines.CoroutineInstance.f_args]--><tt class="descname">f_args</tt><a class="headerlink" href="#cogen.core.coroutines.CoroutineInstance.f_args" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="cogen.core.coroutines.CoroutineInstance.f_kws">
+<!--[cogen.core.coroutines.CoroutineInstance.f_kws]--><tt class="descname">f_kws</tt><a class="headerlink" href="#cogen.core.coroutines.CoroutineInstance.f_kws" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="cogen.core.coroutines.CoroutineInstance.finalize">
+<!--[cogen.core.coroutines.CoroutineInstance.finalize]--><tt class="descname">finalize</tt><big>(</big><big>)</big><a class="headerlink" href="#cogen.core.coroutines.CoroutineInstance.finalize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="cogen.core.coroutines.CoroutineInstance.handle_error">
+<!--[cogen.core.coroutines.CoroutineInstance.handle_error]--><tt class="descname">handle_error</tt><big>(</big><big>)</big><a class="headerlink" href="#cogen.core.coroutines.CoroutineInstance.handle_error" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="cogen.core.coroutines.CoroutineInstance.lastop">
+<!--[cogen.core.coroutines.CoroutineInstance.lastop]--><tt class="descname">lastop</tt><a class="headerlink" href="#cogen.core.coroutines.CoroutineInstance.lastop" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="cogen.core.coroutines.CoroutineInstance.name">
+<!--[cogen.core.coroutines.CoroutineInstance.name]--><tt class="descname">name</tt><a class="headerlink" href="#cogen.core.coroutines.CoroutineInstance.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="cogen.core.coroutines.CoroutineInstance.prio">
+<!--[cogen.core.coroutines.CoroutineInstance.prio]--><tt class="descname">prio</tt><a class="headerlink" href="#cogen.core.coroutines.CoroutineInstance.prio" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="cogen.core.coroutines.CoroutineInstance.process">
+<!--[cogen.core.coroutines.CoroutineInstance.process]--><tt class="descname">process</tt><big>(</big><em>sched</em>, <em>coro</em><big>)</big><a class="headerlink" href="#cogen.core.coroutines.CoroutineInstance.process" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="cogen.core.coroutines.CoroutineInstance.remove_waiter">
+<!--[cogen.core.coroutines.CoroutineInstance.remove_waiter]--><tt class="descname">remove_waiter</tt><big>(</big><em>coro</em>, <em>op=None</em><big>)</big><a class="headerlink" href="#cogen.core.coroutines.CoroutineInstance.remove_waiter" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="cogen.core.coroutines.CoroutineInstance.result">
+<!--[cogen.core.coroutines.CoroutineInstance.result]--><tt class="descname">result</tt><a class="headerlink" href="#cogen.core.coroutines.CoroutineInstance.result" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="cogen.core.coroutines.CoroutineInstance.run_op">
+<!--[cogen.core.coroutines.CoroutineInstance.run_op]--><tt class="descname">run_op</tt><big>(</big><em>op</em><big>)</big><a class="headerlink" href="#cogen.core.coroutines.CoroutineInstance.run_op" title="Permalink to this definition">¶</a></dt>
+<dd><p>Handle the operation:</p>
+<ul class="simple">
+<li>if coro is in STATE_RUNNING, send or throw the given op</li>
+<li>if coro is in STATE_NEED_INIT, call the init function and if it 
+doesn&#8217;t return a generator, set STATE_COMPLETED and set the result
+to whatever the function returned.<ul>
+<li>if StopIteration is raised, set STATE_COMPLETED and return self.</li>
+<li>if any other exception is raised, set STATE_FAILED, handle error
+or send it to the caller, return self</li>
+</ul>
+</li>
+</ul>
+<p>Return self is used as a optimization. Coroutine is also a Operation 
+which handles it&#8217;s own completion (resuming the caller and the waiters).</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="cogen.core.coroutines.CoroutineInstance.running">
+<!--[cogen.core.coroutines.CoroutineInstance.running]--><tt class="descname">running</tt><a class="headerlink" href="#cogen.core.coroutines.CoroutineInstance.running" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="cogen.core.coroutines.CoroutineInstance.state">
+<!--[cogen.core.coroutines.CoroutineInstance.state]--><tt class="descname">state</tt><a class="headerlink" href="#cogen.core.coroutines.CoroutineInstance.state" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="cogen.core.coroutines.CoroutineInstance.waiters">
+<!--[cogen.core.coroutines.CoroutineInstance.waiters]--><tt class="descname">waiters</tt><a class="headerlink" href="#cogen.core.coroutines.CoroutineInstance.waiters" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="exception">
+<dt id="cogen.core.coroutines.CoroutineException">
+<!--[cogen.core.coroutines.CoroutineException]-->exception <tt class="descclassname">cogen.core.coroutines.</tt><tt class="descname">CoroutineException</tt><a class="headerlink" href="#cogen.core.coroutines.CoroutineException" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <tt class="xref docutils literal"><span class="pre">exceptions.Exception</span></tt></p>
+<p>This is used intenally to carry exception state in the poller and 
+scheduler.</p>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="cogen.core.events.html" title="cogen.core.events"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="cogen.core.html" title="cogen.core"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">cogen v0.2.0 documentation</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Core</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+      &copy; Copyright 2008, Maries Ionel Cristian.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 0.6.
+    </div>
+  </body>
+</html>
